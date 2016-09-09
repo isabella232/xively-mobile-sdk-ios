@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F67395DB1BF4B94200C4A262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395DA1BF4B94200C4A262 /* main.m */; };
+		F67395DE1BF4B94200C4A262 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395DD1BF4B94200C4A262 /* AppDelegate.m */; };
+		F67395E11BF4B94200C4A262 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395E01BF4B94200C4A262 /* ViewController.m */; };
+		F67395E41BF4B94200C4A262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67395E21BF4B94200C4A262 /* Main.storyboard */; };
+		F67395E61BF4B94200C4A262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67395E51BF4B94200C4A262 /* Assets.xcassets */; };
+		F67395E91BF4B94200C4A262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67395E71BF4B94200C4A262 /* LaunchScreen.storyboard */; };
+		F67395F41BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395F31BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m */; };
+		F67395FF1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395FE1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m */; };
+		F673960E1BF4B9B200C4A262 /* XivelyHelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = F673960D1BF4B9B200C4A262 /* XivelyHelloWorld.m */; };
+		F67396101BF4B9FD00C4A262 /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F673960F1BF4B9FD00C4A262 /* XivelySDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F67395F01BF4B94200C4A262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F67395CE1BF4B94200C4A262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F67395D51BF4B94200C4A262;
+			remoteInfo = XivelyHelloWorldObjC;
+		};
+		F67395FB1BF4B94200C4A262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F67395CE1BF4B94200C4A262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F67395D51BF4B94200C4A262;
+			remoteInfo = XivelyHelloWorldObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F67395D61BF4B94200C4A262 /* XivelyHelloWorldObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XivelyHelloWorldObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67395DA1BF4B94200C4A262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F67395DC1BF4B94200C4A262 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F67395DD1BF4B94200C4A262 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F67395DF1BF4B94200C4A262 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F67395E01BF4B94200C4A262 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F67395E31BF4B94200C4A262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F67395E51BF4B94200C4A262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F67395E81BF4B94200C4A262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F67395EA1BF4B94200C4A262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67395EF1BF4B94200C4A262 /* XivelyHelloWorldObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XivelyHelloWorldObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67395F31BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XivelyHelloWorldObjCTests.m; sourceTree = "<group>"; };
+		F67395F51BF4B94200C4A262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67395FA1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XivelyHelloWorldObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67395FE1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XivelyHelloWorldObjCUITests.m; sourceTree = "<group>"; };
+		F67396001BF4B94200C4A262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F673960C1BF4B9B200C4A262 /* XivelyHelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyHelloWorld.h; sourceTree = "<group>"; };
+		F673960D1BF4B9B200C4A262 /* XivelyHelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyHelloWorld.m; sourceTree = "<group>"; };
+		F673960F1BF4B9FD00C4A262 /* XivelySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XivelySDK.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F67395D31BF4B94200C4A262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67396101BF4B9FD00C4A262 /* XivelySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67395EC1BF4B94200C4A262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67395F71BF4B94200C4A262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F67395CD1BF4B94200C4A262 = {
+			isa = PBXGroup;
+			children = (
+				F67395D81BF4B94200C4A262 /* XivelyHelloWorldObjC */,
+				F67395F21BF4B94200C4A262 /* XivelyHelloWorldObjCTests */,
+				F67395FD1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests */,
+				F67395D71BF4B94200C4A262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F67395D71BF4B94200C4A262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F67395D61BF4B94200C4A262 /* XivelyHelloWorldObjC.app */,
+				F67395EF1BF4B94200C4A262 /* XivelyHelloWorldObjCTests.xctest */,
+				F67395FA1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F67395D81BF4B94200C4A262 /* XivelyHelloWorldObjC */ = {
+			isa = PBXGroup;
+			children = (
+				F673960F1BF4B9FD00C4A262 /* XivelySDK.framework */,
+				F673960C1BF4B9B200C4A262 /* XivelyHelloWorld.h */,
+				F673960D1BF4B9B200C4A262 /* XivelyHelloWorld.m */,
+				F67395DC1BF4B94200C4A262 /* AppDelegate.h */,
+				F67395DD1BF4B94200C4A262 /* AppDelegate.m */,
+				F67395DF1BF4B94200C4A262 /* ViewController.h */,
+				F67395E01BF4B94200C4A262 /* ViewController.m */,
+				F67395E21BF4B94200C4A262 /* Main.storyboard */,
+				F67395E51BF4B94200C4A262 /* Assets.xcassets */,
+				F67395E71BF4B94200C4A262 /* LaunchScreen.storyboard */,
+				F67395EA1BF4B94200C4A262 /* Info.plist */,
+				F67395D91BF4B94200C4A262 /* Supporting Files */,
+			);
+			path = XivelyHelloWorldObjC;
+			sourceTree = "<group>";
+		};
+		F67395D91BF4B94200C4A262 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F67395DA1BF4B94200C4A262 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F67395F21BF4B94200C4A262 /* XivelyHelloWorldObjCTests */ = {
+			isa = PBXGroup;
+			children = (
+				F67395F31BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m */,
+				F67395F51BF4B94200C4A262 /* Info.plist */,
+			);
+			path = XivelyHelloWorldObjCTests;
+			sourceTree = "<group>";
+		};
+		F67395FD1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F67395FE1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m */,
+				F67396001BF4B94200C4A262 /* Info.plist */,
+			);
+			path = XivelyHelloWorldObjCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F67395D51BF4B94200C4A262 /* XivelyHelloWorldObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67396031BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjC" */;
+			buildPhases = (
+				F67395D21BF4B94200C4A262 /* Sources */,
+				F67395D31BF4B94200C4A262 /* Frameworks */,
+				F67395D41BF4B94200C4A262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XivelyHelloWorldObjC;
+			productName = XivelyHelloWorldObjC;
+			productReference = F67395D61BF4B94200C4A262 /* XivelyHelloWorldObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F67395EE1BF4B94200C4A262 /* XivelyHelloWorldObjCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67396061BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjCTests" */;
+			buildPhases = (
+				F67395EB1BF4B94200C4A262 /* Sources */,
+				F67395EC1BF4B94200C4A262 /* Frameworks */,
+				F67395ED1BF4B94200C4A262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F67395F11BF4B94200C4A262 /* PBXTargetDependency */,
+			);
+			name = XivelyHelloWorldObjCTests;
+			productName = XivelyHelloWorldObjCTests;
+			productReference = F67395EF1BF4B94200C4A262 /* XivelyHelloWorldObjCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F67395F91BF4B94200C4A262 /* XivelyHelloWorldObjCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67396091BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjCUITests" */;
+			buildPhases = (
+				F67395F61BF4B94200C4A262 /* Sources */,
+				F67395F71BF4B94200C4A262 /* Frameworks */,
+				F67395F81BF4B94200C4A262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F67395FC1BF4B94200C4A262 /* PBXTargetDependency */,
+			);
+			name = XivelyHelloWorldObjCUITests;
+			productName = XivelyHelloWorldObjCUITests;
+			productReference = F67395FA1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F67395CE1BF4B94200C4A262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Xively;
+				TargetAttributes = {
+					F67395D51BF4B94200C4A262 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F67395EE1BF4B94200C4A262 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F67395D51BF4B94200C4A262;
+					};
+					F67395F91BF4B94200C4A262 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F67395D51BF4B94200C4A262;
+					};
+				};
+			};
+			buildConfigurationList = F67395D11BF4B94200C4A262 /* Build configuration list for PBXProject "XivelyHelloWorldObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F67395CD1BF4B94200C4A262;
+			productRefGroup = F67395D71BF4B94200C4A262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F67395D51BF4B94200C4A262 /* XivelyHelloWorldObjC */,
+				F67395EE1BF4B94200C4A262 /* XivelyHelloWorldObjCTests */,
+				F67395F91BF4B94200C4A262 /* XivelyHelloWorldObjCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F67395D41BF4B94200C4A262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67395E91BF4B94200C4A262 /* LaunchScreen.storyboard in Resources */,
+				F67395E61BF4B94200C4A262 /* Assets.xcassets in Resources */,
+				F67395E41BF4B94200C4A262 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67395ED1BF4B94200C4A262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67395F81BF4B94200C4A262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F67395D21BF4B94200C4A262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67395E11BF4B94200C4A262 /* ViewController.m in Sources */,
+				F67395DE1BF4B94200C4A262 /* AppDelegate.m in Sources */,
+				F673960E1BF4B9B200C4A262 /* XivelyHelloWorld.m in Sources */,
+				F67395DB1BF4B94200C4A262 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67395EB1BF4B94200C4A262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67395F41BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67395F61BF4B94200C4A262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67395FF1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F67395F11BF4B94200C4A262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F67395D51BF4B94200C4A262 /* XivelyHelloWorldObjC */;
+			targetProxy = F67395F01BF4B94200C4A262 /* PBXContainerItemProxy */;
+		};
+		F67395FC1BF4B94200C4A262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F67395D51BF4B94200C4A262 /* XivelyHelloWorldObjC */;
+			targetProxy = F67395FB1BF4B94200C4A262 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F67395E21BF4B94200C4A262 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F67395E31BF4B94200C4A262 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F67395E71BF4B94200C4A262 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F67395E81BF4B94200C4A262 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F67396011BF4B94200C4A262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F67396021BF4B94200C4A262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F67396041BF4B94200C4A262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = XivelyHelloWorldObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F67396051BF4B94200C4A262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = XivelyHelloWorldObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F67396071BF4B94200C4A262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XivelyHelloWorldObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XivelyHelloWorldObjC.app/XivelyHelloWorldObjC";
+			};
+			name = Debug;
+		};
+		F67396081BF4B94200C4A262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XivelyHelloWorldObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XivelyHelloWorldObjC.app/XivelyHelloWorldObjC";
+			};
+			name = Release;
+		};
+		F673960A1BF4B94200C4A262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XivelyHelloWorldObjCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XivelyHelloWorldObjC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F673960B1BF4B94200C4A262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XivelyHelloWorldObjCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XivelyHelloWorldObjC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F67395D11BF4B94200C4A262 /* Build configuration list for PBXProject "XivelyHelloWorldObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67396011BF4B94200C4A262 /* Debug */,
+				F67396021BF4B94200C4A262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F67396031BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67396041BF4B94200C4A262 /* Debug */,
+				F67396051BF4B94200C4A262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F67396061BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67396071BF4B94200C4A262 /* Debug */,
+				F67396081BF4B94200C4A262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F67396091BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F673960A1BF4B94200C4A262 /* Debug */,
+				F673960B1BF4B94200C4A262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F67395CE1BF4B94200C4A262 /* Project object */;
+}

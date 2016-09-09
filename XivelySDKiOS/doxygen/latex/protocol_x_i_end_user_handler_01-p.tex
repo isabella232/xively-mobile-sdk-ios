@@ -1,0 +1,132 @@
+\hypertarget{protocol_x_i_end_user_handler_01-p}{}\section{$<$X\+I\+End\+User\+Handler $>$ Protocol Reference}
+\label{protocol_x_i_end_user_handler_01-p}\index{$<$\+X\+I\+End\+User\+Handler $>$@{$<$\+X\+I\+End\+User\+Handler $>$}}
+
+
+Interface for objects that holds IoT End\+User info that are accessible.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+End\+User\+Handler.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+End\+User\+Handler $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_end_user_handler_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_end_user_handler_01-p_a34bef6e14c8ebcfb2938939d4546b9bb}{request\+End\+User\+:}
+\begin{DoxyCompactList}\small\item\em Request End\+User info identified by End\+User\+Id asynchronously. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_end_user_handler_01-p_a61ca66b7f1ed59f8f2ccf0d082375f4e}{put\+End\+User\+:}
+\begin{DoxyCompactList}\small\item\em List all organiaztions. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_end_user_handler_01-p_ade5d51576841aee618b7e573dc889907}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+End\+User\+Handler\+State \hyperlink{protocol_x_i_end_user_handler_01-p_a6a1286cca57fb37d1de44fc55446df6d}{state}
+\begin{DoxyCompactList}\small\item\em The state of the handler object. \end{DoxyCompactList}\item 
+id$<$ X\+I\+End\+User\+Handler\+Delegate $>$ \hyperlink{protocol_x_i_end_user_handler_01-p_a38588dbfe6280be2eed34e608014254a}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the result on. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_end_user_handler_01-p_aaf0dc6bc3975d900542b83e8610b7450}{error}
+\begin{DoxyCompactList}\small\item\em The error if the query finished with error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for objects that holds IoT End\+User info that are accessible. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_end_user_handler_01-p_ade5d51576841aee618b7e573dc889907}{}\label{protocol_x_i_end_user_handler_01-p_ade5d51576841aee618b7e573dc889907} 
+\index{X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+End\+User\+Handler) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the query. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_end_user_handler_01-p_a61ca66b7f1ed59f8f2ccf0d082375f4e}{}\label{protocol_x_i_end_user_handler_01-p_a61ca66b7f1ed59f8f2ccf0d082375f4e} 
+\index{X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}!put\+End\+User\+:@{put\+End\+User\+:}}
+\index{put\+End\+User\+:@{put\+End\+User\+:}!X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}}
+\subsubsection{\texorpdfstring{put\+End\+User\+:()}{putEndUser:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+End\+User\+Handler) put\+End\+User\+: \begin{DoxyParamCaption}\item[{(\hyperlink{class_x_i_end_user_info}{X\+I\+End\+User\+Info} $\ast$)}]{end\+User }\end{DoxyParamCaption}}
+
+
+
+List all organiaztions. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_end_user_handler_01-p_a34bef6e14c8ebcfb2938939d4546b9bb}{}\label{protocol_x_i_end_user_handler_01-p_a34bef6e14c8ebcfb2938939d4546b9bb} 
+\index{X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}!request\+End\+User\+:@{request\+End\+User\+:}}
+\index{request\+End\+User\+:@{request\+End\+User\+:}!X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}}
+\subsubsection{\texorpdfstring{request\+End\+User\+:()}{requestEndUser:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+End\+User\+Handler) request\+End\+User\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{end\+User\+Id }\end{DoxyParamCaption}}
+
+
+
+Request End\+User info identified by End\+User\+Id asynchronously. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_end_user_handler_01-p_a38588dbfe6280be2eed34e608014254a}{}\label{protocol_x_i_end_user_handler_01-p_a38588dbfe6280be2eed34e608014254a} 
+\index{X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+End\+User\+Handler\+Delegate$>$ X\+I\+End\+User\+Handler) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_end_user_handler_01-p_aaf0dc6bc3975d900542b83e8610b7450}{}\label{protocol_x_i_end_user_handler_01-p_aaf0dc6bc3975d900542b83e8610b7450} 
+\index{X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}!error@{error}}
+\index{error@{error}!X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+End\+User\+Handler) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error if the query finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_end_user_handler_01-p_a6a1286cca57fb37d1de44fc55446df6d}{}\label{protocol_x_i_end_user_handler_01-p_a6a1286cca57fb37d1de44fc55446df6d} 
+\index{X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}!state@{state}}
+\index{state@{state}!X\+I\+End\+User\+Handler -\/p@{X\+I\+End\+User\+Handler -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+End\+User\+Handler\+State X\+I\+End\+User\+Handler) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The state of the handler object. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+End\+User\+Info/X\+I\+End\+User\+Handler.\+h\end{DoxyCompactItemize}

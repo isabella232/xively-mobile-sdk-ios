@@ -1,0 +1,283 @@
+\hypertarget{interface_x_i_session_services_internal}{}\section{X\+I\+Session\+Services\+Internal Class Reference}
+\label{interface_x_i_session_services_internal}\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+
+
+The implementation of the service creator.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Session\+Services\+Internal.\+h$>$}
+
+Inheritance diagram for X\+I\+Session\+Services\+Internal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_x_i_session_services_internal}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_x_i_session_services_internal_a8496751bb3437da322555a3fb702f246}{init\+With\+Session\+:}
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+(id) -\/ \hyperlink{interface_x_i_session_services_internal_ace1d15a61962e552cb13f7bf10d1e56e}{service\+With\+Call\+Provider\+Class\+:internal\+Class\+:proxy\+Class\+:logger\+:}
+\begin{DoxyCompactList}\small\item\em Create a service that uses one call to provide a service. \end{DoxyCompactList}\item 
+(id) -\/ \hyperlink{interface_x_i_session_services_internal_ae7d776f871143a3001d9f24fa1ca27cd}{service\+Using\+Connection\+Pool\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:}
+\begin{DoxyCompactList}\small\item\em Create a service that uses the M\+Q\+TT connection pool. \end{DoxyCompactList}\item 
+(id) -\/ \hyperlink{interface_x_i_session_services_internal_acb1dd120832c6c6b19d63ac706222f03}{service\+Using\+Session\+Internal\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:}
+\begin{DoxyCompactList}\small\item\em Create a service that needst the session internal class. \end{DoxyCompactList}\item 
+(id$<$ X\+I\+Device\+Info\+List $>$) -\/ \hyperlink{interface_x_i_session_services_internal_a9189da286adb396ae6bf4adce6d76291}{device\+Info\+List}
+\begin{DoxyCompactList}\small\item\em Creates a device info lising object. \end{DoxyCompactList}\item 
+(id$<$ X\+I\+Device\+Handler $>$) -\/ \hyperlink{interface_x_i_session_services_internal_a2873e657d72e56d7d0f0b5e0f0e6e241}{device\+Handler}
+\begin{DoxyCompactList}\small\item\em Creates a device handler object. \end{DoxyCompactList}\item 
+(id$<$ X\+I\+Time\+Series $>$) -\/ \hyperlink{interface_x_i_session_services_internal_ac3c66084f71a5c2f7d2600b8bcb6c8c1}{time\+Series}
+\begin{DoxyCompactList}\small\item\em Creates a time series request object. \end{DoxyCompactList}\item 
+(id$<$ X\+I\+Organization\+Handler $>$) -\/ \hyperlink{interface_x_i_session_services_internal_a1f4dff26e7d2c196d5c71f98abff19de}{organization\+Handler}
+\begin{DoxyCompactList}\small\item\em Creates an organization handler object. \end{DoxyCompactList}\item 
+(id$<$ X\+I\+Organization\+Handler $>$) -\/ \hyperlink{interface_x_i_session_services_internal_af6e364386121abc42ca21dcada112fd5}{end\+User\+Handler}
+\begin{DoxyCompactList}\small\item\em Creates an end\+User handler object. \end{DoxyCompactList}\item 
+(id$<$ X\+I\+Messaging\+Creator $>$) -\/ \hyperlink{interface_x_i_session_services_internal_abee8df637626cbc07de4f7a3d254efbe}{messaging\+Creator}
+\begin{DoxyCompactList}\small\item\em Creates a device association object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_x_i_session_services_internal_a9821bd470bc2299ba66b458301f6a9e5}{services\+With\+Session\+:}
+\begin{DoxyCompactList}\small\item\em The static constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The implementation of the service creator. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_x_i_session_services_internal_a2873e657d72e56d7d0f0b5e0f0e6e241}{}\label{interface_x_i_session_services_internal_a2873e657d72e56d7d0f0b5e0f0e6e241} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!device\+Handler@{device\+Handler}}
+\index{device\+Handler@{device\+Handler}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{device\+Handler()}{deviceHandler()}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Device\+Handler $>$) device\+Handler \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Creates a device handler object. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_device_handler-p}{X\+I\+Device\+Handler} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_a9189da286adb396ae6bf4adce6d76291}{}\label{interface_x_i_session_services_internal_a9189da286adb396ae6bf4adce6d76291} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!device\+Info\+List@{device\+Info\+List}}
+\index{device\+Info\+List@{device\+Info\+List}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{device\+Info\+List()}{deviceInfoList()}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Device\+Info\+List $>$) device\+Info\+List \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Creates a device info lising object. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_device_info_list-p}{X\+I\+Device\+Info\+List} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_af6e364386121abc42ca21dcada112fd5}{}\label{interface_x_i_session_services_internal_af6e364386121abc42ca21dcada112fd5} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!end\+User\+Handler@{end\+User\+Handler}}
+\index{end\+User\+Handler@{end\+User\+Handler}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{end\+User\+Handler()}{endUserHandler()}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Organization\+Handler $>$) end\+User\+Handler \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Creates an end\+User handler object. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_organization_handler-p}{X\+I\+Organization\+Handler} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_a8496751bb3437da322555a3fb702f246}{}\label{interface_x_i_session_services_internal_a8496751bb3437da322555a3fb702f246} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!init\+With\+Session\+:@{init\+With\+Session\+:}}
+\index{init\+With\+Session\+:@{init\+With\+Session\+:}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{init\+With\+Session\+:()}{initWithSession:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Session\+: \begin{DoxyParamCaption}\item[{(\hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} $\ast$)}]{session }\end{DoxyParamCaption}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & The session implementation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_session_services_internal}{X\+I\+Session\+Services\+Internal} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_abee8df637626cbc07de4f7a3d254efbe}{}\label{interface_x_i_session_services_internal_abee8df637626cbc07de4f7a3d254efbe} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!messaging\+Creator@{messaging\+Creator}}
+\index{messaging\+Creator@{messaging\+Creator}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{messaging\+Creator()}{messagingCreator()}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Messaging\+Creator $>$) messaging\+Creator \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Creates a device association object. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_device_association-p}{X\+I\+Device\+Association} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 Creates a messaging creator object. 
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_messaging_creator-p}{X\+I\+Messaging\+Creator} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_a1f4dff26e7d2c196d5c71f98abff19de}{}\label{interface_x_i_session_services_internal_a1f4dff26e7d2c196d5c71f98abff19de} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!organization\+Handler@{organization\+Handler}}
+\index{organization\+Handler@{organization\+Handler}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{organization\+Handler()}{organizationHandler()}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Organization\+Handler $>$) organization\+Handler \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Creates an organization handler object. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_organization_handler-p}{X\+I\+Organization\+Handler} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_a9821bd470bc2299ba66b458301f6a9e5}{}\label{interface_x_i_session_services_internal_a9821bd470bc2299ba66b458301f6a9e5} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!services\+With\+Session\+:@{services\+With\+Session\+:}}
+\index{services\+With\+Session\+:@{services\+With\+Session\+:}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{services\+With\+Session\+:()}{servicesWithSession:()}}
+{\footnotesize\ttfamily + (instancetype) services\+With\+Session\+: \begin{DoxyParamCaption}\item[{(\hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} $\ast$)}]{session }\end{DoxyParamCaption}}
+
+
+
+The static constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & The session implementation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_session_services_internal}{X\+I\+Session\+Services\+Internal} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_ae7d776f871143a3001d9f24fa1ca27cd}{}\label{interface_x_i_session_services_internal_ae7d776f871143a3001d9f24fa1ca27cd} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!service\+Using\+Connection\+Pool\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:@{service\+Using\+Connection\+Pool\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:}}
+\index{service\+Using\+Connection\+Pool\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:@{service\+Using\+Connection\+Pool\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{service\+Using\+Connection\+Pool\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:()}{serviceUsingConnectionPoolWithInternalClass:proxyClass:logger:()}}
+{\footnotesize\ttfamily -\/ (id) service\+Using\+Connection\+Pool\+With\+Internal\+Class\+: \begin{DoxyParamCaption}\item[{(Class)}]{internal\+Class }\item[{proxyClass:(Class)}]{proxy\+Class }\item[{logger:(id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$)}]{logger }\end{DoxyParamCaption}}
+
+
+
+Create a service that uses the M\+Q\+TT connection pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em internal\+Class} & The class of the internal implementation of the service. It needs to conform to \hyperlink{}{X\+I\+Session\+Service\+With\+Connection\+Pool} protocol. \\
+\hline
+{\em proxy\+Class} & The class of the proxy. It needs to conform to \hyperlink{}{X\+I\+Session\+Service\+Proxy} protocol. \\
+\hline
+{\em logger} & The logger instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of the proxy class that owns and refers to an internal object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_acb1dd120832c6c6b19d63ac706222f03}{}\label{interface_x_i_session_services_internal_acb1dd120832c6c6b19d63ac706222f03} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!service\+Using\+Session\+Internal\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:@{service\+Using\+Session\+Internal\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:}}
+\index{service\+Using\+Session\+Internal\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:@{service\+Using\+Session\+Internal\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{service\+Using\+Session\+Internal\+With\+Internal\+Class\+:proxy\+Class\+:logger\+:()}{serviceUsingSessionInternalWithInternalClass:proxyClass:logger:()}}
+{\footnotesize\ttfamily -\/ (id) service\+Using\+Session\+Internal\+With\+Internal\+Class\+: \begin{DoxyParamCaption}\item[{(Class)}]{internal\+Class }\item[{proxyClass:(Class)}]{proxy\+Class }\item[{logger:(id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$)}]{logger }\end{DoxyParamCaption}}
+
+
+
+Create a service that needst the session internal class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em internal\+Class} & The class of the internal implementation of the service. It needs to conform to \hyperlink{}{X\+I\+Session\+Service\+With\+Connection\+Pool} protocol. \\
+\hline
+{\em proxy\+Class} & The class of the proxy. It needs to conform to \hyperlink{}{X\+I\+Session\+Service\+Proxy} protocol. \\
+\hline
+{\em logger} & The logger instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of the proxy class that owns and refers to an internal object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_ace1d15a61962e552cb13f7bf10d1e56e}{}\label{interface_x_i_session_services_internal_ace1d15a61962e552cb13f7bf10d1e56e} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!service\+With\+Call\+Provider\+Class\+:internal\+Class\+:proxy\+Class\+:logger\+:@{service\+With\+Call\+Provider\+Class\+:internal\+Class\+:proxy\+Class\+:logger\+:}}
+\index{service\+With\+Call\+Provider\+Class\+:internal\+Class\+:proxy\+Class\+:logger\+:@{service\+With\+Call\+Provider\+Class\+:internal\+Class\+:proxy\+Class\+:logger\+:}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{service\+With\+Call\+Provider\+Class\+:internal\+Class\+:proxy\+Class\+:logger\+:()}{serviceWithCallProviderClass:internalClass:proxyClass:logger:()}}
+{\footnotesize\ttfamily -\/ (id) service\+With\+Call\+Provider\+Class\+: \begin{DoxyParamCaption}\item[{(Class)}]{call\+Provider\+Class }\item[{internalClass:(Class)}]{internal\+Class }\item[{proxyClass:(Class)}]{proxy\+Class }\item[{logger:(id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$)}]{logger }\end{DoxyParamCaption}}
+
+
+
+Create a service that uses one call to provide a service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call\+Provider\+Class} & The class of the provider of the calls. This class needs to conform to \hyperlink{}{X\+I\+Session\+Services\+Call\+Provider} protocol. \\
+\hline
+{\em internal\+Class} & The class of the internal implementation of the service. It needs to conform to \hyperlink{}{X\+I\+Session\+Service\+With\+Call\+Provider} protocol. \\
+\hline
+{\em proxy\+Class} & The class of the proxy. It needs to conform to \hyperlink{}{X\+I\+Session\+Service\+Proxy} protocol. \\
+\hline
+{\em logger} & The logger instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of the proxy class that owns and refers to an internal object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_services_internal_ac3c66084f71a5c2f7d2600b8bcb6c8c1}{}\label{interface_x_i_session_services_internal_ac3c66084f71a5c2f7d2600b8bcb6c8c1} 
+\index{X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}!time\+Series@{time\+Series}}
+\index{time\+Series@{time\+Series}!X\+I\+Session\+Services\+Internal@{X\+I\+Session\+Services\+Internal}}
+\subsubsection{\texorpdfstring{time\+Series()}{timeSeries()}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Time\+Series $>$) time\+Series \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Creates a time series request object. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_time_series-p}{X\+I\+Time\+Series} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+Session\+Services/\hyperlink{_x_i_session_services_internal_8h}{X\+I\+Session\+Services\+Internal.\+h}\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Session\+Services/X\+I\+Session\+Services\+Internal.\+m\end{DoxyCompactItemize}

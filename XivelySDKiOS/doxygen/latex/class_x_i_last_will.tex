@@ -1,0 +1,155 @@
+\hypertarget{class_x_i_last_will}{}\section{X\+I\+Last\+Will Class Reference}
+\label{class_x_i_last_will}\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+
+
+Last will data for a messaging connection.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Last\+Will.\+h$>$}
+
+Inheritance diagram for X\+I\+Last\+Will\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_i_last_will}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{class_x_i_last_will_ac5464f614e5d20f9ff9b0ab7623b7115}{init\+With\+Channel\+:message\+:qos\+:retain\+:}
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+(B\+O\+OL) -\/ \hyperlink{class_x_i_last_will_ab3f5d0887dc1cb7a17de8ed23e1c2435}{is\+Equal\+To\+Last\+Will\+:}
+\begin{DoxyCompactList}\small\item\em Checks last will equivalence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_last_will_a975ae65dcc009dd717a824b1ac89e640}{channel}
+\begin{DoxyCompactList}\small\item\em The channel to send the last will message to. \end{DoxyCompactList}\item 
+N\+S\+Data $\ast$ \hyperlink{class_x_i_last_will_a3c0ae36d50017d963764de4aaebf78d1}{message}
+\begin{DoxyCompactList}\small\item\em The message to be sent as a last will. \end{DoxyCompactList}\item 
+X\+I\+Messaging\+QoS \hyperlink{class_x_i_last_will_ac5e0aeaa6a123b07a7a20dcecdc5e115}{qos}
+\begin{DoxyCompactList}\small\item\em The QoS of the last will message. \end{DoxyCompactList}\item 
+B\+O\+OL \hyperlink{class_x_i_last_will_a04b48606877c0bd4cbec63e394ac0807}{retained}
+\begin{DoxyCompactList}\small\item\em Y\+ES if the last will message needs to be retained. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Last will data for a messaging connection. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{class_x_i_last_will_ac5464f614e5d20f9ff9b0ab7623b7115}{}\label{class_x_i_last_will_ac5464f614e5d20f9ff9b0ab7623b7115} 
+\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}!init\+With\+Channel\+:message\+:qos\+:retain\+:@{init\+With\+Channel\+:message\+:qos\+:retain\+:}}
+\index{init\+With\+Channel\+:message\+:qos\+:retain\+:@{init\+With\+Channel\+:message\+:qos\+:retain\+:}!X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+\subsubsection{\texorpdfstring{init\+With\+Channel\+:message\+:qos\+:retain\+:()}{initWithChannel:message:qos:retain:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Channel\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{channel }\item[{message:(N\+S\+Data $\ast$)}]{message }\item[{qos:(X\+I\+Messaging\+QoS)}]{qos }\item[{retain:(B\+O\+OL)}]{retain }\end{DoxyParamCaption}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send the last will message to. \\
+\hline
+{\em message} & The message to be sent as a last will. \\
+\hline
+{\em qos} & The QoS of the last will message. \\
+\hline
+{\em retain} & Y\+ES if the last will message needs to be retained. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{class_x_i_last_will}{X\+I\+Last\+Will} instance. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_last_will_ab3f5d0887dc1cb7a17de8ed23e1c2435}{}\label{class_x_i_last_will_ab3f5d0887dc1cb7a17de8ed23e1c2435} 
+\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}!is\+Equal\+To\+Last\+Will\+:@{is\+Equal\+To\+Last\+Will\+:}}
+\index{is\+Equal\+To\+Last\+Will\+:@{is\+Equal\+To\+Last\+Will\+:}!X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+\subsubsection{\texorpdfstring{is\+Equal\+To\+Last\+Will\+:()}{isEqualToLastWill:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Equal\+To\+Last\+Will\+: \begin{DoxyParamCaption}\item[{(\hyperlink{class_x_i_last_will}{X\+I\+Last\+Will} $\ast$)}]{last\+Will }\end{DoxyParamCaption}}
+
+
+
+Checks last will equivalence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em last\+Will} & An other last will instance to be compared with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+ES if the two last wills are the same. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_x_i_last_will_a975ae65dcc009dd717a824b1ac89e640}{}\label{class_x_i_last_will_a975ae65dcc009dd717a824b1ac89e640} 
+\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}!channel@{channel}}
+\index{channel@{channel}!X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+\subsubsection{\texorpdfstring{channel}{channel}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) channel\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The channel to send the last will message to. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_last_will_a3c0ae36d50017d963764de4aaebf78d1}{}\label{class_x_i_last_will_a3c0ae36d50017d963764de4aaebf78d1} 
+\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}!message@{message}}
+\index{message@{message}!X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$) message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The message to be sent as a last will. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_last_will_ac5e0aeaa6a123b07a7a20dcecdc5e115}{}\label{class_x_i_last_will_ac5e0aeaa6a123b07a7a20dcecdc5e115} 
+\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}!qos@{qos}}
+\index{qos@{qos}!X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+\subsubsection{\texorpdfstring{qos}{qos}}
+{\footnotesize\ttfamily -\/ (X\+I\+Messaging\+QoS) qos\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The QoS of the last will message. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_last_will_a04b48606877c0bd4cbec63e394ac0807}{}\label{class_x_i_last_will_a04b48606877c0bd4cbec63e394ac0807} 
+\index{X\+I\+Last\+Will@{X\+I\+Last\+Will}!retained@{retained}}
+\index{retained@{retained}!X\+I\+Last\+Will@{X\+I\+Last\+Will}}
+\subsubsection{\texorpdfstring{retained}{retained}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) retained\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Y\+ES if the last will message needs to be retained. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Messaging/X\+I\+Last\+Will.\+m\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\hyperlink{_x_i_last_will_8h}{X\+I\+Last\+Will.\+h}\end{DoxyCompactItemize}

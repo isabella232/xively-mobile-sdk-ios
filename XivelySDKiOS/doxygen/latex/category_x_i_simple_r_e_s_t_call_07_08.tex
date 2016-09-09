@@ -1,0 +1,189 @@
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08}{}\section{X\+I\+Simple\+R\+E\+S\+T\+Call() Category Reference}
+\label{category_x_i_simple_r_e_s_t_call_07_08}\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+
+
+X\+I\+R\+E\+S\+T\+Call\+Internal private interface.  
+
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_ad1cad88893cef3f2437547a390239c09}{method\+String\+For\+R\+E\+S\+T\+Call\+Method\+:}
+\begin{DoxyCompactList}\small\item\em Helper function for creating a R\+E\+ST call method string. \end{DoxyCompactList}\item 
+(N\+S\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_a263c210c47255d82bb27c47b5babd20e}{request\+With\+U\+R\+L\+:method\+:headers\+:body\+:}
+\begin{DoxyCompactList}\small\item\em Creates an H\+T\+TP request from components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+R\+E\+S\+T\+Call\+State \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_a6364ccaf1317a77df115ede73206cf24}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the call. \end{DoxyCompactList}\item 
+N\+S\+Data $\ast$ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_af4144cce1ed9a24c994cb158e0fdec58}{result}
+\begin{DoxyCompactList}\small\item\em The result of the call if the call finished with success. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_a6f1a442876e355a9b79fdfdba78cadf8}{error}
+\begin{DoxyCompactList}\small\item\em The error of the call if the call finished with error. \end{DoxyCompactList}\item 
+N\+S\+U\+R\+L\+Session $\ast$ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_abbcaa23c8ae325fb2a3b17b1b00402f9}{url\+Session}
+\begin{DoxyCompactList}\small\item\em The url session to use to call H\+T\+TP requests. \end{DoxyCompactList}\item 
+N\+S\+U\+R\+L\+Session\+Data\+Task $\ast$ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_a62e37bff2f70f011fea6c61b854c6b17}{task}
+\begin{DoxyCompactList}\small\item\em The currently running U\+RL call task. \end{DoxyCompactList}\item 
+\hyperlink{interface_x_i_r_e_s_t_default_headers_provider}{X\+I\+R\+E\+S\+T\+Default\+Headers\+Provider} $\ast$ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_a91235d31715c2e3cd41bff9419d44b62}{default\+Headers\+Provider}
+\begin{DoxyCompactList}\small\item\em The provider of the default H\+T\+TP headers. \end{DoxyCompactList}\item 
+N\+S\+Array $\ast$ \hyperlink{category_x_i_simple_r_e_s_t_call_07_08_a3e5908b5178dc6f0813437222e67dd22}{response\+Recognizers}
+\begin{DoxyCompactList}\small\item\em Instances if \hyperlink{}{X\+I\+R\+E\+S\+T\+Call\+Response\+Recognizer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+X\+I\+R\+E\+S\+T\+Call\+Internal private interface. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_ad1cad88893cef3f2437547a390239c09}{}\label{category_x_i_simple_r_e_s_t_call_07_08_ad1cad88893cef3f2437547a390239c09} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!method\+String\+For\+R\+E\+S\+T\+Call\+Method\+:@{method\+String\+For\+R\+E\+S\+T\+Call\+Method\+:}}
+\index{method\+String\+For\+R\+E\+S\+T\+Call\+Method\+:@{method\+String\+For\+R\+E\+S\+T\+Call\+Method\+:}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{method\+String\+For\+R\+E\+S\+T\+Call\+Method\+:()}{methodStringForRESTCallMethod:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) method\+String\+For\+R\+E\+S\+T\+Call\+Method\+: \begin{DoxyParamCaption}\item[{(X\+I\+R\+E\+S\+T\+Call\+Method)}]{method }\end{DoxyParamCaption}}
+
+
+
+Helper function for creating a R\+E\+ST call method string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & The enum that converts to string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string equvalent for the method. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_a263c210c47255d82bb27c47b5babd20e}{}\label{category_x_i_simple_r_e_s_t_call_07_08_a263c210c47255d82bb27c47b5babd20e} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!request\+With\+U\+R\+L\+:method\+:headers\+:body\+:@{request\+With\+U\+R\+L\+:method\+:headers\+:body\+:}}
+\index{request\+With\+U\+R\+L\+:method\+:headers\+:body\+:@{request\+With\+U\+R\+L\+:method\+:headers\+:body\+:}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{request\+With\+U\+R\+L\+:method\+:headers\+:body\+:()}{requestWithURL:method:headers:body:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+R\+L\+Request $\ast$) request\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url\+String }\item[{method:(X\+I\+R\+E\+S\+T\+Call\+Method)}]{method }\item[{headers:(N\+S\+Dictionary $\ast$)}]{headers }\item[{body:(N\+S\+Data $\ast$)}]{body }\end{DoxyParamCaption}}
+
+
+
+Creates an H\+T\+TP request from components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url\+String} & The string frmat of the url. \\
+\hline
+{\em method} & The H\+T\+TP method to send the message. \\
+\hline
+{\em headers} & The H\+T\+TP header dictionary to send. \\
+\hline
+{\em body} & The body of the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The U\+RL request object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_a91235d31715c2e3cd41bff9419d44b62}{}\label{category_x_i_simple_r_e_s_t_call_07_08_a91235d31715c2e3cd41bff9419d44b62} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!default\+Headers\+Provider@{default\+Headers\+Provider}}
+\index{default\+Headers\+Provider@{default\+Headers\+Provider}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{default\+Headers\+Provider}{defaultHeadersProvider}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_r_e_s_t_default_headers_provider}{X\+I\+R\+E\+S\+T\+Default\+Headers\+Provider}$\ast$) default\+Headers\+Provider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The provider of the default H\+T\+TP headers. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_a6f1a442876e355a9b79fdfdba78cadf8}{}\label{category_x_i_simple_r_e_s_t_call_07_08_a6f1a442876e355a9b79fdfdba78cadf8} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!error@{error}}
+\index{error@{error}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The error of the call if the call finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_a3e5908b5178dc6f0813437222e67dd22}{}\label{category_x_i_simple_r_e_s_t_call_07_08_a3e5908b5178dc6f0813437222e67dd22} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!response\+Recognizers@{response\+Recognizers}}
+\index{response\+Recognizers@{response\+Recognizers}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{response\+Recognizers}{responseRecognizers}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array$\ast$) response\+Recognizers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Instances if \hyperlink{}{X\+I\+R\+E\+S\+T\+Call\+Response\+Recognizer}. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_af4144cce1ed9a24c994cb158e0fdec58}{}\label{category_x_i_simple_r_e_s_t_call_07_08_af4144cce1ed9a24c994cb158e0fdec58} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!result@{result}}
+\index{result@{result}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$) result\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The result of the call if the call finished with success. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_a6364ccaf1317a77df115ede73206cf24}{}\label{category_x_i_simple_r_e_s_t_call_07_08_a6364ccaf1317a77df115ede73206cf24} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!state@{state}}
+\index{state@{state}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+R\+E\+S\+T\+Call\+State) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_a62e37bff2f70f011fea6c61b854c6b17}{}\label{category_x_i_simple_r_e_s_t_call_07_08_a62e37bff2f70f011fea6c61b854c6b17} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!task@{task}}
+\index{task@{task}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{task}{task}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+R\+L\+Session\+Data\+Task$\ast$) task\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The currently running U\+RL call task. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_simple_r_e_s_t_call_07_08_abbcaa23c8ae325fb2a3b17b1b00402f9}{}\label{category_x_i_simple_r_e_s_t_call_07_08_abbcaa23c8ae325fb2a3b17b1b00402f9} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}!url\+Session@{url\+Session}}
+\index{url\+Session@{url\+Session}!X\+I\+Simple\+R\+E\+S\+T\+Call()@{X\+I\+Simple\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{url\+Session}{urlSession}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+R\+L\+Session$\ast$) url\+Session\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The url session to use to call H\+T\+TP requests. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+R\+E\+S\+T\+Call/X\+I\+Simple\+R\+E\+S\+T\+Call.\+m\end{DoxyCompactItemize}

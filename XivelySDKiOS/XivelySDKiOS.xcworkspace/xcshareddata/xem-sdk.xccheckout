@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFA1B950-D056-4A4F-9DDA-57A60D09C487</string>
+	<key>IDESourceControlProjectName</key>
+	<string>xem-sdk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>25FDAFA7B598095C269AE98CA1622F84F1E129EC</key>
+		<string>ssh://dev-stash.3amlabs.net:7999/xem-sdk/xem-sdk-research.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xem-sdk.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>25FDAFA7B598095C269AE98CA1622F84F1E129EC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://dev-stash.3amlabs.net:7999/xem-sdk/xem-sdk-research.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>25FDAFA7B598095C269AE98CA1622F84F1E129EC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>25FDAFA7B598095C269AE98CA1622F84F1E129EC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>xem-sdk-research</string>
+		</dict>
+	</array>
+</dict>
+</plist>

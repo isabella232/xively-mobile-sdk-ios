@@ -1,0 +1,143 @@
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p}{}\section{$<$X\+I\+R\+E\+S\+T\+Call $>$ Protocol Reference}
+\label{protocol_x_i_r_e_s_t_call_01-p}\index{$<$\+X\+I\+R\+E\+S\+T\+Call $>$@{$<$\+X\+I\+R\+E\+S\+T\+Call $>$}}
+
+
+Interface for a rest call.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+R\+E\+S\+T\+Call.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+R\+E\+S\+T\+Call $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_r_e_s_t_call_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_r_e_s_t_call_01-p_a61381029d5b30a8edd8a5a8938ba332f}{start\+With\+U\+R\+L\+:method\+:headers\+:body\+:}
+\begin{DoxyCompactList}\small\item\em Start the call. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_r_e_s_t_call_01-p_a78d1e5fe3f553d13bf0fcba0adb07b74}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the running call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ X\+I\+R\+E\+S\+T\+Call\+Delegate $>$ \hyperlink{protocol_x_i_r_e_s_t_call_01-p_a5a8ef8749c07d609e217012db1c5051e}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the reult on. \end{DoxyCompactList}\item 
+X\+I\+R\+E\+S\+T\+Call\+State \hyperlink{protocol_x_i_r_e_s_t_call_01-p_a97493d9eebb0ebd6b0ccd33b92e2b32e}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the call. \end{DoxyCompactList}\item 
+N\+S\+Data $\ast$ \hyperlink{protocol_x_i_r_e_s_t_call_01-p_a860f6b923f9cd9eb626e854e4f508df1}{result}
+\begin{DoxyCompactList}\small\item\em The result of the call if the call finished with success. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_r_e_s_t_call_01-p_af71a4319828a2e994a3e2360002f49d9}{error}
+\begin{DoxyCompactList}\small\item\em The error of the call if the call finished with error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for a rest call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p_a78d1e5fe3f553d13bf0fcba0adb07b74}{}\label{protocol_x_i_r_e_s_t_call_01-p_a78d1e5fe3f553d13bf0fcba0adb07b74} 
+\index{X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+R\+E\+S\+T\+Call) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the running call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p_a61381029d5b30a8edd8a5a8938ba332f}{}\label{protocol_x_i_r_e_s_t_call_01-p_a61381029d5b30a8edd8a5a8938ba332f} 
+\index{X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}!start\+With\+U\+R\+L\+:method\+:headers\+:body\+:@{start\+With\+U\+R\+L\+:method\+:headers\+:body\+:}}
+\index{start\+With\+U\+R\+L\+:method\+:headers\+:body\+:@{start\+With\+U\+R\+L\+:method\+:headers\+:body\+:}!X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}}
+\subsubsection{\texorpdfstring{start\+With\+U\+R\+L\+:method\+:headers\+:body\+:()}{startWithURL:method:headers:body:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+R\+E\+S\+T\+Call) start\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\item[{method:(X\+I\+R\+E\+S\+T\+Call\+Method)}]{method }\item[{headers:(N\+S\+Dictionary $\ast$)}]{headers }\item[{body:(N\+S\+Data $\ast$)}]{body }\end{DoxyParamCaption}}
+
+
+
+Start the call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to call. \\
+\hline
+{\em method} & The H\+T\+TP method to set for the call. \\
+\hline
+{\em headers} & The H\+T\+TP headers to add to the call. \\
+\hline
+{\em body} & The H\+T\+TP body to add to the call. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p_a5a8ef8749c07d609e217012db1c5051e}{}\label{protocol_x_i_r_e_s_t_call_01-p_a5a8ef8749c07d609e217012db1c5051e} 
+\index{X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+R\+E\+S\+T\+Call\+Delegate$>$ X\+I\+R\+E\+S\+T\+Call) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the reult on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p_af71a4319828a2e994a3e2360002f49d9}{}\label{protocol_x_i_r_e_s_t_call_01-p_af71a4319828a2e994a3e2360002f49d9} 
+\index{X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}!error@{error}}
+\index{error@{error}!X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+R\+E\+S\+T\+Call) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error of the call if the call finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p_a860f6b923f9cd9eb626e854e4f508df1}{}\label{protocol_x_i_r_e_s_t_call_01-p_a860f6b923f9cd9eb626e854e4f508df1} 
+\index{X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}!result@{result}}
+\index{result@{result}!X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}}
+\subsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ X\+I\+R\+E\+S\+T\+Call) result\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The result of the call if the call finished with success. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_r_e_s_t_call_01-p_a97493d9eebb0ebd6b0ccd33b92e2b32e}{}\label{protocol_x_i_r_e_s_t_call_01-p_a97493d9eebb0ebd6b0ccd33b92e2b32e} 
+\index{X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}!state@{state}}
+\index{state@{state}!X\+I\+R\+E\+S\+T\+Call -\/p@{X\+I\+R\+E\+S\+T\+Call -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+R\+E\+S\+T\+Call\+State X\+I\+R\+E\+S\+T\+Call) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+R\+E\+S\+T\+Call/X\+I\+R\+E\+S\+T\+Call.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+\hypertarget{class_x_i_access}{}\section{X\+I\+Access Class Reference}
+\label{class_x_i_access}\index{X\+I\+Access@{X\+I\+Access}}
+
+
+This class holds the XI related credentials, and it initiates the XI Engagement session.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Access.\+h$>$}
+
+Inheritance diagram for X\+I\+Access\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_i_access}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_ab7c9c9e22935201b0a02672e7fc40493}{account\+Id}
+\begin{DoxyCompactList}\small\item\em The account id of the access. It is set in the initialization. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_ab5ba2ba4a7e62564a4a2494a0b911bc5}{mqtt\+Username}
+\begin{DoxyCompactList}\small\item\em The username to connect with. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_a04c660fd582a30ad70590859fa064ffe}{mqtt\+Password}
+\begin{DoxyCompactList}\small\item\em The password to connect with. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_a74e77064908603354f861fd0d5fa5333}{mqtt\+Device\+Id}
+\begin{DoxyCompactList}\small\item\em The device id to connect with. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_ab1f2a1242110ed0016d94554f912dcaf}{jwt}
+\begin{DoxyCompactList}\small\item\em The J\+S\+ON Web Token used in R\+E\+ST calls. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_a2ac8d7b7c68d94c6388f6a221a9e56d8}{idm\+User\+Id}
+\begin{DoxyCompactList}\small\item\em The User ID of the User in I\+DM. \end{DoxyCompactList}\item 
+X\+I\+Access\+Blueprint\+User\+Type \hyperlink{class_x_i_access_a9d0a61df17a8b9420ae7ed102e94ff8a}{blueprint\+User\+Type}
+\begin{DoxyCompactList}\small\item\em The Blueprint user type. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_a0cda9e9bdd8e42272b9f302aad785a9b}{blueprint\+User\+Id}
+\begin{DoxyCompactList}\small\item\em The account user id if the user is an account user. The end user id if the user is an end user. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_acf10b571cca2607d9ac4d2650d6368ac}{blueprint\+Organization\+Id}
+\begin{DoxyCompactList}\small\item\em The ID of the Blueprint Organization the current user belongs to. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_access_a8d12607e6e2dd1a4c19e88bdcf4a5924}{blueprint\+User\+Name}
+\begin{DoxyCompactList}\small\item\em The name of the logged in user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds the XI related credentials, and it initiates the XI Engagement session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_x_i_access_ab7c9c9e22935201b0a02672e7fc40493}{}\label{class_x_i_access_ab7c9c9e22935201b0a02672e7fc40493} 
+\index{X\+I\+Access@{X\+I\+Access}!account\+Id@{account\+Id}}
+\index{account\+Id@{account\+Id}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{account\+Id}{accountId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) account\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The account id of the access. It is set in the initialization. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_acf10b571cca2607d9ac4d2650d6368ac}{}\label{class_x_i_access_acf10b571cca2607d9ac4d2650d6368ac} 
+\index{X\+I\+Access@{X\+I\+Access}!blueprint\+Organization\+Id@{blueprint\+Organization\+Id}}
+\index{blueprint\+Organization\+Id@{blueprint\+Organization\+Id}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{blueprint\+Organization\+Id}{blueprintOrganizationId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) blueprint\+Organization\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The ID of the Blueprint Organization the current user belongs to. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_a0cda9e9bdd8e42272b9f302aad785a9b}{}\label{class_x_i_access_a0cda9e9bdd8e42272b9f302aad785a9b} 
+\index{X\+I\+Access@{X\+I\+Access}!blueprint\+User\+Id@{blueprint\+User\+Id}}
+\index{blueprint\+User\+Id@{blueprint\+User\+Id}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{blueprint\+User\+Id}{blueprintUserId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) blueprint\+User\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The account user id if the user is an account user. The end user id if the user is an end user. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_a8d12607e6e2dd1a4c19e88bdcf4a5924}{}\label{class_x_i_access_a8d12607e6e2dd1a4c19e88bdcf4a5924} 
+\index{X\+I\+Access@{X\+I\+Access}!blueprint\+User\+Name@{blueprint\+User\+Name}}
+\index{blueprint\+User\+Name@{blueprint\+User\+Name}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{blueprint\+User\+Name}{blueprintUserName}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) blueprint\+User\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The name of the logged in user. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_a9d0a61df17a8b9420ae7ed102e94ff8a}{}\label{class_x_i_access_a9d0a61df17a8b9420ae7ed102e94ff8a} 
+\index{X\+I\+Access@{X\+I\+Access}!blueprint\+User\+Type@{blueprint\+User\+Type}}
+\index{blueprint\+User\+Type@{blueprint\+User\+Type}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{blueprint\+User\+Type}{blueprintUserType}}
+{\footnotesize\ttfamily -\/ (X\+I\+Access\+Blueprint\+User\+Type) blueprint\+User\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The Blueprint user type. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_a2ac8d7b7c68d94c6388f6a221a9e56d8}{}\label{class_x_i_access_a2ac8d7b7c68d94c6388f6a221a9e56d8} 
+\index{X\+I\+Access@{X\+I\+Access}!idm\+User\+Id@{idm\+User\+Id}}
+\index{idm\+User\+Id@{idm\+User\+Id}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{idm\+User\+Id}{idmUserId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) idm\+User\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The User ID of the User in I\+DM. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_ab1f2a1242110ed0016d94554f912dcaf}{}\label{class_x_i_access_ab1f2a1242110ed0016d94554f912dcaf} 
+\index{X\+I\+Access@{X\+I\+Access}!jwt@{jwt}}
+\index{jwt@{jwt}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{jwt}{jwt}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) jwt\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The J\+S\+ON Web Token used in R\+E\+ST calls. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_a74e77064908603354f861fd0d5fa5333}{}\label{class_x_i_access_a74e77064908603354f861fd0d5fa5333} 
+\index{X\+I\+Access@{X\+I\+Access}!mqtt\+Device\+Id@{mqtt\+Device\+Id}}
+\index{mqtt\+Device\+Id@{mqtt\+Device\+Id}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{mqtt\+Device\+Id}{mqttDeviceId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) mqtt\+Device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The device id to connect with. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_a04c660fd582a30ad70590859fa064ffe}{}\label{class_x_i_access_a04c660fd582a30ad70590859fa064ffe} 
+\index{X\+I\+Access@{X\+I\+Access}!mqtt\+Password@{mqtt\+Password}}
+\index{mqtt\+Password@{mqtt\+Password}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{mqtt\+Password}{mqttPassword}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) mqtt\+Password\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The password to connect with. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_access_ab5ba2ba4a7e62564a4a2494a0b911bc5}{}\label{class_x_i_access_ab5ba2ba4a7e62564a4a2494a0b911bc5} 
+\index{X\+I\+Access@{X\+I\+Access}!mqtt\+Username@{mqtt\+Username}}
+\index{mqtt\+Username@{mqtt\+Username}!X\+I\+Access@{X\+I\+Access}}
+\subsubsection{\texorpdfstring{mqtt\+Username}{mqttUsername}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) mqtt\+Username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The username to connect with. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Access/\hyperlink{_x_i_access_8m}{X\+I\+Access.\+m}\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+Access/\hyperlink{_x_i_access_8h}{X\+I\+Access.\+h}\end{DoxyCompactItemize}

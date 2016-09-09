@@ -1,0 +1,132 @@
+\hypertarget{protocol_x_i_organization_handler_01-p}{}\section{$<$X\+I\+Organization\+Handler $>$ Protocol Reference}
+\label{protocol_x_i_organization_handler_01-p}\index{$<$\+X\+I\+Organization\+Handler $>$@{$<$\+X\+I\+Organization\+Handler $>$}}
+
+
+Interface for objects that holds IoT organization info that are accessible.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Organization\+Handler.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Organization\+Handler $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_organization_handler_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_organization_handler_01-p_a36711047f2e239abe173fbc750d25569}{request\+Organization\+:}
+\begin{DoxyCompactList}\small\item\em Request organization info identified by organization\+Id asynchronously. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_organization_handler_01-p_afb5982385b4013f40f7c996c32311816}{list\+Organizations}
+\begin{DoxyCompactList}\small\item\em List all organiaztions. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_organization_handler_01-p_af3b06f8c5b80ad208741cee353356fbc}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Organization\+Handler\+State \hyperlink{protocol_x_i_organization_handler_01-p_aaab2f6fa3c8134fe4d726ab87538fdd4}{state}
+\begin{DoxyCompactList}\small\item\em The state of the handler object. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Organization\+Handler\+Delegate $>$ \hyperlink{protocol_x_i_organization_handler_01-p_a2a1851bcf9cbac6a5a8f2f18f566fd0c}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the result on. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_organization_handler_01-p_a10736d88a59d4ad85fedcdf041888401}{error}
+\begin{DoxyCompactList}\small\item\em The error if the query finished with error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for objects that holds IoT organization info that are accessible. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_organization_handler_01-p_af3b06f8c5b80ad208741cee353356fbc}{}\label{protocol_x_i_organization_handler_01-p_af3b06f8c5b80ad208741cee353356fbc} 
+\index{X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Organization\+Handler) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the query. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_organization_handler_01-p_afb5982385b4013f40f7c996c32311816}{}\label{protocol_x_i_organization_handler_01-p_afb5982385b4013f40f7c996c32311816} 
+\index{X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}!list\+Organizations@{list\+Organizations}}
+\index{list\+Organizations@{list\+Organizations}!X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}}
+\subsubsection{\texorpdfstring{list\+Organizations()}{listOrganizations()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Organization\+Handler) list\+Organizations \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+List all organiaztions. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_organization_handler_01-p_a36711047f2e239abe173fbc750d25569}{}\label{protocol_x_i_organization_handler_01-p_a36711047f2e239abe173fbc750d25569} 
+\index{X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}!request\+Organization\+:@{request\+Organization\+:}}
+\index{request\+Organization\+:@{request\+Organization\+:}!X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}}
+\subsubsection{\texorpdfstring{request\+Organization\+:()}{requestOrganization:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Organization\+Handler) request\+Organization\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{organization\+Id }\end{DoxyParamCaption}}
+
+
+
+Request organization info identified by organization\+Id asynchronously. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_organization_handler_01-p_a2a1851bcf9cbac6a5a8f2f18f566fd0c}{}\label{protocol_x_i_organization_handler_01-p_a2a1851bcf9cbac6a5a8f2f18f566fd0c} 
+\index{X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Organization\+Handler\+Delegate$>$ X\+I\+Organization\+Handler) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_organization_handler_01-p_a10736d88a59d4ad85fedcdf041888401}{}\label{protocol_x_i_organization_handler_01-p_a10736d88a59d4ad85fedcdf041888401} 
+\index{X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}!error@{error}}
+\index{error@{error}!X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+Organization\+Handler) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error if the query finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_organization_handler_01-p_aaab2f6fa3c8134fe4d726ab87538fdd4}{}\label{protocol_x_i_organization_handler_01-p_aaab2f6fa3c8134fe4d726ab87538fdd4} 
+\index{X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}!state@{state}}
+\index{state@{state}!X\+I\+Organization\+Handler -\/p@{X\+I\+Organization\+Handler -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Organization\+Handler\+State X\+I\+Organization\+Handler) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The state of the handler object. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Organization\+Info/X\+I\+Organization\+Handler.\+h\end{DoxyCompactItemize}

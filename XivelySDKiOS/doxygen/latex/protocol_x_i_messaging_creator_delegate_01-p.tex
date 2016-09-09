@@ -1,0 +1,80 @@
+\hypertarget{protocol_x_i_messaging_creator_delegate_01-p}{}\section{$<$X\+I\+Messaging\+Creator\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_messaging_creator_delegate_01-p}\index{$<$\+X\+I\+Messaging\+Creator\+Delegate $>$@{$<$\+X\+I\+Messaging\+Creator\+Delegate $>$}}
+
+
+The protocol is to call back the messaging creation result on.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Messaging\+Creator.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Messaging\+Creator\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_messaging_creator_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_creator_delegate_01-p_adb133e0f0103fd9c782f5dcb444093e8}{messaging\+Creator\+:did\+Create\+Messaging\+:}
+\begin{DoxyCompactList}\small\item\em The messaging creation was successful. The running messaging is returned. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_creator_delegate_01-p_ab6785dae82b6fe547d4b19ed56d5a5cd}{messaging\+Creator\+:did\+Fail\+To\+Create\+Messaging\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The messaging creation was not successful. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The protocol is to call back the messaging creation result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_messaging_creator_delegate_01-p_adb133e0f0103fd9c782f5dcb444093e8}{}\label{protocol_x_i_messaging_creator_delegate_01-p_adb133e0f0103fd9c782f5dcb444093e8} 
+\index{X\+I\+Messaging\+Creator\+Delegate -\/p@{X\+I\+Messaging\+Creator\+Delegate -\/p}!messaging\+Creator\+:did\+Create\+Messaging\+:@{messaging\+Creator\+:did\+Create\+Messaging\+:}}
+\index{messaging\+Creator\+:did\+Create\+Messaging\+:@{messaging\+Creator\+:did\+Create\+Messaging\+:}!X\+I\+Messaging\+Creator\+Delegate -\/p@{X\+I\+Messaging\+Creator\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{messaging\+Creator\+:did\+Create\+Messaging\+:()}{messagingCreator:didCreateMessaging:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Creator\+Delegate) messaging\+Creator\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+Creator $>$)}]{creator }\item[{didCreateMessaging:(id$<$ X\+I\+Messaging $>$)}]{messaging }\end{DoxyParamCaption}}
+
+
+
+The messaging creation was successful. The running messaging is returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creator} & The messaging creator that created the messaging. \\
+\hline
+{\em messaging} & The active messaging. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_creator_delegate_01-p_ab6785dae82b6fe547d4b19ed56d5a5cd}{}\label{protocol_x_i_messaging_creator_delegate_01-p_ab6785dae82b6fe547d4b19ed56d5a5cd} 
+\index{X\+I\+Messaging\+Creator\+Delegate -\/p@{X\+I\+Messaging\+Creator\+Delegate -\/p}!messaging\+Creator\+:did\+Fail\+To\+Create\+Messaging\+With\+Error\+:@{messaging\+Creator\+:did\+Fail\+To\+Create\+Messaging\+With\+Error\+:}}
+\index{messaging\+Creator\+:did\+Fail\+To\+Create\+Messaging\+With\+Error\+:@{messaging\+Creator\+:did\+Fail\+To\+Create\+Messaging\+With\+Error\+:}!X\+I\+Messaging\+Creator\+Delegate -\/p@{X\+I\+Messaging\+Creator\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{messaging\+Creator\+:did\+Fail\+To\+Create\+Messaging\+With\+Error\+:()}{messagingCreator:didFailToCreateMessagingWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Creator\+Delegate) messaging\+Creator\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+Creator $>$)}]{creator }\item[{didFailToCreateMessagingWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The messaging creation was not successful. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creator} & The messaging creator that created the messaging. \\
+\hline
+{\em error} & The error description. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_messaging_error_8h}{X\+I\+Messaging\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\hyperlink{_x_i_messaging_creator_8h}{X\+I\+Messaging\+Creator.\+h}\end{DoxyCompactItemize}

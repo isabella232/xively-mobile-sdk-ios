@@ -1,0 +1,305 @@
+\hypertarget{protocol_x_i_messaging_01-p}{}\section{$<$X\+I\+Messaging $>$ Protocol Reference}
+\label{protocol_x_i_messaging_01-p}\index{$<$\+X\+I\+Messaging $>$@{$<$\+X\+I\+Messaging $>$}}
+
+
+The interface of the messaging creator.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Messaging.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Messaging $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_messaging_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a7883758cbf4e863c78367c5c8b46571a}{add\+Data\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Add a data listener. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a826157b38e443f4afdfed968648b1643}{remove\+Data\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Remove a data listener. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a010a800e4b356ec9f07ae64764c64b18}{add\+State\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Add a state listener. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a45b3e767df76eb04c7bc750f206b28c5}{remove\+State\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Remove a state listener. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_aadf39a52055ddbd35e9bfc4ce0a84d72}{add\+Subscription\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Add a subscription listener. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a8e4b91527ad72342dfa47b67e33f9cde}{remove\+Subscription\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Remove a subscription listener. \end{DoxyCompactList}\item 
+(N\+S\+U\+Integer) -\/ \hyperlink{protocol_x_i_messaging_01-p_ae390588f0144835d7b2cac62c8968ef0}{publish\+To\+Channel\+:message\+:qos\+:}
+\begin{DoxyCompactList}\small\item\em Publish to a channel. It does not retain the message. \end{DoxyCompactList}\item 
+(N\+S\+U\+Integer) -\/ \hyperlink{protocol_x_i_messaging_01-p_acd6593199463654985e8ad5cf37eff9c}{publish\+To\+Channel\+:message\+:qos\+:retain\+:}
+\begin{DoxyCompactList}\small\item\em Publish to a channel. The retaining flag can be set. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a709f4377e80640789a751b71f1c7eb17}{subscribe\+To\+Channel\+:qos\+:}
+\begin{DoxyCompactList}\small\item\em Subcribe to a channel with a given QoS. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_afe2bfff1aeb2eec7f7af7aab942d8711}{unsubscribe\+From\+Channel\+:}
+\begin{DoxyCompactList}\small\item\em Unsubscribe from a channel. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_01-p_a60fca9e3ce704b7b34a28bfecab21eae}{close}
+\begin{DoxyCompactList}\small\item\em Close controlling devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Messaging\+State \hyperlink{protocol_x_i_messaging_01-p_aac43b2f050d63a882e6c372886078fe1}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the messaging. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_messaging_01-p_a9c7cc05afa1414b88fa8892761818a07}{final\+Error}
+\begin{DoxyCompactList}\small\item\em If the messaging was ended by an error, this holds the error value. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_messaging_error_8h}{X\+I\+Messaging\+Error.\+h}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface of the messaging creator. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_messaging_01-p_a7883758cbf4e863c78367c5c8b46571a}{}\label{protocol_x_i_messaging_01-p_a7883758cbf4e863c78367c5c8b46571a} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!add\+Data\+Listener\+:@{add\+Data\+Listener\+:}}
+\index{add\+Data\+Listener\+:@{add\+Data\+Listener\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{add\+Data\+Listener\+:()}{addDataListener:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) add\+Data\+Listener\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+Data\+Listener $>$)}]{listener }\end{DoxyParamCaption}}
+
+
+
+Add a data listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_a010a800e4b356ec9f07ae64764c64b18}{}\label{protocol_x_i_messaging_01-p_a010a800e4b356ec9f07ae64764c64b18} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!add\+State\+Listener\+:@{add\+State\+Listener\+:}}
+\index{add\+State\+Listener\+:@{add\+State\+Listener\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{add\+State\+Listener\+:()}{addStateListener:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) add\+State\+Listener\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+State\+Listener $>$)}]{listener }\end{DoxyParamCaption}}
+
+
+
+Add a state listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_aadf39a52055ddbd35e9bfc4ce0a84d72}{}\label{protocol_x_i_messaging_01-p_aadf39a52055ddbd35e9bfc4ce0a84d72} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!add\+Subscription\+Listener\+:@{add\+Subscription\+Listener\+:}}
+\index{add\+Subscription\+Listener\+:@{add\+Subscription\+Listener\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{add\+Subscription\+Listener\+:()}{addSubscriptionListener:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) add\+Subscription\+Listener\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+Subscription\+Listener $>$)}]{listener }\end{DoxyParamCaption}}
+
+
+
+Add a subscription listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_a60fca9e3ce704b7b34a28bfecab21eae}{}\label{protocol_x_i_messaging_01-p_a60fca9e3ce704b7b34a28bfecab21eae} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!close@{close}}
+\index{close@{close}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) close \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Close controlling devices. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_ae390588f0144835d7b2cac62c8968ef0}{}\label{protocol_x_i_messaging_01-p_ae390588f0144835d7b2cac62c8968ef0} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!publish\+To\+Channel\+:message\+:qos\+:@{publish\+To\+Channel\+:message\+:qos\+:}}
+\index{publish\+To\+Channel\+:message\+:qos\+:@{publish\+To\+Channel\+:message\+:qos\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{publish\+To\+Channel\+:message\+:qos\+:()}{publishToChannel:message:qos:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer X\+I\+Messaging) publish\+To\+Channel\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{channel }\item[{message:(N\+S\+Data $\ast$)}]{message }\item[{qos:(X\+I\+Messaging\+QoS)}]{qos }\end{DoxyParamCaption}}
+
+
+
+Publish to a channel. It does not retain the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send the message. \\
+\hline
+{\em message} & The message to be sent. \\
+\hline
+{\em qos} & The QoS of the message to send with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the message sent. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_acd6593199463654985e8ad5cf37eff9c}{}\label{protocol_x_i_messaging_01-p_acd6593199463654985e8ad5cf37eff9c} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!publish\+To\+Channel\+:message\+:qos\+:retain\+:@{publish\+To\+Channel\+:message\+:qos\+:retain\+:}}
+\index{publish\+To\+Channel\+:message\+:qos\+:retain\+:@{publish\+To\+Channel\+:message\+:qos\+:retain\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{publish\+To\+Channel\+:message\+:qos\+:retain\+:()}{publishToChannel:message:qos:retain:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer X\+I\+Messaging) publish\+To\+Channel\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{channel }\item[{message:(N\+S\+Data $\ast$)}]{message }\item[{qos:(X\+I\+Messaging\+QoS)}]{qos }\item[{retain:(B\+O\+OL)}]{retain }\end{DoxyParamCaption}}
+
+
+
+Publish to a channel. The retaining flag can be set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send the message. \\
+\hline
+{\em message} & The message to be sent. \\
+\hline
+{\em qos} & The QoS of the message to send with. \\
+\hline
+{\em retain} & Y\+ES if the message needs to be retained by the broker. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the message sent. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_a826157b38e443f4afdfed968648b1643}{}\label{protocol_x_i_messaging_01-p_a826157b38e443f4afdfed968648b1643} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!remove\+Data\+Listener\+:@{remove\+Data\+Listener\+:}}
+\index{remove\+Data\+Listener\+:@{remove\+Data\+Listener\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{remove\+Data\+Listener\+:()}{removeDataListener:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) remove\+Data\+Listener\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+Data\+Listener $>$)}]{listener }\end{DoxyParamCaption}}
+
+
+
+Remove a data listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_a45b3e767df76eb04c7bc750f206b28c5}{}\label{protocol_x_i_messaging_01-p_a45b3e767df76eb04c7bc750f206b28c5} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!remove\+State\+Listener\+:@{remove\+State\+Listener\+:}}
+\index{remove\+State\+Listener\+:@{remove\+State\+Listener\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{remove\+State\+Listener\+:()}{removeStateListener:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) remove\+State\+Listener\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+State\+Listener $>$)}]{listener }\end{DoxyParamCaption}}
+
+
+
+Remove a state listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_a8e4b91527ad72342dfa47b67e33f9cde}{}\label{protocol_x_i_messaging_01-p_a8e4b91527ad72342dfa47b67e33f9cde} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!remove\+Subscription\+Listener\+:@{remove\+Subscription\+Listener\+:}}
+\index{remove\+Subscription\+Listener\+:@{remove\+Subscription\+Listener\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{remove\+Subscription\+Listener\+:()}{removeSubscriptionListener:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) remove\+Subscription\+Listener\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging\+Subscription\+Listener $>$)}]{listener }\end{DoxyParamCaption}}
+
+
+
+Remove a subscription listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & The listener to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_a709f4377e80640789a751b71f1c7eb17}{}\label{protocol_x_i_messaging_01-p_a709f4377e80640789a751b71f1c7eb17} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!subscribe\+To\+Channel\+:qos\+:@{subscribe\+To\+Channel\+:qos\+:}}
+\index{subscribe\+To\+Channel\+:qos\+:@{subscribe\+To\+Channel\+:qos\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{subscribe\+To\+Channel\+:qos\+:()}{subscribeToChannel:qos:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) subscribe\+To\+Channel\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{channel }\item[{qos:(X\+I\+Messaging\+QoS)}]{qos }\end{DoxyParamCaption}}
+
+
+
+Subcribe to a channel with a given QoS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to subscribe to. \\
+\hline
+{\em qos} & The QoS for the subscription. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_afe2bfff1aeb2eec7f7af7aab942d8711}{}\label{protocol_x_i_messaging_01-p_afe2bfff1aeb2eec7f7af7aab942d8711} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!unsubscribe\+From\+Channel\+:@{unsubscribe\+From\+Channel\+:}}
+\index{unsubscribe\+From\+Channel\+:@{unsubscribe\+From\+Channel\+:}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{unsubscribe\+From\+Channel\+:()}{unsubscribeFromChannel:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging) unsubscribe\+From\+Channel\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{channel }\end{DoxyParamCaption}}
+
+
+
+Unsubscribe from a channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to unsubscribe from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_messaging_01-p_a9c7cc05afa1414b88fa8892761818a07}{}\label{protocol_x_i_messaging_01-p_a9c7cc05afa1414b88fa8892761818a07} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!final\+Error@{final\+Error}}
+\index{final\+Error@{final\+Error}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{final\+Error}{finalError}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+Messaging) final\+Error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+If the messaging was ended by an error, this holds the error value. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_messaging_error_8h}{X\+I\+Messaging\+Error.\+h}. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_01-p_aac43b2f050d63a882e6c372886078fe1}{}\label{protocol_x_i_messaging_01-p_aac43b2f050d63a882e6c372886078fe1} 
+\index{X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}!state@{state}}
+\index{state@{state}!X\+I\+Messaging -\/p@{X\+I\+Messaging -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Messaging\+State X\+I\+Messaging) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the messaging. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\hyperlink{_x_i_messaging_8h}{X\+I\+Messaging.\+h}\end{DoxyCompactItemize}

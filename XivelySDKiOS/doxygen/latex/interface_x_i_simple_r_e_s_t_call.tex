@@ -1,0 +1,94 @@
+\hypertarget{interface_x_i_simple_r_e_s_t_call}{}\section{X\+I\+Simple\+R\+E\+S\+T\+Call Class Reference}
+\label{interface_x_i_simple_r_e_s_t_call}\index{X\+I\+Simple\+R\+E\+S\+T\+Call@{X\+I\+Simple\+R\+E\+S\+T\+Call}}
+
+
+\hyperlink{class_x_i_r_e_s_t_call-p}{X\+I\+R\+E\+S\+T\+Call} implementation with N\+S\+U\+R\+L\+Session. it only works with i\+OS 7 and later.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Simple\+R\+E\+S\+T\+Call.\+h$>$}
+
+Inheritance diagram for X\+I\+Simple\+R\+E\+S\+T\+Call\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_x_i_simple_r_e_s_t_call}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_x_i_simple_r_e_s_t_call_ab6b30d86ec930f88b747d702cc1190a5}{init\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:}
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_x_i_simple_r_e_s_t_call_af0fc13a5b2a19327b80e2371099060d8}{rest\+Call\+Internal\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:}
+\begin{DoxyCompactList}\small\item\em The static constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_x_i_r_e_s_t_call-p}{X\+I\+R\+E\+S\+T\+Call} implementation with N\+S\+U\+R\+L\+Session. it only works with i\+OS 7 and later. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_x_i_simple_r_e_s_t_call_ab6b30d86ec930f88b747d702cc1190a5}{}\label{interface_x_i_simple_r_e_s_t_call_ab6b30d86ec930f88b747d702cc1190a5} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call@{X\+I\+Simple\+R\+E\+S\+T\+Call}!init\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:@{init\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:}}
+\index{init\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:@{init\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:}!X\+I\+Simple\+R\+E\+S\+T\+Call@{X\+I\+Simple\+R\+E\+S\+T\+Call}}
+\subsubsection{\texorpdfstring{init\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:()}{initWithURLSession:defaultHeadersProvider:responseRecognizers:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+U\+R\+L\+Session\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+R\+L\+Session $\ast$)}]{url\+Session }\item[{defaultHeadersProvider:(\hyperlink{interface_x_i_r_e_s_t_default_headers_provider}{X\+I\+R\+E\+S\+T\+Default\+Headers\+Provider} $\ast$)}]{default\+Headers\+Provider }\item[{responseRecognizers:(N\+S\+Array $\ast$)}]{response\+Recognizers }\end{DoxyParamCaption}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url\+Session} & The U\+RL connection to use for connecting. \\
+\hline
+{\em default\+Headers\+Provider} & The provider of the default H\+T\+TP headers. \\
+\hline
+{\em response\+Recognizers} & Instances if \hyperlink{}{X\+I\+R\+E\+S\+T\+Call\+Response\+Recognizer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+R\+E\+S\+T\+Call\+Internal object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_simple_r_e_s_t_call_af0fc13a5b2a19327b80e2371099060d8}{}\label{interface_x_i_simple_r_e_s_t_call_af0fc13a5b2a19327b80e2371099060d8} 
+\index{X\+I\+Simple\+R\+E\+S\+T\+Call@{X\+I\+Simple\+R\+E\+S\+T\+Call}!rest\+Call\+Internal\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:@{rest\+Call\+Internal\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:}}
+\index{rest\+Call\+Internal\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:@{rest\+Call\+Internal\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:}!X\+I\+Simple\+R\+E\+S\+T\+Call@{X\+I\+Simple\+R\+E\+S\+T\+Call}}
+\subsubsection{\texorpdfstring{rest\+Call\+Internal\+With\+U\+R\+L\+Session\+:default\+Headers\+Provider\+:response\+Recognizers\+:()}{restCallInternalWithURLSession:defaultHeadersProvider:responseRecognizers:()}}
+{\footnotesize\ttfamily + (instancetype) rest\+Call\+Internal\+With\+U\+R\+L\+Session\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+R\+L\+Session $\ast$)}]{url\+Session }\item[{defaultHeadersProvider:(\hyperlink{interface_x_i_r_e_s_t_default_headers_provider}{X\+I\+R\+E\+S\+T\+Default\+Headers\+Provider} $\ast$)}]{default\+Headers\+Provider }\item[{responseRecognizers:(N\+S\+Array $\ast$)}]{response\+Recognizers }\end{DoxyParamCaption}}
+
+
+
+The static constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url\+Session} & The U\+RL connection to use for connecting. \\
+\hline
+{\em default\+Headers\+Provider} & The provider of the default H\+T\+TP headers. \\
+\hline
+{\em response\+Recognizers} & Instances if \hyperlink{}{X\+I\+R\+E\+S\+T\+Call\+Response\+Recognizer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+R\+E\+S\+T\+Call\+Internal object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+R\+E\+S\+T\+Call/X\+I\+Simple\+R\+E\+S\+T\+Call.\+h\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+R\+E\+S\+T\+Call/X\+I\+Simple\+R\+E\+S\+T\+Call.\+m\end{DoxyCompactItemize}

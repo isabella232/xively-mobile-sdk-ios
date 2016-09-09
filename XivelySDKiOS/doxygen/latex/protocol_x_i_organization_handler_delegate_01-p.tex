@@ -1,0 +1,102 @@
+\hypertarget{protocol_x_i_organization_handler_delegate_01-p}{}\section{$<$X\+I\+Organization\+Handler\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_organization_handler_delegate_01-p}\index{$<$\+X\+I\+Organization\+Handler\+Delegate $>$@{$<$\+X\+I\+Organization\+Handler\+Delegate $>$}}
+
+
+The delegate for device info listing.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Organization\+Handler.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Organization\+Handler\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_organization_handler_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_organization_handler_delegate_01-p_a31f995db2b5e2e00169950a217ad6475}{organization\+Handler\+:did\+Receive\+List\+:}
+\begin{DoxyCompactList}\small\item\em The organization info listing finished with success. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_organization_handler_delegate_01-p_a5e44780373062b185cf11e3598b39cdf}{organization\+Handler\+:did\+Receive\+Organization\+Info\+:}
+\begin{DoxyCompactList}\small\item\em The organization info query finished with success. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_organization_handler_delegate_01-p_a2731d197e18e9b397a7ee33e46c35fb1}{organization\+Handler\+:did\+Fail\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The association finished with an error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The delegate for device info listing. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_organization_handler_delegate_01-p_a2731d197e18e9b397a7ee33e46c35fb1}{}\label{protocol_x_i_organization_handler_delegate_01-p_a2731d197e18e9b397a7ee33e46c35fb1} 
+\index{X\+I\+Organization\+Handler\+Delegate -\/p@{X\+I\+Organization\+Handler\+Delegate -\/p}!organization\+Handler\+:did\+Fail\+With\+Error\+:@{organization\+Handler\+:did\+Fail\+With\+Error\+:}}
+\index{organization\+Handler\+:did\+Fail\+With\+Error\+:@{organization\+Handler\+:did\+Fail\+With\+Error\+:}!X\+I\+Organization\+Handler\+Delegate -\/p@{X\+I\+Organization\+Handler\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{organization\+Handler\+:did\+Fail\+With\+Error\+:()}{organizationHandler:didFailWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Organization\+Handler\+Delegate) organization\+Handler\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Organization\+Handler $>$)}]{organization\+Handler }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The association finished with an error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em organization\+Handler} & The \hyperlink{class_x_i_organization_handler-p}{X\+I\+Organization\+Handler} instance that initiates the callback. \\
+\hline
+{\em error} & The reason of the error. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_organization_handler_delegate_01-p_a31f995db2b5e2e00169950a217ad6475}{}\label{protocol_x_i_organization_handler_delegate_01-p_a31f995db2b5e2e00169950a217ad6475} 
+\index{X\+I\+Organization\+Handler\+Delegate -\/p@{X\+I\+Organization\+Handler\+Delegate -\/p}!organization\+Handler\+:did\+Receive\+List\+:@{organization\+Handler\+:did\+Receive\+List\+:}}
+\index{organization\+Handler\+:did\+Receive\+List\+:@{organization\+Handler\+:did\+Receive\+List\+:}!X\+I\+Organization\+Handler\+Delegate -\/p@{X\+I\+Organization\+Handler\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{organization\+Handler\+:did\+Receive\+List\+:()}{organizationHandler:didReceiveList:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Organization\+Handler\+Delegate) organization\+Handler\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Organization\+Handler $>$)}]{organizationhandler }\item[{didReceiveList:(N\+S\+Array $\ast$)}]{organization\+Infos }\end{DoxyParamCaption}}
+
+
+
+The organization info listing finished with success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em organization\+Handler} & The organization\+Handler instance that initiates the callback. \\
+\hline
+{\em organization\+Infos} & The organization info container objects. They are all instances of \hyperlink{class_x_i_organization_info}{X\+I\+Organization\+Info}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_organization_handler_delegate_01-p_a5e44780373062b185cf11e3598b39cdf}{}\label{protocol_x_i_organization_handler_delegate_01-p_a5e44780373062b185cf11e3598b39cdf} 
+\index{X\+I\+Organization\+Handler\+Delegate -\/p@{X\+I\+Organization\+Handler\+Delegate -\/p}!organization\+Handler\+:did\+Receive\+Organization\+Info\+:@{organization\+Handler\+:did\+Receive\+Organization\+Info\+:}}
+\index{organization\+Handler\+:did\+Receive\+Organization\+Info\+:@{organization\+Handler\+:did\+Receive\+Organization\+Info\+:}!X\+I\+Organization\+Handler\+Delegate -\/p@{X\+I\+Organization\+Handler\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{organization\+Handler\+:did\+Receive\+Organization\+Info\+:()}{organizationHandler:didReceiveOrganizationInfo:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Organization\+Handler\+Delegate) organization\+Handler\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Organization\+Handler $>$)}]{organization\+Handler }\item[{didReceiveOrganizationInfo:(\hyperlink{class_x_i_organization_info}{X\+I\+Organization\+Info} $\ast$)}]{organization\+Info }\end{DoxyParamCaption}}
+
+
+
+The organization info query finished with success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em organization\+Handler} & The organization\+Handler instance that initiates the callback. \\
+\hline
+{\em organization\+Info} & The organization info object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Organization\+Info/X\+I\+Organization\+Handler.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+# messages over MQTT 
+
+message CommonMessage {
+	required string type;
+	required string userId;
+	required string data;
+}
+
+# messageType = "operator", "visitor", "system"
+message Message {
+	required string displayName;
+	required string messageType;
+	required string message;
+	optional uint64 timestamp;
+}
+
+message Tag {
+	required string name;
+}
+
+message Hyperlink {
+	required string url;
+}
+
+message Typing {
+	required string displayName;
+	required bool typing;
+}
+
+message CloseChat {
+	required string chatId;
+}
+
+############################################################################################
+
+# messages over REST API
+
+message CreateChatResponse {
+	required string chatId;
+	required string persistentTopic;
+	optional string nonPersistentTopic;
+}
+
+message CustomFields {
+}
+
+message CreateChatRequest {
+	required string accountId;
+	# required string deviceId;
+	required string endUserId;
+	repeated string supportedDevices;
+	optional CustomFields customFields;
+}

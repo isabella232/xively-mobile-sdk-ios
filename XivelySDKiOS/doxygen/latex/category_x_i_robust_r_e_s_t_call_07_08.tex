@@ -1,0 +1,223 @@
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08}{}\section{X\+I\+Robust\+R\+E\+S\+T\+Call() Category Reference}
+\label{category_x_i_robust_r_e_s_t_call_07_08}\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+R\+E\+S\+T\+Call\+State \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_abf42c4db39f91e60f97a9e21216f463a}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the call. \end{DoxyCompactList}\item 
+N\+S\+Data $\ast$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_af60c21d6c194a2bb5a3758993e9d6a3d}{result}
+\begin{DoxyCompactList}\small\item\em The result of the call if the call finished with success. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_a91411757abcf912073f533c900dd57bf}{error}
+\begin{DoxyCompactList}\small\item\em The error of the call if the call finished with error. \end{DoxyCompactList}\item 
+id$<$ \hyperlink{protocol_x_i_robust_r_e_s_t_call_simple_call_provider-p}{X\+I\+Robust\+R\+E\+S\+T\+Call\+Simple\+Call\+Provider} $>$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_a1d70fa158b2c2c826c6001d95ebc50e5}{simple\+Call\+Provider}
+\begin{DoxyCompactList}\small\item\em The provider for individual R\+E\+ST calls. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Timer\+Provider $>$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_a5ee90c38f5c704c9a0eb8b4131798f43}{timer\+Provider}
+\begin{DoxyCompactList}\small\item\em The timer provider for timeouts. \end{DoxyCompactList}\item 
+id$<$ X\+I\+R\+E\+S\+T\+Call $>$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_af87b849dcdb3ead87e53fa2f747ee3ab}{current\+Call}
+\begin{DoxyCompactList}\small\item\em The rect call currently running. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_ade598ca3442f11fbf8667b7322ac6bc8}{url\+String}
+\begin{DoxyCompactList}\small\item\em The U\+RL to call. \end{DoxyCompactList}\item 
+X\+I\+R\+E\+S\+T\+Call\+Method \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_aa1832057faed9fc9e60ff583ec8becf2}{method}
+\begin{DoxyCompactList}\small\item\em The H\+T\+TP method to set for the call. \end{DoxyCompactList}\item 
+N\+S\+Dictionary $\ast$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_ac73826c3921c0612f0ddbfff7667566a}{headers}
+\begin{DoxyCompactList}\small\item\em The H\+T\+TP headers to add to the call. \end{DoxyCompactList}\item 
+N\+S\+Data $\ast$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_a9b04700bffe91efc03700dc8b69b5e2b}{body}
+\begin{DoxyCompactList}\small\item\em The H\+T\+TP body to add to the call. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Timer $>$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_abcd9232ef75177aa6fa882050044f97b}{call\+Timeout\+Timer}
+\begin{DoxyCompactList}\small\item\em The timer for a single call timeout. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Timer $>$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_ac719a5af700e85389765512407704b9c}{wait\+Timeout\+Timer}
+\begin{DoxyCompactList}\small\item\em The timer for a single call timeout. \end{DoxyCompactList}\item 
+N\+S\+Integer \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_a8746f2e98cc9cf9ef30e07106fa39935}{retry\+Count}
+\begin{DoxyCompactList}\small\item\em The current retry count. \end{DoxyCompactList}\item 
+\hyperlink{class_x_i_sdk_config}{X\+I\+Sdk\+Config} $\ast$ \hyperlink{category_x_i_robust_r_e_s_t_call_07_08_a8ac7eacb7f3346f88d205472982f08fe}{config}
+\begin{DoxyCompactList}\small\item\em The config for the internal execution of the S\+DK. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Property Documentation}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_a9b04700bffe91efc03700dc8b69b5e2b}{}\label{category_x_i_robust_r_e_s_t_call_07_08_a9b04700bffe91efc03700dc8b69b5e2b} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!body@{body}}
+\index{body@{body}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$) body\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The H\+T\+TP body to add to the call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_abcd9232ef75177aa6fa882050044f97b}{}\label{category_x_i_robust_r_e_s_t_call_07_08_abcd9232ef75177aa6fa882050044f97b} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!call\+Timeout\+Timer@{call\+Timeout\+Timer}}
+\index{call\+Timeout\+Timer@{call\+Timeout\+Timer}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{call\+Timeout\+Timer}{callTimeoutTimer}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Timer$>$) call\+Timeout\+Timer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The timer for a single call timeout. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_a8ac7eacb7f3346f88d205472982f08fe}{}\label{category_x_i_robust_r_e_s_t_call_07_08_a8ac7eacb7f3346f88d205472982f08fe} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!config@{config}}
+\index{config@{config}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily -\/ (\hyperlink{class_x_i_sdk_config}{X\+I\+Sdk\+Config}$\ast$) config\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The config for the internal execution of the S\+DK. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_af87b849dcdb3ead87e53fa2f747ee3ab}{}\label{category_x_i_robust_r_e_s_t_call_07_08_af87b849dcdb3ead87e53fa2f747ee3ab} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!current\+Call@{current\+Call}}
+\index{current\+Call@{current\+Call}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{current\+Call}{currentCall}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+R\+E\+S\+T\+Call$>$) current\+Call\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The rect call currently running. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_a91411757abcf912073f533c900dd57bf}{}\label{category_x_i_robust_r_e_s_t_call_07_08_a91411757abcf912073f533c900dd57bf} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!error@{error}}
+\index{error@{error}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The error of the call if the call finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_ac73826c3921c0612f0ddbfff7667566a}{}\label{category_x_i_robust_r_e_s_t_call_07_08_ac73826c3921c0612f0ddbfff7667566a} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!headers@{headers}}
+\index{headers@{headers}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary$\ast$) headers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The H\+T\+TP headers to add to the call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_aa1832057faed9fc9e60ff583ec8becf2}{}\label{category_x_i_robust_r_e_s_t_call_07_08_aa1832057faed9fc9e60ff583ec8becf2} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!method@{method}}
+\index{method@{method}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily -\/ (X\+I\+R\+E\+S\+T\+Call\+Method) method\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The H\+T\+TP method to set for the call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_af60c21d6c194a2bb5a3758993e9d6a3d}{}\label{category_x_i_robust_r_e_s_t_call_07_08_af60c21d6c194a2bb5a3758993e9d6a3d} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!result@{result}}
+\index{result@{result}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$) result\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The result of the call if the call finished with success. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_a8746f2e98cc9cf9ef30e07106fa39935}{}\label{category_x_i_robust_r_e_s_t_call_07_08_a8746f2e98cc9cf9ef30e07106fa39935} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!retry\+Count@{retry\+Count}}
+\index{retry\+Count@{retry\+Count}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{retry\+Count}{retryCount}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) retry\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current retry count. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_a1d70fa158b2c2c826c6001d95ebc50e5}{}\label{category_x_i_robust_r_e_s_t_call_07_08_a1d70fa158b2c2c826c6001d95ebc50e5} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!simple\+Call\+Provider@{simple\+Call\+Provider}}
+\index{simple\+Call\+Provider@{simple\+Call\+Provider}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{simple\+Call\+Provider}{simpleCallProvider}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_x_i_robust_r_e_s_t_call_simple_call_provider-p}{X\+I\+Robust\+R\+E\+S\+T\+Call\+Simple\+Call\+Provider}$>$) simple\+Call\+Provider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The provider for individual R\+E\+ST calls. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_abf42c4db39f91e60f97a9e21216f463a}{}\label{category_x_i_robust_r_e_s_t_call_07_08_abf42c4db39f91e60f97a9e21216f463a} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!state@{state}}
+\index{state@{state}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+R\+E\+S\+T\+Call\+State) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_a5ee90c38f5c704c9a0eb8b4131798f43}{}\label{category_x_i_robust_r_e_s_t_call_07_08_a5ee90c38f5c704c9a0eb8b4131798f43} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!timer\+Provider@{timer\+Provider}}
+\index{timer\+Provider@{timer\+Provider}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{timer\+Provider}{timerProvider}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Timer\+Provider$>$) timer\+Provider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The timer provider for timeouts. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_ade598ca3442f11fbf8667b7322ac6bc8}{}\label{category_x_i_robust_r_e_s_t_call_07_08_ade598ca3442f11fbf8667b7322ac6bc8} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!url\+String@{url\+String}}
+\index{url\+String@{url\+String}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{url\+String}{urlString}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) url\+String\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The U\+RL to call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_robust_r_e_s_t_call_07_08_ac719a5af700e85389765512407704b9c}{}\label{category_x_i_robust_r_e_s_t_call_07_08_ac719a5af700e85389765512407704b9c} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}!wait\+Timeout\+Timer@{wait\+Timeout\+Timer}}
+\index{wait\+Timeout\+Timer@{wait\+Timeout\+Timer}!X\+I\+Robust\+R\+E\+S\+T\+Call()@{X\+I\+Robust\+R\+E\+S\+T\+Call()}}
+\subsubsection{\texorpdfstring{wait\+Timeout\+Timer}{waitTimeoutTimer}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Timer$>$) wait\+Timeout\+Timer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The timer for a single call timeout. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+R\+E\+S\+T\+Call/X\+I\+Robust\+R\+E\+S\+T\+Call.\+m\end{DoxyCompactItemize}

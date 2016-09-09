@@ -1,0 +1,226 @@
+\hypertarget{class_x_i_device_info}{}\section{X\+I\+Device\+Info Class Reference}
+\label{class_x_i_device_info}\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+
+
+The properties of an IoT device.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Device\+Info.\+h$>$}
+
+Inheritance diagram for X\+I\+Device\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_i_device_info}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_x_i_device_info_ae331cb2141cac26c4b56dd292a9db9f6}{}\label{class_x_i_device_info_ae331cb2141cac26c4b56dd292a9db9f6} 
+(instancetype) -\/ {\bfseries init\+With\+Dictionary\+:}
+\item 
+\hypertarget{class_x_i_device_info_a389ba1c44ed1b2f27683c87509e4d6b8}{}\label{class_x_i_device_info_a389ba1c44ed1b2f27683c87509e4d6b8} 
+(N\+S\+Dictionary $\ast$) -\/ {\bfseries dictionary}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{class_x_i_device_info_a9ffa8d12d59d023b4e84972d2ab5090b}{parameters}
+\begin{DoxyCompactList}\small\item\em All the device parameters in a dictionary form. \end{DoxyCompactList}\item 
+N\+S\+Dictionary $\ast$ \hyperlink{class_x_i_device_info_a7f957997e697f1766cd29a57cda05f37}{custom\+Fields}
+\begin{DoxyCompactList}\small\item\em All device fields in a dictionary form. \end{DoxyCompactList}\item 
+N\+S\+Dictionary $\ast$ \hyperlink{class_x_i_device_info_aaa3e21f185171a65e7976c05209ff3cd}{fields\+To\+Update}
+\begin{DoxyCompactList}\small\item\em New/\+Changed Key-\/\+Value pairs for device P\+UT. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_device_info_aa89ded62978ed5dee588d15b388fd455}{device\+Id}
+\begin{DoxyCompactList}\small\item\em The id of the IoT device. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_device_info_a74d409685fc6546a9272636806985147}{serial\+Number}
+\begin{DoxyCompactList}\small\item\em The serial number. \end{DoxyCompactList}\item 
+X\+I\+Device\+Info\+Provisioning\+State \hyperlink{class_x_i_device_info_a7ef1e9cac2ea7949086b790b252ce4f2}{provisioning\+State}
+\begin{DoxyCompactList}\small\item\em The current provisioning state. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_device_info_aa4fc691baad98b90f8480c98084242cc}{device\+Version}
+\begin{DoxyCompactList}\small\item\em The device version. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_device_info_a2aa49cfc179f19162a62298f91938ce6}{device\+Location}
+\begin{DoxyCompactList}\small\item\em The device location. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_device_info_ab578d2cea864531a027a611cb30982c1}{device\+Name}
+\begin{DoxyCompactList}\small\item\em The device name. \end{DoxyCompactList}\item 
+N\+S\+Date $\ast$ \hyperlink{class_x_i_device_info_a764ddcb5a675766b6114c56debe13ac8}{purchase\+Date}
+\begin{DoxyCompactList}\small\item\em The purchase date. \end{DoxyCompactList}\item 
+N\+S\+Array $\ast$ \hyperlink{class_x_i_device_info_a618f25a4cfac3972fb86c59ada06c662}{device\+Channels}
+\begin{DoxyCompactList}\small\item\em The list of channels of the device. The elements of the array are all the instances of \hyperlink{class_x_i_device_channel}{X\+I\+Device\+Channel} class. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{class_x_i_device_info_aa4b01ce3773d036a1cec1d63381f8d72}{version}
+\begin{DoxyCompactList}\small\item\em The database version of the device info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The properties of an IoT device. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_x_i_device_info_a7f957997e697f1766cd29a57cda05f37}{}\label{class_x_i_device_info_a7f957997e697f1766cd29a57cda05f37} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!custom\+Fields@{custom\+Fields}}
+\index{custom\+Fields@{custom\+Fields}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{custom\+Fields}{customFields}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary$\ast$) custom\+Fields\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+All device fields in a dictionary form. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_a618f25a4cfac3972fb86c59ada06c662}{}\label{class_x_i_device_info_a618f25a4cfac3972fb86c59ada06c662} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!device\+Channels@{device\+Channels}}
+\index{device\+Channels@{device\+Channels}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{device\+Channels}{deviceChannels}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array$\ast$) device\+Channels\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The list of channels of the device. The elements of the array are all the instances of \hyperlink{class_x_i_device_channel}{X\+I\+Device\+Channel} class. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_aa89ded62978ed5dee588d15b388fd455}{}\label{class_x_i_device_info_aa89ded62978ed5dee588d15b388fd455} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!device\+Id@{device\+Id}}
+\index{device\+Id@{device\+Id}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{device\+Id}{deviceId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The id of the IoT device. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_a2aa49cfc179f19162a62298f91938ce6}{}\label{class_x_i_device_info_a2aa49cfc179f19162a62298f91938ce6} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!device\+Location@{device\+Location}}
+\index{device\+Location@{device\+Location}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{device\+Location}{deviceLocation}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) device\+Location\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The device location. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_ab578d2cea864531a027a611cb30982c1}{}\label{class_x_i_device_info_ab578d2cea864531a027a611cb30982c1} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!device\+Name@{device\+Name}}
+\index{device\+Name@{device\+Name}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{device\+Name}{deviceName}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) device\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The device name. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_aa4fc691baad98b90f8480c98084242cc}{}\label{class_x_i_device_info_aa4fc691baad98b90f8480c98084242cc} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!device\+Version@{device\+Version}}
+\index{device\+Version@{device\+Version}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{device\+Version}{deviceVersion}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) device\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The device version. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_aaa3e21f185171a65e7976c05209ff3cd}{}\label{class_x_i_device_info_aaa3e21f185171a65e7976c05209ff3cd} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!fields\+To\+Update@{fields\+To\+Update}}
+\index{fields\+To\+Update@{fields\+To\+Update}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{fields\+To\+Update}{fieldsToUpdate}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary$\ast$) fields\+To\+Update\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+New/\+Changed Key-\/\+Value pairs for device P\+UT. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_a9ffa8d12d59d023b4e84972d2ab5090b}{}\label{class_x_i_device_info_a9ffa8d12d59d023b4e84972d2ab5090b} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!parameters@{parameters}}
+\index{parameters@{parameters}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{parameters}{parameters}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary$\ast$) parameters\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+All the device parameters in a dictionary form. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_a7ef1e9cac2ea7949086b790b252ce4f2}{}\label{class_x_i_device_info_a7ef1e9cac2ea7949086b790b252ce4f2} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!provisioning\+State@{provisioning\+State}}
+\index{provisioning\+State@{provisioning\+State}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{provisioning\+State}{provisioningState}}
+{\footnotesize\ttfamily -\/ (X\+I\+Device\+Info\+Provisioning\+State) provisioning\+State\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current provisioning state. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_a764ddcb5a675766b6114c56debe13ac8}{}\label{class_x_i_device_info_a764ddcb5a675766b6114c56debe13ac8} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!purchase\+Date@{purchase\+Date}}
+\index{purchase\+Date@{purchase\+Date}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{purchase\+Date}{purchaseDate}}
+{\footnotesize\ttfamily -\/ (N\+S\+Date$\ast$) purchase\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The purchase date. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_a74d409685fc6546a9272636806985147}{}\label{class_x_i_device_info_a74d409685fc6546a9272636806985147} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!serial\+Number@{serial\+Number}}
+\index{serial\+Number@{serial\+Number}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{serial\+Number}{serialNumber}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) serial\+Number\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The serial number. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_device_info_aa4b01ce3773d036a1cec1d63381f8d72}{}\label{class_x_i_device_info_aa4b01ce3773d036a1cec1d63381f8d72} 
+\index{X\+I\+Device\+Info@{X\+I\+Device\+Info}!version@{version}}
+\index{version@{version}!X\+I\+Device\+Info@{X\+I\+Device\+Info}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The database version of the device info. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Device\+Info/X\+I\+Device\+Info.\+m\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Device\+Info/\hyperlink{_x_i_device_info_8h}{X\+I\+Device\+Info.\+h}\end{DoxyCompactItemize}

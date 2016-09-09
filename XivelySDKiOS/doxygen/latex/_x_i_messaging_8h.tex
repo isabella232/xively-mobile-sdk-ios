@@ -1,0 +1,86 @@
+\hypertarget{_x_i_messaging_8h}{}\section{src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\+X\+I\+Messaging.h File Reference}
+\label{_x_i_messaging_8h}\index{src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\+X\+I\+Messaging.\+h@{src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\+X\+I\+Messaging.\+h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \hyperlink{protocol_x_i_messaging_01-p}{$<$\+X\+I\+Messaging $>$}
+\begin{DoxyCompactList}\small\item\em The interface of the messaging creator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_x_i_messaging_8h_a850bef327ab7dd4a9e5726b79167f0f6}{N\+S\+\_\+\+E\+N\+UM} (N\+S\+U\+Integer, X\+I\+Messaging\+QoS)
+\begin{DoxyCompactList}\small\item\em The QoS level of publish and subscribe commands. \end{DoxyCompactList}\item 
+typedef \hyperlink{_x_i_messaging_8h_a2a23ca97a711a0f5e05d05c03df7bfaf}{N\+S\+\_\+\+E\+N\+UM} (N\+S\+U\+Integer, X\+I\+Messaging\+State)
+\begin{DoxyCompactList}\small\item\em The states of \hyperlink{}{X\+I\+Messaging}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+U\+Int16 const \hyperlink{_x_i_messaging_8h_ac2b8fdb2c60227aef7e76074eb206a56}{X\+I\+Qo\+S0\+Message\+Id}
+\begin{DoxyCompactList}\small\item\em All messages sent by X\+I\+Messaging\+Qo\+S\+At\+Most\+Once QoS level has this message ID. They are not verified on the data listener inteface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_x_i_messaging_8h_a850bef327ab7dd4a9e5726b79167f0f6}{}\label{_x_i_messaging_8h_a850bef327ab7dd4a9e5726b79167f0f6} 
+\index{X\+I\+Messaging.\+h@{X\+I\+Messaging.\+h}!N\+S\+\_\+\+E\+N\+UM@{N\+S\+\_\+\+E\+N\+UM}}
+\index{N\+S\+\_\+\+E\+N\+UM@{N\+S\+\_\+\+E\+N\+UM}!X\+I\+Messaging.\+h@{X\+I\+Messaging.\+h}}
+\subsubsection{\texorpdfstring{N\+S\+\_\+\+E\+N\+U\+M()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily typedef N\+S\+\_\+\+E\+N\+UM (\begin{DoxyParamCaption}\item[{N\+S\+U\+Integer}]{,  }\item[{X\+I\+Messaging\+QoS}]{ }\end{DoxyParamCaption})}
+
+
+
+The QoS level of publish and subscribe commands. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+$<$ The messages are sent at most once. \begin{DoxySince}{Since}
+Version 1.\+0
+\end{DoxySince}
+$<$ The messages are sent at least once. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{_x_i_messaging_8h_a2a23ca97a711a0f5e05d05c03df7bfaf}{}\label{_x_i_messaging_8h_a2a23ca97a711a0f5e05d05c03df7bfaf} 
+\index{X\+I\+Messaging.\+h@{X\+I\+Messaging.\+h}!N\+S\+\_\+\+E\+N\+UM@{N\+S\+\_\+\+E\+N\+UM}}
+\index{N\+S\+\_\+\+E\+N\+UM@{N\+S\+\_\+\+E\+N\+UM}!X\+I\+Messaging.\+h@{X\+I\+Messaging.\+h}}
+\subsubsection{\texorpdfstring{N\+S\+\_\+\+E\+N\+U\+M()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily typedef N\+S\+\_\+\+E\+N\+UM (\begin{DoxyParamCaption}\item[{N\+S\+U\+Integer}]{,  }\item[{X\+I\+Messaging\+State}]{ }\end{DoxyParamCaption})}
+
+
+
+The states of \hyperlink{}{X\+I\+Messaging}. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+$<$ The messaging is up and running. \begin{DoxySince}{Since}
+Version 1.\+0
+\end{DoxySince}
+$<$ The messaging is trying to reconnect. All published messages will be delivered on successful reconnection. \begin{DoxySince}{Since}
+Version 1.\+0
+\end{DoxySince}
+$<$ The messaging is disconnecting. \begin{DoxySince}{Since}
+Version 1.\+0
+\end{DoxySince}
+$<$ The messaging is closed. \begin{DoxySince}{Since}
+Version 1.\+0
+\end{DoxySince}
+$<$ The messaging ended with an error. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_x_i_messaging_8h_ac2b8fdb2c60227aef7e76074eb206a56}{}\label{_x_i_messaging_8h_ac2b8fdb2c60227aef7e76074eb206a56} 
+\index{X\+I\+Messaging.\+h@{X\+I\+Messaging.\+h}!X\+I\+Qo\+S0\+Message\+Id@{X\+I\+Qo\+S0\+Message\+Id}}
+\index{X\+I\+Qo\+S0\+Message\+Id@{X\+I\+Qo\+S0\+Message\+Id}!X\+I\+Messaging.\+h@{X\+I\+Messaging.\+h}}
+\subsubsection{\texorpdfstring{X\+I\+Qo\+S0\+Message\+Id}{XIQoS0MessageId}}
+{\footnotesize\ttfamily U\+Int16 const X\+I\+Qo\+S0\+Message\+Id}
+
+
+
+All messages sent by X\+I\+Messaging\+Qo\+S\+At\+Most\+Once QoS level has this message ID. They are not verified on the data listener inteface. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}

@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['init',['init',['../class_x_i_authentication.html#adc69456604cafb7618c940a3b93e7616',1,'XIAuthentication::init()'],['../class_x_i_sdk_config.html#ab73045dfa620f53c0176047df7109856',1,'XISdkConfig::init()']]],
+  ['initwithchannel_3amessage_3aqos_3aretain_3a',['initWithChannel:message:qos:retain:',['../class_x_i_last_will.html#ac5464f614e5d20f9ff9b0ab7623b7115',1,'XILastWill']]],
+  ['initwithconfig_3adefaultheadersprovider_3aresponserecognizers_3a',['initWithConfig:defaultHeadersProvider:responseRecognizers:',['../interface_x_i_r_e_s_t_call_provider_internal.html#ab7b1e2c7114d170d1efbb086da61984a',1,'XIRESTCallProviderInternal']]],
+  ['initwithenvironment_3a',['initWithEnvironment:',['../category_x_i_sdk_config_07_selector_08.html#aaf78fa6769fee2f17ba641609f112e55',1,'XISdkConfig(Selector)::initWithEnvironment:()'],['../class_x_i_sdk_config.html#aaf78fa6769fee2f17ba641609f112e55',1,'XISdkConfig::initWithEnvironment:()']]],
+  ['initwithhttpresponsetimeout_3aurlsession_3amqttconnecttimeout_3amqttretryattempt_3amqttwaitonreconnect_3a',['initWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:',['../class_x_i_sdk_config.html#aeea5606d1560af2396d135819f5f9596',1,'XISdkConfig']]],
+  ['initwithhttpresponsetimeout_3aurlsession_3amqttconnecttimeout_3amqttretryattempt_3amqttwaitonreconnect_3aenvironment_3a',['initWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:environment:',['../category_x_i_sdk_config_07_selector_08.html#aeceeeb80a520f874d9793485a70bd591',1,'XISdkConfig(Selector)::initWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:environment:()'],['../class_x_i_sdk_config.html#aeceeeb80a520f874d9793485a70bd591',1,'XISdkConfig::initWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:environment:()']]],
+  ['initwithinternal_3a',['initWithInternal:',['../interface_x_i_session_proxy.html#a16ae3a74b593a05e61585a8de35cbeb0',1,'XISessionProxy']]],
+  ['initwithlogger_3arestcallprovider_3aservicesconfig_3aaccess_3a',['initWithLogger:restCallProvider:servicesConfig:access:',['../interface_x_i_session_internal.html#aecd47a945b3c947b44952fceb6272386',1,'XISessionInternal']]],
+  ['initwithlogger_3arestcallprovider_3aservicesconfig_3aaccess_3aconnectionpool_3anotifications_3a',['initWithLogger:restCallProvider:servicesConfig:access:connectionPool:notifications:',['../interface_x_i_session_internal.html#a1d6df5dc95c8bde9c2b6d9a4e2a8608e',1,'XISessionInternal']]],
+  ['initwithsdkconfig_3a',['initWithSdkConfig:',['../class_x_i_authentication.html#ab2a3d72425cbd6ae9910016f727198c1',1,'XIAuthentication']]],
+  ['initwithsession_3a',['initWithSession:',['../interface_x_i_session_services_internal.html#a8496751bb3437da322555a3fb702f246',1,'XISessionServicesInternal']]],
+  ['initwithsessionservicesinternal_3a',['initWithSessionServicesInternal:',['../category_x_i_session_services_07_init_08.html#a0d28149c31bd80883b3a59a653b8680b',1,'XISessionServices(Init)']]],
+  ['initwithsimplecallprovider_3atimerprovider_3aconfig_3a',['initWithSimpleCallProvider:timerProvider:config:',['../interface_x_i_robust_r_e_s_t_call.html#af138b45a25978ef766bd3fe602cbffec',1,'XIRobustRESTCall']]],
+  ['initwithurlsession_3adefaultheadersprovider_3aresponserecognizers_3a',['initWithURLSession:defaultHeadersProvider:responseRecognizers:',['../interface_x_i_simple_r_e_s_t_call.html#ab6b30d86ec930f88b747d702cc1190a5',1,'XISimpleRESTCall']]],
+  ['isequaltolastwill_3a',['isEqualToLastWill:',['../class_x_i_last_will.html#ab3f5d0887dc1cb7a17de8ed23e1c2435',1,'XILastWill']]]
+];

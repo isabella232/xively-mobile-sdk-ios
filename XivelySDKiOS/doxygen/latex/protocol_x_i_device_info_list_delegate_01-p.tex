@@ -1,0 +1,80 @@
+\hypertarget{protocol_x_i_device_info_list_delegate_01-p}{}\section{$<$X\+I\+Device\+Info\+List\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_device_info_list_delegate_01-p}\index{$<$\+X\+I\+Device\+Info\+List\+Delegate $>$@{$<$\+X\+I\+Device\+Info\+List\+Delegate $>$}}
+
+
+The delegate for device info listing.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Device\+Info\+List.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Device\+Info\+List\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_device_info_list_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_device_info_list_delegate_01-p_a7e959da1858b5767ad82a44926c9127b}{device\+Info\+List\+:did\+Receive\+List\+:}
+\begin{DoxyCompactList}\small\item\em The device info listing finished with success. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_device_info_list_delegate_01-p_af5a6ce6f7dda877c7e3282a3f78ccafe}{device\+Info\+List\+:did\+Fail\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The association finished with an error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The delegate for device info listing. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_device_info_list_delegate_01-p_af5a6ce6f7dda877c7e3282a3f78ccafe}{}\label{protocol_x_i_device_info_list_delegate_01-p_af5a6ce6f7dda877c7e3282a3f78ccafe} 
+\index{X\+I\+Device\+Info\+List\+Delegate -\/p@{X\+I\+Device\+Info\+List\+Delegate -\/p}!device\+Info\+List\+:did\+Fail\+With\+Error\+:@{device\+Info\+List\+:did\+Fail\+With\+Error\+:}}
+\index{device\+Info\+List\+:did\+Fail\+With\+Error\+:@{device\+Info\+List\+:did\+Fail\+With\+Error\+:}!X\+I\+Device\+Info\+List\+Delegate -\/p@{X\+I\+Device\+Info\+List\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{device\+Info\+List\+:did\+Fail\+With\+Error\+:()}{deviceInfoList:didFailWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Info\+List\+Delegate) device\+Info\+List\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Device\+Info\+List $>$)}]{device\+Info\+List }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The association finished with an error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Info\+List} & The device\+Info\+List instance that initiates the callback. \\
+\hline
+{\em error} & The reason of the error. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_device_info_error_8h}{X\+I\+Device\+Info\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_info_list_delegate_01-p_a7e959da1858b5767ad82a44926c9127b}{}\label{protocol_x_i_device_info_list_delegate_01-p_a7e959da1858b5767ad82a44926c9127b} 
+\index{X\+I\+Device\+Info\+List\+Delegate -\/p@{X\+I\+Device\+Info\+List\+Delegate -\/p}!device\+Info\+List\+:did\+Receive\+List\+:@{device\+Info\+List\+:did\+Receive\+List\+:}}
+\index{device\+Info\+List\+:did\+Receive\+List\+:@{device\+Info\+List\+:did\+Receive\+List\+:}!X\+I\+Device\+Info\+List\+Delegate -\/p@{X\+I\+Device\+Info\+List\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{device\+Info\+List\+:did\+Receive\+List\+:()}{deviceInfoList:didReceiveList:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Info\+List\+Delegate) device\+Info\+List\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Device\+Info\+List $>$)}]{device\+Info\+List }\item[{didReceiveList:(N\+S\+Array $\ast$)}]{device\+Infos }\end{DoxyParamCaption}}
+
+
+
+The device info listing finished with success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Info\+List} & The device\+Info\+List instance that initiates the callback. \\
+\hline
+{\em device\+Infos} & The device info container objects. They are all instances of \hyperlink{class_x_i_device_info}{X\+I\+Device\+Info}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Device\+Info/\hyperlink{_x_i_device_info_list_8h}{X\+I\+Device\+Info\+List.\+h}\end{DoxyCompactItemize}

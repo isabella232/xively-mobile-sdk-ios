@@ -1,0 +1,122 @@
+\hypertarget{protocol_x_i_device_association_01-p}{}\section{$<$X\+I\+Device\+Association $>$ Protocol Reference}
+\label{protocol_x_i_device_association_01-p}\index{$<$\+X\+I\+Device\+Association $>$@{$<$\+X\+I\+Device\+Association $>$}}
+
+
+Interface for objects that do IoT device assiciation to an end user.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Device\+Association.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Device\+Association $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_device_association_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_device_association_01-p_a51b895b55ddb9ba961d35c0bac09ef3b}{associate\+Device\+With\+Association\+Code\+:}
+\begin{DoxyCompactList}\small\item\em Begin association of the IoT device to the current user, that the activation code belongs to. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_device_association_01-p_a3e83f44defee4be07893de3e4029be8a}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the association. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Device\+Association\+State \hyperlink{protocol_x_i_device_association_01-p_af70116567dbff00e7c465dcb9d40ae69}{state}
+\begin{DoxyCompactList}\small\item\em The state of the activation object. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Device\+Association\+Delegate $>$ \hyperlink{protocol_x_i_device_association_01-p_a272fb3bd6bed9d86cc1fc1ba5f20912a}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the association result on. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_device_association_01-p_ac1c291d5cffbf45a0025fde23968dbf9}{error}
+\begin{DoxyCompactList}\small\item\em The error if the authentication finished with error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for objects that do IoT device assiciation to an end user. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_device_association_01-p_a51b895b55ddb9ba961d35c0bac09ef3b}{}\label{protocol_x_i_device_association_01-p_a51b895b55ddb9ba961d35c0bac09ef3b} 
+\index{X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}!associate\+Device\+With\+Association\+Code\+:@{associate\+Device\+With\+Association\+Code\+:}}
+\index{associate\+Device\+With\+Association\+Code\+:@{associate\+Device\+With\+Association\+Code\+:}!X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}}
+\subsubsection{\texorpdfstring{associate\+Device\+With\+Association\+Code\+:()}{associateDeviceWithAssociationCode:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Association) associate\+Device\+With\+Association\+Code\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{association\+Code }\end{DoxyParamCaption}}
+
+
+
+Begin association of the IoT device to the current user, that the activation code belongs to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em association\+Code} & The association code of the IoT device to be assigned to the current end user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_association_01-p_a3e83f44defee4be07893de3e4029be8a}{}\label{protocol_x_i_device_association_01-p_a3e83f44defee4be07893de3e4029be8a} 
+\index{X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Association) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the association. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_device_association_01-p_a272fb3bd6bed9d86cc1fc1ba5f20912a}{}\label{protocol_x_i_device_association_01-p_a272fb3bd6bed9d86cc1fc1ba5f20912a} 
+\index{X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Device\+Association\+Delegate$>$ X\+I\+Device\+Association) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the association result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_association_01-p_ac1c291d5cffbf45a0025fde23968dbf9}{}\label{protocol_x_i_device_association_01-p_ac1c291d5cffbf45a0025fde23968dbf9} 
+\index{X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}!error@{error}}
+\index{error@{error}!X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+Device\+Association) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error if the authentication finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_association_01-p_af70116567dbff00e7c465dcb9d40ae69}{}\label{protocol_x_i_device_association_01-p_af70116567dbff00e7c465dcb9d40ae69} 
+\index{X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}!state@{state}}
+\index{state@{state}!X\+I\+Device\+Association -\/p@{X\+I\+Device\+Association -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Device\+Association\+State X\+I\+Device\+Association) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The state of the activation object. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+\_\+\+\_\+\+T\+E\+M\+P\+O\+R\+A\+R\+Y\+\_\+\+R\+E\+M\+O\+V\+E\+D\+\_\+\+\_\+/\+Device\+Association/\hyperlink{_x_i_device_association_8h}{X\+I\+Device\+Association.\+h}\end{DoxyCompactItemize}

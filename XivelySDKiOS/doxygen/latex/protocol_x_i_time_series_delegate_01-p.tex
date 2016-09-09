@@ -1,0 +1,80 @@
+\hypertarget{protocol_x_i_time_series_delegate_01-p}{}\section{$<$X\+I\+Time\+Series\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_time_series_delegate_01-p}\index{$<$\+X\+I\+Time\+Series\+Delegate $>$@{$<$\+X\+I\+Time\+Series\+Delegate $>$}}
+
+
+The delegate for time series responses.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Time\+Series.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Time\+Series\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_time_series_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_time_series_delegate_01-p_acb5b2883bf84fc539593d6821319cda1}{time\+Series\+:did\+Receive\+Items\+:}
+\begin{DoxyCompactList}\small\item\em The time series request finished with success. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_time_series_delegate_01-p_a7ec763fef4ff3ee7b58b87ea0a855c2f}{time\+Series\+:did\+Fail\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The time series request finished with an error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The delegate for time series responses. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_time_series_delegate_01-p_a7ec763fef4ff3ee7b58b87ea0a855c2f}{}\label{protocol_x_i_time_series_delegate_01-p_a7ec763fef4ff3ee7b58b87ea0a855c2f} 
+\index{X\+I\+Time\+Series\+Delegate -\/p@{X\+I\+Time\+Series\+Delegate -\/p}!time\+Series\+:did\+Fail\+With\+Error\+:@{time\+Series\+:did\+Fail\+With\+Error\+:}}
+\index{time\+Series\+:did\+Fail\+With\+Error\+:@{time\+Series\+:did\+Fail\+With\+Error\+:}!X\+I\+Time\+Series\+Delegate -\/p@{X\+I\+Time\+Series\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{time\+Series\+:did\+Fail\+With\+Error\+:()}{timeSeries:didFailWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Time\+Series\+Delegate) time\+Series\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Time\+Series $>$)}]{time\+Series }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The time series request finished with an error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Series} & The time\+Series instance that initiates the callback. \\
+\hline
+{\em error} & The reason of the error. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_time_series_error_8h}{X\+I\+Time\+Series\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_time_series_delegate_01-p_acb5b2883bf84fc539593d6821319cda1}{}\label{protocol_x_i_time_series_delegate_01-p_acb5b2883bf84fc539593d6821319cda1} 
+\index{X\+I\+Time\+Series\+Delegate -\/p@{X\+I\+Time\+Series\+Delegate -\/p}!time\+Series\+:did\+Receive\+Items\+:@{time\+Series\+:did\+Receive\+Items\+:}}
+\index{time\+Series\+:did\+Receive\+Items\+:@{time\+Series\+:did\+Receive\+Items\+:}!X\+I\+Time\+Series\+Delegate -\/p@{X\+I\+Time\+Series\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{time\+Series\+:did\+Receive\+Items\+:()}{timeSeries:didReceiveItems:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Time\+Series\+Delegate) time\+Series\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Time\+Series $>$)}]{time\+Series }\item[{didReceiveItems:(N\+S\+Array $\ast$)}]{time\+Series\+Items }\end{DoxyParamCaption}}
+
+
+
+The time series request finished with success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Series} & The time\+Series instance that initiates the callback. \\
+\hline
+{\em time\+Series\+Items} & The result time series items. They are all instances of \hyperlink{interface_x_i_time_series_item}{X\+I\+Time\+Series\+Item}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Time\+Series/\hyperlink{_x_i_time_series_8h}{X\+I\+Time\+Series.\+h}\end{DoxyCompactItemize}

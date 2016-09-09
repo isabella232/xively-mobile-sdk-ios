@@ -1,0 +1,15 @@
+//
+//  xem-sdk.xcconfig
+//  common
+//
+//  Created by Gábor Szajkó on 11/12/14.
+//  Copyright (c) 2015 LogMeIn Inc.. All rights reserved.
+//
+PUMPKIN_HOME        = ~/.pumpkin
+RAPIDJSON_DIRECTORY = $(PUMPKIN_HOME)/rapidjson-1.0.0
+OCMOCK_DIRECTORY = $(PUMPKIN_HOME)/libOCMock-3.0.2
+PAHO_DIRECTORY = $(PUMPKIN_HOME)/libxem-sdk-libpaho-ios-1.0.1129
+
+HEADER_SEARCH_PATHS = $(inherited) . $(OCMOCK_DIRECTORY) $(RAPIDJSON_DIRECTORY) $(PAHO_DIRECTORY)/include
+LIBRARY_SEARCH_PATHS = $(inherited) $(OCMOCK_DIRECTORY) $(PAHO_DIRECTORY)
+

@@ -1,0 +1,161 @@
+\hypertarget{category_x_i_session_internal_07_08}{}\section{X\+I\+Session\+Internal() Category Reference}
+\label{category_x_i_session_internal_07_08}\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+
+
+\hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} private interface.  
+
+
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_x_i_session_services}{X\+I\+Session\+Services} $\ast$ \hyperlink{category_x_i_session_internal_07_08_a0bde5674ebda588ae03329b307ea476f}{services}
+\begin{DoxyCompactList}\small\item\em The services creator. \end{DoxyCompactList}\item 
+\hyperlink{class_x_i_access}{X\+I\+Access} $\ast$ \hyperlink{category_x_i_session_internal_07_08_aed4f95ad415dba8b614f31fd2de6b213}{access}
+\begin{DoxyCompactList}\small\item\em The access object with the credentials. \end{DoxyCompactList}\item 
+X\+I\+Session\+State \hyperlink{category_x_i_session_internal_07_08_a6d9c9e5903ac3ee10b6729e3e74f834f}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the session. \end{DoxyCompactList}\item 
+\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config} $\ast$ \hyperlink{category_x_i_session_internal_07_08_acaf7c1e7cac39e0c0937b1ebd13c326c}{services\+Config}
+\begin{DoxyCompactList}\small\item\em The config for the internal execution of the S\+DK. \end{DoxyCompactList}\item 
+B\+O\+OL \hyperlink{category_x_i_session_internal_07_08_aa7c7df651a614de08864a6ddfbba1165}{suspended}
+\begin{DoxyCompactList}\small\item\em The operation is suspended. \end{DoxyCompactList}\item 
+id$<$ X\+I\+C\+O\+Connection\+Pooling $>$ \hyperlink{category_x_i_session_internal_07_08_adc8bea01e6c36e7e28e5c68c028c4b5d}{connection\+Pool}
+\begin{DoxyCompactList}\small\item\em The pool for creating M\+Q\+TT connections. \end{DoxyCompactList}\item 
+id$<$ \hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging} $>$ \hyperlink{category_x_i_session_internal_07_08_aec666be425dd3c45da3bac34d87d5e1b}{log}
+\begin{DoxyCompactList}\small\item\em The logger. \end{DoxyCompactList}\item 
+id$<$ X\+I\+R\+E\+S\+T\+Call\+Provider $>$ \hyperlink{category_x_i_session_internal_07_08_a82a93ab90616ebd6c9ecf7afec360626}{rest\+Call\+Provider}
+\begin{DoxyCompactList}\small\item\em The provider of rest calls. \end{DoxyCompactList}\item 
+\hyperlink{interface_x_i_c_o_session_notifications}{X\+I\+C\+O\+Session\+Notifications} $\ast$ \hyperlink{category_x_i_session_internal_07_08_acea05d51d24a4832ad5d4466d4ded648}{notifications}
+\begin{DoxyCompactList}\small\item\em The noifications center in the session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} private interface. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{category_x_i_session_internal_07_08_aed4f95ad415dba8b614f31fd2de6b213}{}\label{category_x_i_session_internal_07_08_aed4f95ad415dba8b614f31fd2de6b213} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!access@{access}}
+\index{access@{access}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{access}{access}}
+{\footnotesize\ttfamily -\/ (\hyperlink{class_x_i_access}{X\+I\+Access}$\ast$) access\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The access object with the credentials. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_adc8bea01e6c36e7e28e5c68c028c4b5d}{}\label{category_x_i_session_internal_07_08_adc8bea01e6c36e7e28e5c68c028c4b5d} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!connection\+Pool@{connection\+Pool}}
+\index{connection\+Pool@{connection\+Pool}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{connection\+Pool}{connectionPool}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+C\+O\+Connection\+Pooling$>$) connection\+Pool\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The pool for creating M\+Q\+TT connections. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_aec666be425dd3c45da3bac34d87d5e1b}{}\label{category_x_i_session_internal_07_08_aec666be425dd3c45da3bac34d87d5e1b} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!log@{log}}
+\index{log@{log}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$) log\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The logger. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_acea05d51d24a4832ad5d4466d4ded648}{}\label{category_x_i_session_internal_07_08_acea05d51d24a4832ad5d4466d4ded648} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!notifications@{notifications}}
+\index{notifications@{notifications}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{notifications}{notifications}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_c_o_session_notifications}{X\+I\+C\+O\+Session\+Notifications}$\ast$) notifications\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The noifications center in the session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_a82a93ab90616ebd6c9ecf7afec360626}{}\label{category_x_i_session_internal_07_08_a82a93ab90616ebd6c9ecf7afec360626} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!rest\+Call\+Provider@{rest\+Call\+Provider}}
+\index{rest\+Call\+Provider@{rest\+Call\+Provider}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{rest\+Call\+Provider}{restCallProvider}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+R\+E\+S\+T\+Call\+Provider$>$) rest\+Call\+Provider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The provider of rest calls. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_a0bde5674ebda588ae03329b307ea476f}{}\label{category_x_i_session_internal_07_08_a0bde5674ebda588ae03329b307ea476f} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!services@{services}}
+\index{services@{services}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{services}{services}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_session_services}{X\+I\+Session\+Services}$\ast$) services\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The services creator. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_acaf7c1e7cac39e0c0937b1ebd13c326c}{}\label{category_x_i_session_internal_07_08_acaf7c1e7cac39e0c0937b1ebd13c326c} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!services\+Config@{services\+Config}}
+\index{services\+Config@{services\+Config}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{services\+Config}{servicesConfig}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config}$\ast$) services\+Config\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The config for the internal execution of the S\+DK. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_a6d9c9e5903ac3ee10b6729e3e74f834f}{}\label{category_x_i_session_internal_07_08_a6d9c9e5903ac3ee10b6729e3e74f834f} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!state@{state}}
+\index{state@{state}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Session\+State) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{category_x_i_session_internal_07_08_aa7c7df651a614de08864a6ddfbba1165}{}\label{category_x_i_session_internal_07_08_aa7c7df651a614de08864a6ddfbba1165} 
+\index{X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}!suspended@{suspended}}
+\index{suspended@{suspended}!X\+I\+Session\+Internal()@{X\+I\+Session\+Internal()}}
+\subsubsection{\texorpdfstring{suspended}{suspended}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) suspended\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The operation is suspended. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Session/X\+I\+Session\+Internal.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,396 @@
+\hypertarget{class_x_i_sdk_config}{}\section{X\+I\+Sdk\+Config Class Reference}
+\label{class_x_i_sdk_config}\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+
+
+Configurations to set up the internal behavior of the S\+DK.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Sdk\+Config.\+h$>$}
+
+Inheritance diagram for X\+I\+Sdk\+Config\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_i_sdk_config}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{class_x_i_sdk_config_ab73045dfa620f53c0176047df7109856}{init}
+\begin{DoxyCompactList}\small\item\em Constructor for creating a config with default settings. \end{DoxyCompactList}\item 
+(instancetype) -\/ \hyperlink{class_x_i_sdk_config_aeea5606d1560af2396d135819f5f9596}{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:}
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+(instancetype) -\/ \hyperlink{class_x_i_sdk_config_aaf78fa6769fee2f17ba641609f112e55}{init\+With\+Environment\+:}
+\begin{DoxyCompactList}\small\item\em Initialization with default parameters and environment selection. \end{DoxyCompactList}\item 
+(instancetype) -\/ \hyperlink{class_x_i_sdk_config_aeceeeb80a520f874d9793485a70bd591}{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:}
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{class_x_i_sdk_config_a7fed9db56ae4a91646296d35c6cb25b5}{config}
+\begin{DoxyCompactList}\small\item\em Static constructor for creating a config with default settings. \end{DoxyCompactList}\item 
+(instancetype) + \hyperlink{class_x_i_sdk_config_ad84b287f2b68f614ffa522dfab020af3}{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:}
+\begin{DoxyCompactList}\small\item\em Static constructor. \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \hyperlink{class_x_i_sdk_config_af8943df70be2f22a5c1937b9ec7d961b}{version}
+\begin{DoxyCompactList}\small\item\em The current version of the S\+DK. \end{DoxyCompactList}\item 
+(instancetype) + \hyperlink{class_x_i_sdk_config_afa1234314350e4363b3540809540812b}{config\+With\+Environment\+:}
+\begin{DoxyCompactList}\small\item\em Static constructor for creating a config with default settings. \end{DoxyCompactList}\item 
+(instancetype) + \hyperlink{class_x_i_sdk_config_a01ace5ad13ef869398e87b9413dab6e3}{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:}
+\begin{DoxyCompactList}\small\item\em Static constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{class_x_i_sdk_config_a721a1a7c8f44e42eb79defd955bf1d17}{http\+Response\+Timeout}
+\begin{DoxyCompactList}\small\item\em The timeout for any H\+T\+TP request in seconds. \end{DoxyCompactList}\item 
+N\+S\+U\+R\+L\+Session $\ast$ \hyperlink{class_x_i_sdk_config_a01bb2fc51f6bca0e8a5bd32281abeee7}{url\+Session}
+\begin{DoxyCompactList}\small\item\em The U\+RL session that is used for H\+T\+TP calls. \end{DoxyCompactList}\item 
+long \hyperlink{class_x_i_sdk_config_abd757758fc57eeb6b4962078944675d4}{mqtt\+Connect\+Timeout}
+\begin{DoxyCompactList}\small\item\em The timeout of the initial mqtt connection. \end{DoxyCompactList}\item 
+int \hyperlink{class_x_i_sdk_config_ac8b3d3418421adc422c9cd5ce4c88582}{mqtt\+Retry\+Attempt}
+\begin{DoxyCompactList}\small\item\em The number of attempts an M\+Q\+TT connection is tried to build up if it fails. \end{DoxyCompactList}\item 
+long \hyperlink{class_x_i_sdk_config_a7e1114e4fbf145f2f9e88e5e0ecbe4cd}{mqtt\+Wait\+On\+Reconnect}
+\begin{DoxyCompactList}\small\item\em The the time spent between an M\+Q\+TT connection error and the next connection retry attempt in seconds. \end{DoxyCompactList}\item 
+X\+I\+Log\+Level \hyperlink{class_x_i_sdk_config_a564301d822062bec6a8062f08f916661}{log\+Level}
+\begin{DoxyCompactList}\small\item\em Set and get the S\+DK\textquotesingle{}s log level. The default is warning level. \end{DoxyCompactList}\item 
+X\+I\+Environment \hyperlink{class_x_i_sdk_config_acf4a6e964bf34ed131bd9b3a2324a186}{environment}
+\begin{DoxyCompactList}\small\item\em The environment the S\+DK connects to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configurations to set up the internal behavior of the S\+DK. 
+
+The session config is for fine tunning the S\+DK behavior. At this moment network handling parameters can be set here. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{class_x_i_sdk_config_a7fed9db56ae4a91646296d35c6cb25b5}{}\label{class_x_i_sdk_config_a7fed9db56ae4a91646296d35c6cb25b5} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!config@{config}}
+\index{config@{config}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily + (instancetype) config \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Static constructor for creating a config with default settings. 
+
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_afa1234314350e4363b3540809540812b}{}\label{class_x_i_sdk_config_afa1234314350e4363b3540809540812b} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!config\+With\+Environment\+:@{config\+With\+Environment\+:}}
+\index{config\+With\+Environment\+:@{config\+With\+Environment\+:}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{config\+With\+Environment\+:()}{configWithEnvironment:()}}
+{\footnotesize\ttfamily + (instancetype) config\+With\+Environment\+: \begin{DoxyParamCaption}\item[{(X\+I\+Environment)}]{environment }\end{DoxyParamCaption}}
+
+
+
+Static constructor for creating a config with default settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em environment} & The environment the S\+DK connects to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+Provided by category \hyperlink{category_x_i_sdk_config_07_selector_08_afa1234314350e4363b3540809540812b}{X\+I\+Sdk\+Config(\+Selector)}.
+
+\hypertarget{class_x_i_sdk_config_ad84b287f2b68f614ffa522dfab020af3}{}\label{class_x_i_sdk_config_ad84b287f2b68f614ffa522dfab020af3} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:@{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:}}
+\index{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:@{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:()}{configWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:()}}
+{\footnotesize\ttfamily + (instancetype) config\+With\+H\+T\+T\+P\+Response\+Timeout\+: \begin{DoxyParamCaption}\item[{(long)}]{http\+Response\+Timeout }\item[{urlSession:(N\+S\+U\+R\+L\+Session $\ast$)}]{url\+Session }\item[{mqttConnectTimeout:(long)}]{mqtt\+Connect\+Timeout }\item[{mqttRetryAttempt:(int)}]{mqtt\+Retry\+Attempt }\item[{mqttWaitOnReconnect:(long)}]{mqtt\+Wait\+On\+Reconnect }\end{DoxyParamCaption}}
+
+
+
+Static constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Response\+Timeout} & The timeout for any H\+T\+TP request in seconds. \\
+\hline
+{\em url\+Session} & The U\+RL session that is used for H\+T\+TP calls. \\
+\hline
+{\em mqtt\+Connect\+Timeout} & The timeout of the initial mqtt connection. \\
+\hline
+{\em mqtt\+Retry\+Attempt} & The number of attempts an M\+Q\+TT connection is tried to build up if it fails. \\
+\hline
+{\em mqtt\+Wait\+On\+Reconnect} & The the time spent between an M\+Q\+TT connection error and the next connection retry attempt in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_a01ace5ad13ef869398e87b9413dab6e3}{}\label{class_x_i_sdk_config_a01ace5ad13ef869398e87b9413dab6e3} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:@{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:}}
+\index{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:@{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{config\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:()}{configWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:environment:()}}
+{\footnotesize\ttfamily + (instancetype) config\+With\+H\+T\+T\+P\+Response\+Timeout\+: \begin{DoxyParamCaption}\item[{(long)}]{http\+Response\+Timeout }\item[{urlSession:(N\+S\+U\+R\+L\+Session $\ast$)}]{url\+Session }\item[{mqttConnectTimeout:(long)}]{mqtt\+Connect\+Timeout }\item[{mqttRetryAttempt:(int)}]{mqtt\+Retry\+Attempt }\item[{mqttWaitOnReconnect:(long)}]{mqtt\+Wait\+On\+Reconnect }\item[{environment:(X\+I\+Environment)}]{environment }\end{DoxyParamCaption}}
+
+
+
+Static constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Response\+Timeout} & The timeout for any H\+T\+TP request in seconds. \\
+\hline
+{\em url\+Session} & The U\+RL session that is used for H\+T\+TP calls. \\
+\hline
+{\em mqtt\+Connect\+Timeout} & The timeout of the initial mqtt connection. \\
+\hline
+{\em mqtt\+Retry\+Attempt} & The number of attempts an M\+Q\+TT connection is tried to build up if it fails. \\
+\hline
+{\em mqtt\+Wait\+On\+Reconnect} & The the time spent between an M\+Q\+TT connection error and the next connection retry attempt in seconds. \\
+\hline
+{\em environment} & The environment the S\+DK connects to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+Provided by category \hyperlink{category_x_i_sdk_config_07_selector_08_a01ace5ad13ef869398e87b9413dab6e3}{X\+I\+Sdk\+Config(\+Selector)}.
+
+\hypertarget{class_x_i_sdk_config_ab73045dfa620f53c0176047df7109856}{}\label{class_x_i_sdk_config_ab73045dfa620f53c0176047df7109856} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!init@{init}}
+\index{init@{init}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily -\/ (instancetype) init \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Constructor for creating a config with default settings. 
+
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_aaf78fa6769fee2f17ba641609f112e55}{}\label{class_x_i_sdk_config_aaf78fa6769fee2f17ba641609f112e55} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!init\+With\+Environment\+:@{init\+With\+Environment\+:}}
+\index{init\+With\+Environment\+:@{init\+With\+Environment\+:}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{init\+With\+Environment\+:()}{initWithEnvironment:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Environment\+: \begin{DoxyParamCaption}\item[{(X\+I\+Environment)}]{environment }\end{DoxyParamCaption}}
+
+
+
+Initialization with default parameters and environment selection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em environment} & The environment the S\+DK connects to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+Provided by category \hyperlink{category_x_i_sdk_config_07_selector_08_aaf78fa6769fee2f17ba641609f112e55}{X\+I\+Sdk\+Config(\+Selector)}.
+
+\hypertarget{class_x_i_sdk_config_aeea5606d1560af2396d135819f5f9596}{}\label{class_x_i_sdk_config_aeea5606d1560af2396d135819f5f9596} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:@{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:}}
+\index{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:@{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:()}{initWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+H\+T\+T\+P\+Response\+Timeout\+: \begin{DoxyParamCaption}\item[{(long)}]{http\+Response\+Timeout }\item[{urlSession:(N\+S\+U\+R\+L\+Session $\ast$)}]{url\+Session }\item[{mqttConnectTimeout:(long)}]{mqtt\+Connect\+Timeout }\item[{mqttRetryAttempt:(int)}]{mqtt\+Retry\+Attempt }\item[{mqttWaitOnReconnect:(long)}]{mqtt\+Wait\+On\+Reconnect }\end{DoxyParamCaption}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Response\+Timeout} & The timeout for any H\+T\+TP request in seconds. \\
+\hline
+{\em url\+Session} & The U\+RL session that is used for H\+T\+TP calls. \\
+\hline
+{\em mqtt\+Connect\+Timeout} & The timeout of the initial mqtt connection. \\
+\hline
+{\em mqtt\+Retry\+Attempt} & The number of attempts an M\+Q\+TT connection is tried to build up if it fails. \\
+\hline
+{\em mqtt\+Wait\+On\+Reconnect} & The the time spent between an M\+Q\+TT connection error and the next connection retry attempt in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_aeceeeb80a520f874d9793485a70bd591}{}\label{class_x_i_sdk_config_aeceeeb80a520f874d9793485a70bd591} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:@{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:}}
+\index{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:@{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{init\+With\+H\+T\+T\+P\+Response\+Timeout\+:url\+Session\+:mqtt\+Connect\+Timeout\+:mqtt\+Retry\+Attempt\+:mqtt\+Wait\+On\+Reconnect\+:environment\+:()}{initWithHTTPResponseTimeout:urlSession:mqttConnectTimeout:mqttRetryAttempt:mqttWaitOnReconnect:environment:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+H\+T\+T\+P\+Response\+Timeout\+: \begin{DoxyParamCaption}\item[{(long)}]{http\+Response\+Timeout }\item[{urlSession:(N\+S\+U\+R\+L\+Session $\ast$)}]{url\+Session }\item[{mqttConnectTimeout:(long)}]{mqtt\+Connect\+Timeout }\item[{mqttRetryAttempt:(int)}]{mqtt\+Retry\+Attempt }\item[{mqttWaitOnReconnect:(long)}]{mqtt\+Wait\+On\+Reconnect }\item[{environment:(X\+I\+Environment)}]{environment }\end{DoxyParamCaption}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Response\+Timeout} & The timeout for any H\+T\+TP request in seconds. \\
+\hline
+{\em url\+Session} & The U\+RL session that is used for H\+T\+TP calls. \\
+\hline
+{\em mqtt\+Connect\+Timeout} & The timeout of the initial mqtt connection. \\
+\hline
+{\em mqtt\+Retry\+Attempt} & The number of attempts an M\+Q\+TT connection is tried to build up if it fails. \\
+\hline
+{\em mqtt\+Wait\+On\+Reconnect} & The the time spent between an M\+Q\+TT connection error and the next connection retry attempt in seconds. \\
+\hline
+{\em environment} & The environment the S\+DK connects to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An X\+I\+Session\+Config object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+Provided by category \hyperlink{category_x_i_sdk_config_07_selector_08_aeceeeb80a520f874d9793485a70bd591}{X\+I\+Sdk\+Config(\+Selector)}.
+
+\hypertarget{class_x_i_sdk_config_af8943df70be2f22a5c1937b9ec7d961b}{}\label{class_x_i_sdk_config_af8943df70be2f22a5c1937b9ec7d961b} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!version@{version}}
+\index{version@{version}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The current version of the S\+DK. 
+
+\begin{DoxyReturn}{Returns}
+The current version of the S\+DK. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_x_i_sdk_config_acf4a6e964bf34ed131bd9b3a2324a186}{}\label{class_x_i_sdk_config_acf4a6e964bf34ed131bd9b3a2324a186} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!environment@{environment}}
+\index{environment@{environment}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{environment}{environment}}
+{\footnotesize\ttfamily -\/ (X\+I\+Environment) environment\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The environment the S\+DK connects to. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+Provided by category \hyperlink{category_x_i_sdk_config_07_selector_08_acf4a6e964bf34ed131bd9b3a2324a186}{X\+I\+Sdk\+Config(\+Selector)}.
+
+\hypertarget{class_x_i_sdk_config_a721a1a7c8f44e42eb79defd955bf1d17}{}\label{class_x_i_sdk_config_a721a1a7c8f44e42eb79defd955bf1d17} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!http\+Response\+Timeout@{http\+Response\+Timeout}}
+\index{http\+Response\+Timeout@{http\+Response\+Timeout}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{http\+Response\+Timeout}{httpResponseTimeout}}
+{\footnotesize\ttfamily -\/ (long) http\+Response\+Timeout\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The timeout for any H\+T\+TP request in seconds. 
+
+It is the overall timeout for any H\+T\+TP call which applies disregarding the retry attempt count and the waiting time between them. The default value is 15s. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_a564301d822062bec6a8062f08f916661}{}\label{class_x_i_sdk_config_a564301d822062bec6a8062f08f916661} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{log\+Level}{logLevel}}
+{\footnotesize\ttfamily -\/ (X\+I\+Log\+Level) log\+Level\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Set and get the S\+DK\textquotesingle{}s log level. The default is warning level. 
+
+The default is 2s. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_abd757758fc57eeb6b4962078944675d4}{}\label{class_x_i_sdk_config_abd757758fc57eeb6b4962078944675d4} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!mqtt\+Connect\+Timeout@{mqtt\+Connect\+Timeout}}
+\index{mqtt\+Connect\+Timeout@{mqtt\+Connect\+Timeout}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{mqtt\+Connect\+Timeout}{mqttConnectTimeout}}
+{\footnotesize\ttfamily -\/ (long) mqtt\+Connect\+Timeout\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The timeout of the initial mqtt connection. 
+
+The default is 15s. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_ac8b3d3418421adc422c9cd5ce4c88582}{}\label{class_x_i_sdk_config_ac8b3d3418421adc422c9cd5ce4c88582} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!mqtt\+Retry\+Attempt@{mqtt\+Retry\+Attempt}}
+\index{mqtt\+Retry\+Attempt@{mqtt\+Retry\+Attempt}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{mqtt\+Retry\+Attempt}{mqttRetryAttempt}}
+{\footnotesize\ttfamily -\/ (int) mqtt\+Retry\+Attempt\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The number of attempts an M\+Q\+TT connection is tried to build up if it fails. 
+
+The default is 3. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_a7e1114e4fbf145f2f9e88e5e0ecbe4cd}{}\label{class_x_i_sdk_config_a7e1114e4fbf145f2f9e88e5e0ecbe4cd} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!mqtt\+Wait\+On\+Reconnect@{mqtt\+Wait\+On\+Reconnect}}
+\index{mqtt\+Wait\+On\+Reconnect@{mqtt\+Wait\+On\+Reconnect}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{mqtt\+Wait\+On\+Reconnect}{mqttWaitOnReconnect}}
+{\footnotesize\ttfamily -\/ (long) mqtt\+Wait\+On\+Reconnect\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The the time spent between an M\+Q\+TT connection error and the next connection retry attempt in seconds. 
+
+The default is 2s. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_sdk_config_a01bb2fc51f6bca0e8a5bd32281abeee7}{}\label{class_x_i_sdk_config_a01bb2fc51f6bca0e8a5bd32281abeee7} 
+\index{X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}!url\+Session@{url\+Session}}
+\index{url\+Session@{url\+Session}!X\+I\+Sdk\+Config@{X\+I\+Sdk\+Config}}
+\subsubsection{\texorpdfstring{url\+Session}{urlSession}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+R\+L\+Session$\ast$) url\+Session\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The U\+RL session that is used for H\+T\+TP calls. 
+
+The default is an url session with default configuration. \begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Config/\hyperlink{_x_i_sdk_config_8m}{X\+I\+Sdk\+Config.\+m}\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\hyperlink{_x_i_sdk_config_8h}{X\+I\+Sdk\+Config.\+h}\end{DoxyCompactItemize}

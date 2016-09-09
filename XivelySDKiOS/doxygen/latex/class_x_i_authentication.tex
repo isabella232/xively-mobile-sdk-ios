@@ -1,0 +1,167 @@
+\hypertarget{class_x_i_authentication}{}\section{X\+I\+Authentication Class Reference}
+\label{class_x_i_authentication}\index{X\+I\+Authentication@{X\+I\+Authentication}}
+
+
+This class initiates authentication towards Xively system.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Authentication.\+h$>$}
+
+Inheritance diagram for X\+I\+Authentication\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_x_i_authentication}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{class_x_i_authentication_adc69456604cafb7618c940a3b93e7616}{init}
+\begin{DoxyCompactList}\small\item\em It creates an authentication object with default configrations. \end{DoxyCompactList}\item 
+(instancetype) -\/ \hyperlink{class_x_i_authentication_ab2a3d72425cbd6ae9910016f727198c1}{init\+With\+Sdk\+Config\+:}
+\begin{DoxyCompactList}\small\item\em It creates an authentication object with the given S\+DK configurations. The S\+DK uses these configurations throughout its operations. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{class_x_i_authentication_a214a506a3c3b080ffa2684ea7b23fc41}{request\+Login\+With\+Username\+:password\+:account\+Id\+:}
+\begin{DoxyCompactList}\small\item\em Start a username/password authentication flow. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{class_x_i_authentication_a7bf5b124824916d29f13aaff466982c9}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the authentication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Authentication\+State \hyperlink{class_x_i_authentication_a59528547df840ad2a9708b9a30af4540}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the authentication. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Authentication\+Delegate $>$ \hyperlink{class_x_i_authentication_a7daae4919be8aa935e600b1ee959f70c}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the result on. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{class_x_i_authentication_a57d9e97d981ae0ba9c9bacf431989596}{error}
+\begin{DoxyCompactList}\small\item\em The error if the authentication finished with error. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_authentication_error_8h}{X\+I\+Authentication\+Error.\+h}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class initiates authentication towards Xively system. 
+
+This class executes the username/password based authentications towards Xively. It returns a \hyperlink{}{X\+I\+Session } if the authentication was successfull. 
+
+First you need to create an instance and set its delegate. Than you need to call \hyperlink{class_x_i_authentication_a214a506a3c3b080ffa2684ea7b23fc41}{X\+I\+Authentication\+::request\+Login\+With\+Username\+:password\+:account\+Id\+:}. If the parameters are correct, its result is called back on \hyperlink{}{X\+I\+Authentication\+Delegate\+::authentication\+:did\+Create\+Session\+:} or \hyperlink{}{X\+I\+Authentication\+Delegate\+::authentication\+:did\+Fail\+With\+Error\+:} whether it was a success or failure. The successfull branch return the valid \hyperlink{}{X\+I\+Session} object that can be used to proceed further. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{class_x_i_authentication_a7bf5b124824916d29f13aaff466982c9}{}\label{class_x_i_authentication_a7bf5b124824916d29f13aaff466982c9} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the authentication. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_authentication_adc69456604cafb7618c940a3b93e7616}{}\label{class_x_i_authentication_adc69456604cafb7618c940a3b93e7616} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!init@{init}}
+\index{init@{init}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily -\/ (instancetype) init \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+It creates an authentication object with default configrations. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_authentication}{X\+I\+Authentication} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_authentication_ab2a3d72425cbd6ae9910016f727198c1}{}\label{class_x_i_authentication_ab2a3d72425cbd6ae9910016f727198c1} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!init\+With\+Sdk\+Config\+:@{init\+With\+Sdk\+Config\+:}}
+\index{init\+With\+Sdk\+Config\+:@{init\+With\+Sdk\+Config\+:}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{init\+With\+Sdk\+Config\+:()}{initWithSdkConfig:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Sdk\+Config\+: \begin{DoxyParamCaption}\item[{(\hyperlink{class_x_i_sdk_config}{X\+I\+Sdk\+Config}$\ast$)}]{sdk\+Config }\end{DoxyParamCaption}}
+
+
+
+It creates an authentication object with the given S\+DK configurations. The S\+DK uses these configurations throughout its operations. 
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{class_x_i_authentication}{X\+I\+Authentication} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_authentication_a214a506a3c3b080ffa2684ea7b23fc41}{}\label{class_x_i_authentication_a214a506a3c3b080ffa2684ea7b23fc41} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!request\+Login\+With\+Username\+:password\+:account\+Id\+:@{request\+Login\+With\+Username\+:password\+:account\+Id\+:}}
+\index{request\+Login\+With\+Username\+:password\+:account\+Id\+:@{request\+Login\+With\+Username\+:password\+:account\+Id\+:}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{request\+Login\+With\+Username\+:password\+:account\+Id\+:()}{requestLoginWithUsername:password:accountId:()}}
+{\footnotesize\ttfamily -\/ (void) request\+Login\+With\+Username\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{username }\item[{password:(N\+S\+String $\ast$)}]{password }\item[{accountId:(N\+S\+String $\ast$)}]{account\+Id }\end{DoxyParamCaption}}
+
+
+
+Start a username/password authentication flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The Xively username. \\
+\hline
+{\em password} & The Xively password. \\
+\hline
+{\em account\+Id} & The Xively account ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_x_i_authentication_a7daae4919be8aa935e600b1ee959f70c}{}\label{class_x_i_authentication_a7daae4919be8aa935e600b1ee959f70c} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ X\+I\+Authentication\+Delegate $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_authentication_a57d9e97d981ae0ba9c9bacf431989596}{}\label{class_x_i_authentication_a57d9e97d981ae0ba9c9bacf431989596} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!error@{error}}
+\index{error@{error}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error $\ast$) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error if the authentication finished with error. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_authentication_error_8h}{X\+I\+Authentication\+Error.\+h}. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{class_x_i_authentication_a59528547df840ad2a9708b9a30af4540}{}\label{class_x_i_authentication_a59528547df840ad2a9708b9a30af4540} 
+\index{X\+I\+Authentication@{X\+I\+Authentication}!state@{state}}
+\index{state@{state}!X\+I\+Authentication@{X\+I\+Authentication}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Authentication\+State) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the authentication. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Authentication/\hyperlink{_x_i_authentication_8m}{X\+I\+Authentication.\+m}\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\hyperlink{_x_i_authentication_8h}{X\+I\+Authentication.\+h}\end{DoxyCompactItemize}

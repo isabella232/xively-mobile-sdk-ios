@@ -1,0 +1,82 @@
+\hypertarget{protocol_x_i_messaging_data_listener_01-p}{}\section{$<$X\+I\+Messaging\+Data\+Listener $>$ Protocol Reference}
+\label{protocol_x_i_messaging_data_listener_01-p}\index{$<$\+X\+I\+Messaging\+Data\+Listener $>$@{$<$\+X\+I\+Messaging\+Data\+Listener $>$}}
+
+
+An interface to call back on message arrivals.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Messaging\+Data\+Listener.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Messaging\+Data\+Listener $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_messaging_data_listener_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_data_listener_01-p_a1693f95f44643f3b134db2c90e03e593}{messaging\+:did\+Receive\+Data\+:on\+Channel\+:}
+\begin{DoxyCompactList}\small\item\em A message arrived on a given channel. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_data_listener_01-p_a0b4113fc83b613e4d137e642a2e1a35b}{messaging\+:did\+Send\+Data\+With\+Id\+:}
+\begin{DoxyCompactList}\small\item\em A message was successfully sent by the S\+DK user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface to call back on message arrivals. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_messaging_data_listener_01-p_a1693f95f44643f3b134db2c90e03e593}{}\label{protocol_x_i_messaging_data_listener_01-p_a1693f95f44643f3b134db2c90e03e593} 
+\index{X\+I\+Messaging\+Data\+Listener -\/p@{X\+I\+Messaging\+Data\+Listener -\/p}!messaging\+:did\+Receive\+Data\+:on\+Channel\+:@{messaging\+:did\+Receive\+Data\+:on\+Channel\+:}}
+\index{messaging\+:did\+Receive\+Data\+:on\+Channel\+:@{messaging\+:did\+Receive\+Data\+:on\+Channel\+:}!X\+I\+Messaging\+Data\+Listener -\/p@{X\+I\+Messaging\+Data\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Receive\+Data\+:on\+Channel\+:()}{messaging:didReceiveData:onChannel:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Data\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didReceiveData:(N\+S\+Data $\ast$)}]{message }\item[{onChannel:(N\+S\+String $\ast$)}]{channel }\end{DoxyParamCaption}}
+
+
+
+A message arrived on a given channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em message} & The message data that was received. \\
+\hline
+{\em channel} & The channel, the message came from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_data_listener_01-p_a0b4113fc83b613e4d137e642a2e1a35b}{}\label{protocol_x_i_messaging_data_listener_01-p_a0b4113fc83b613e4d137e642a2e1a35b} 
+\index{X\+I\+Messaging\+Data\+Listener -\/p@{X\+I\+Messaging\+Data\+Listener -\/p}!messaging\+:did\+Send\+Data\+With\+Id\+:@{messaging\+:did\+Send\+Data\+With\+Id\+:}}
+\index{messaging\+:did\+Send\+Data\+With\+Id\+:@{messaging\+:did\+Send\+Data\+With\+Id\+:}!X\+I\+Messaging\+Data\+Listener -\/p@{X\+I\+Messaging\+Data\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Send\+Data\+With\+Id\+:()}{messaging:didSendDataWithId:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Data\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didSendDataWithId:(N\+S\+Integer)}]{message\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+A message was successfully sent by the S\+DK user. 
+
+It only works for \hyperlink{}{X\+I\+Messaging\+Qo\+S\+At\+Least\+Once} and \hyperlink{}{X\+I\+Messaging\+Qo\+S\+Exactly\+Once} QoS levels. 
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em message\+Id} & The ID of the message that was successfully delivered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\hyperlink{_x_i_messaging_data_listener_8h}{X\+I\+Messaging\+Data\+Listener.\+h}\end{DoxyCompactItemize}

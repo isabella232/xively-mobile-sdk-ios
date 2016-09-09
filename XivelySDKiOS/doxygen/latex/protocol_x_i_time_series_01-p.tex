@@ -1,0 +1,126 @@
+\hypertarget{protocol_x_i_time_series_01-p}{}\section{$<$X\+I\+Time\+Series $>$ Protocol Reference}
+\label{protocol_x_i_time_series_01-p}\index{$<$\+X\+I\+Time\+Series $>$@{$<$\+X\+I\+Time\+Series $>$}}
+
+
+Interface for objects that perform time series listing.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Time\+Series.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Time\+Series $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_time_series_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_time_series_01-p_aa52c1e154fd5b74caa7a5e7c3e6ddc64}{request\+Time\+Series\+Items\+For\+Channel\+:start\+Date\+:end\+Date\+:}
+\begin{DoxyCompactList}\small\item\em Request time series data for the given channel in the given time range. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_time_series_01-p_a0835de2f42cac50f6e0da9af775047c2}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the time series listing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Time\+Series\+State \hyperlink{protocol_x_i_time_series_01-p_a069ed984107bc2fb781ca7c09629a855}{state}
+\begin{DoxyCompactList}\small\item\em The state of the ime series object. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Time\+Series\+Delegate $>$ \hyperlink{protocol_x_i_time_series_01-p_ab1a82e0bb55e940d962d8633b4609a48}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the time series result on. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_time_series_01-p_a17dae744d476350328a52d2a65e10708}{error}
+\begin{DoxyCompactList}\small\item\em The error if the time series listing finished with error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for objects that perform time series listing. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_time_series_01-p_a0835de2f42cac50f6e0da9af775047c2}{}\label{protocol_x_i_time_series_01-p_a0835de2f42cac50f6e0da9af775047c2} 
+\index{X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Time\+Series) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the time series listing. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_time_series_01-p_aa52c1e154fd5b74caa7a5e7c3e6ddc64}{}\label{protocol_x_i_time_series_01-p_aa52c1e154fd5b74caa7a5e7c3e6ddc64} 
+\index{X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}!request\+Time\+Series\+Items\+For\+Channel\+:start\+Date\+:end\+Date\+:@{request\+Time\+Series\+Items\+For\+Channel\+:start\+Date\+:end\+Date\+:}}
+\index{request\+Time\+Series\+Items\+For\+Channel\+:start\+Date\+:end\+Date\+:@{request\+Time\+Series\+Items\+For\+Channel\+:start\+Date\+:end\+Date\+:}!X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}}
+\subsubsection{\texorpdfstring{request\+Time\+Series\+Items\+For\+Channel\+:start\+Date\+:end\+Date\+:()}{requestTimeSeriesItemsForChannel:startDate:endDate:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Time\+Series) request\+Time\+Series\+Items\+For\+Channel\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{channel }\item[{startDate:(N\+S\+Date $\ast$)}]{start\+Date }\item[{endDate:(N\+S\+Date $\ast$)}]{end\+Date }\end{DoxyParamCaption}}
+
+
+
+Request time series data for the given channel in the given time range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel that the time series query is requested for. \\
+\hline
+{\em start\+Date} & The start time of the request. \\
+\hline
+{\em end\+Date} & The end time of the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_time_series_01-p_ab1a82e0bb55e940d962d8633b4609a48}{}\label{protocol_x_i_time_series_01-p_ab1a82e0bb55e940d962d8633b4609a48} 
+\index{X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Time\+Series\+Delegate$>$ X\+I\+Time\+Series) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the time series result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_time_series_01-p_a17dae744d476350328a52d2a65e10708}{}\label{protocol_x_i_time_series_01-p_a17dae744d476350328a52d2a65e10708} 
+\index{X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}!error@{error}}
+\index{error@{error}!X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+Time\+Series) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error if the time series listing finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_time_series_01-p_a069ed984107bc2fb781ca7c09629a855}{}\label{protocol_x_i_time_series_01-p_a069ed984107bc2fb781ca7c09629a855} 
+\index{X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}!state@{state}}
+\index{state@{state}!X\+I\+Time\+Series -\/p@{X\+I\+Time\+Series -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Time\+Series\+State X\+I\+Time\+Series) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The state of the ime series object. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Time\+Series/\hyperlink{_x_i_time_series_8h}{X\+I\+Time\+Series.\+h}\end{DoxyCompactItemize}

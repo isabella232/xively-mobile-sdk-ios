@@ -1,0 +1,60 @@
+//
+//  common-iOS.pch
+//  common-iOS
+//
+//  Created by gszajko on 24/06/15.
+//  Copyright (c) 2015 LogMeIn Inc. All rights reserved.
+//
+
+#ifndef common_iOS_common_iOS_pch
+#define common_iOS_common_iOS_pch
+
+#import <Foundation/Foundation.h>
+
+#import <Internals/Log/XICOLog.h>
+
+#pragma mark -
+#pragma mark Environment
+#import "XIEnvironment.h"
+
+#pragma mark -
+#pragma mark Config
+#import "XISdkConfig.h"
+#import "XIServicesConfig.h"
+
+#pragma mark -
+#pragma mark Public Authentication
+#import "XIAuthentication.h"
+
+#pragma mark -
+#pragma mark FiniteStateMachine
+#import <Internals/FSM/XICOFiniteStateMachine.h>
+
+#pragma mark -
+#pragma mark REST
+#import "XIRESTCallDelegate.h"
+#import "XIRESTCall.h"
+#import "XIRESTCallProvider.h"
+
+#pragma mark -
+#pragma mark Authentication
+#import "Authentication/XICOAuthenticating.h"
+#import "Authentication/XICOAuthentication.h"
+
+#pragma mark -
+#pragma mark Connection
+#import <Internals/Connection/XICOQOS.h>
+#import <Internals/Connection/XICOConnectionState.h>
+#import <Internals/Connection/XICOConnectionListener.h>
+#import "XICOMqttSessionFactory.h"
+#import <Internals/Connection/XICOConnecting.h>
+#import "XICOConnection.h"
+
+#pragma mark -
+#pragma mark ConnectionPool
+#import "XICOConnectionFactory.h"
+#import <Internals/ConnectionPool/XICOConnectionPoolDelegate.h>
+#import <Internals/ConnectionPool/XICOConnectionPooling.h>
+#import "XICOConnectionPool.h"
+
+#endif

@@ -1,0 +1,130 @@
+\hypertarget{protocol_x_i_messaging_subscription_listener_01-p}{}\section{$<$X\+I\+Messaging\+Subscription\+Listener $>$ Protocol Reference}
+\label{protocol_x_i_messaging_subscription_listener_01-p}\index{$<$\+X\+I\+Messaging\+Subscription\+Listener $>$@{$<$\+X\+I\+Messaging\+Subscription\+Listener $>$}}
+
+
+An interface to call back on subscription and unsubscription successes and failures.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Messaging\+Subscription\+Listener.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Messaging\+Subscription\+Listener $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_messaging_subscription_listener_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_subscription_listener_01-p_a5655baec5f028ddddc34bf3f103d5f2e}{messaging\+:did\+Subscribe\+To\+Channel\+:qos\+:}
+\begin{DoxyCompactList}\small\item\em The messaging successfully subscribed to a channel. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_subscription_listener_01-p_a34dd688644eeef160dac1f6f1b0654fa}{messaging\+:did\+Fail\+To\+Subscribe\+To\+Channel\+:error\+:}
+\begin{DoxyCompactList}\small\item\em The messaging failed to subscribe to a channel. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_subscription_listener_01-p_acaa134e9f3071ba1b7aa921583fbe6ac}{messaging\+:did\+Unsubscribe\+From\+Channel\+:}
+\begin{DoxyCompactList}\small\item\em The messaging successfully unsubscribed from a channel. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_subscription_listener_01-p_a1d3fdcd676f630f81aebc74342548311}{messaging\+:did\+Fail\+To\+Unsubscribe\+From\+Channel\+:error\+:}
+\begin{DoxyCompactList}\small\item\em The messaging successfully unsubscribed from a channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface to call back on subscription and unsubscription successes and failures. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_messaging_subscription_listener_01-p_a34dd688644eeef160dac1f6f1b0654fa}{}\label{protocol_x_i_messaging_subscription_listener_01-p_a34dd688644eeef160dac1f6f1b0654fa} 
+\index{X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}!messaging\+:did\+Fail\+To\+Subscribe\+To\+Channel\+:error\+:@{messaging\+:did\+Fail\+To\+Subscribe\+To\+Channel\+:error\+:}}
+\index{messaging\+:did\+Fail\+To\+Subscribe\+To\+Channel\+:error\+:@{messaging\+:did\+Fail\+To\+Subscribe\+To\+Channel\+:error\+:}!X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Fail\+To\+Subscribe\+To\+Channel\+:error\+:()}{messaging:didFailToSubscribeToChannel:error:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Subscription\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didFailToSubscribeToChannel:(N\+S\+String $\ast$)}]{channel }\item[{error:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The messaging failed to subscribe to a channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em channel} & The channel it tried to subscribe to. \\
+\hline
+{\em error} & The reason of the error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_subscription_listener_01-p_a1d3fdcd676f630f81aebc74342548311}{}\label{protocol_x_i_messaging_subscription_listener_01-p_a1d3fdcd676f630f81aebc74342548311} 
+\index{X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}!messaging\+:did\+Fail\+To\+Unsubscribe\+From\+Channel\+:error\+:@{messaging\+:did\+Fail\+To\+Unsubscribe\+From\+Channel\+:error\+:}}
+\index{messaging\+:did\+Fail\+To\+Unsubscribe\+From\+Channel\+:error\+:@{messaging\+:did\+Fail\+To\+Unsubscribe\+From\+Channel\+:error\+:}!X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Fail\+To\+Unsubscribe\+From\+Channel\+:error\+:()}{messaging:didFailToUnsubscribeFromChannel:error:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Subscription\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didFailToUnsubscribeFromChannel:(N\+S\+String $\ast$)}]{channel }\item[{error:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The messaging successfully unsubscribed from a channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em channel} & The channel it tried to unsubscribe from. \\
+\hline
+{\em error} & The reason of the error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_subscription_listener_01-p_a5655baec5f028ddddc34bf3f103d5f2e}{}\label{protocol_x_i_messaging_subscription_listener_01-p_a5655baec5f028ddddc34bf3f103d5f2e} 
+\index{X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}!messaging\+:did\+Subscribe\+To\+Channel\+:qos\+:@{messaging\+:did\+Subscribe\+To\+Channel\+:qos\+:}}
+\index{messaging\+:did\+Subscribe\+To\+Channel\+:qos\+:@{messaging\+:did\+Subscribe\+To\+Channel\+:qos\+:}!X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Subscribe\+To\+Channel\+:qos\+:()}{messaging:didSubscribeToChannel:qos:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Subscription\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didSubscribeToChannel:(N\+S\+String $\ast$)}]{channel }\item[{qos:(X\+I\+Messaging\+QoS)}]{qos }\end{DoxyParamCaption}}
+
+
+
+The messaging successfully subscribed to a channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em channel} & The channel it subscribed to. \\
+\hline
+{\em qos} & The QoS level the server accepted to deliver messages. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_subscription_listener_01-p_acaa134e9f3071ba1b7aa921583fbe6ac}{}\label{protocol_x_i_messaging_subscription_listener_01-p_acaa134e9f3071ba1b7aa921583fbe6ac} 
+\index{X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}!messaging\+:did\+Unsubscribe\+From\+Channel\+:@{messaging\+:did\+Unsubscribe\+From\+Channel\+:}}
+\index{messaging\+:did\+Unsubscribe\+From\+Channel\+:@{messaging\+:did\+Unsubscribe\+From\+Channel\+:}!X\+I\+Messaging\+Subscription\+Listener -\/p@{X\+I\+Messaging\+Subscription\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Unsubscribe\+From\+Channel\+:()}{messaging:didUnsubscribeFromChannel:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+Subscription\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didUnsubscribeFromChannel:(N\+S\+String $\ast$)}]{channel }\end{DoxyParamCaption}}
+
+
+
+The messaging successfully unsubscribed from a channel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em channel} & The channel it unsubscribed from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\hyperlink{_x_i_messaging_subscription_listener_8h}{X\+I\+Messaging\+Subscription\+Listener.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\hypertarget{protocol_x_i_r_e_s_t_call_delegate_01-p}{}\section{$<$X\+I\+R\+E\+S\+T\+Call\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_r_e_s_t_call_delegate_01-p}\index{$<$\+X\+I\+R\+E\+S\+T\+Call\+Delegate $>$@{$<$\+X\+I\+R\+E\+S\+T\+Call\+Delegate $>$}}
+
+
+Interface for a rest call.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+R\+E\+S\+T\+Call\+Delegate.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+R\+E\+S\+T\+Call\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_r_e_s_t_call_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_r_e_s_t_call_delegate_01-p_ab47c12249ea52d9a38894ff453321a73}{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Data\+:http\+Status\+Code\+:}
+\begin{DoxyCompactList}\small\item\em The call did finish with success. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_r_e_s_t_call_delegate_01-p_ab95cc81b044092d6dc1216f923aa5b50}{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The call did fail to finish. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for a rest call. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_r_e_s_t_call_delegate_01-p_ab47c12249ea52d9a38894ff453321a73}{}\label{protocol_x_i_r_e_s_t_call_delegate_01-p_ab47c12249ea52d9a38894ff453321a73} 
+\index{X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p@{X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p}!X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Data\+:http\+Status\+Code\+:@{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Data\+:http\+Status\+Code\+:}}
+\index{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Data\+:http\+Status\+Code\+:@{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Data\+:http\+Status\+Code\+:}!X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p@{X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Data\+:http\+Status\+Code\+:()}{XIRESTCall:didFinishWithData:httpStatusCode:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+R\+E\+S\+T\+Call\+Delegate) X\+I\+R\+E\+S\+T\+Call\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+R\+E\+S\+T\+Call $>$)}]{call }\item[{didFinishWithData:(N\+S\+Data $\ast$)}]{data }\item[{httpStatusCode:(N\+S\+Integer)}]{http\+Status\+Code }\end{DoxyParamCaption}}
+
+
+
+The call did finish with success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call} & The call that finished. \\
+\hline
+{\em data} & The received data. \\
+\hline
+{\em http\+Status\+Code} & The http status code of response. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_r_e_s_t_call_delegate_01-p_ab95cc81b044092d6dc1216f923aa5b50}{}\label{protocol_x_i_r_e_s_t_call_delegate_01-p_ab95cc81b044092d6dc1216f923aa5b50} 
+\index{X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p@{X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p}!X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Error\+:@{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Error\+:}}
+\index{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Error\+:@{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Error\+:}!X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p@{X\+I\+R\+E\+S\+T\+Call\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{X\+I\+R\+E\+S\+T\+Call\+:did\+Finish\+With\+Error\+:()}{XIRESTCall:didFinishWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+R\+E\+S\+T\+Call\+Delegate) X\+I\+R\+E\+S\+T\+Call\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+R\+E\+S\+T\+Call $>$)}]{call }\item[{didFinishWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The call did fail to finish. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em call} & The call that finished. \\
+\hline
+{\em error} & The received error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+R\+E\+S\+T\+Call/X\+I\+R\+E\+S\+T\+Call\+Delegate.\+h\end{DoxyCompactItemize}

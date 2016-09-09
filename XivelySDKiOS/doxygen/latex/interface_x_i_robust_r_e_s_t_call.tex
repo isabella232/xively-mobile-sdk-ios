@@ -1,0 +1,130 @@
+\hypertarget{interface_x_i_robust_r_e_s_t_call}{}\section{X\+I\+Robust\+R\+E\+S\+T\+Call Class Reference}
+\label{interface_x_i_robust_r_e_s_t_call}\index{X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}}
+
+
+A robust rec call that has the \hyperlink{class_x_i_r_e_s_t_call-p}{X\+I\+R\+E\+S\+T\+Call} interface. It tries to reconnect if there was an error.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Robust\+R\+E\+S\+T\+Call.\+h$>$}
+
+Inheritance diagram for X\+I\+Robust\+R\+E\+S\+T\+Call\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.879195cm]{interface_x_i_robust_r_e_s_t_call}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_x_i_robust_r_e_s_t_call_af138b45a25978ef766bd3fe602cbffec}{init\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:}
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_x_i_robust_r_e_s_t_call_a1ef8d367191235dd2e223d281cf6570b}{rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:}
+\begin{DoxyCompactList}\small\item\em The static constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Integer \hyperlink{interface_x_i_robust_r_e_s_t_call_a171520ea20c4754022319faa183c9a1c}{maximum\+Retry\+Count}
+\begin{DoxyCompactList}\small\item\em The request retry count. \end{DoxyCompactList}\item 
+N\+S\+Integer \hyperlink{interface_x_i_robust_r_e_s_t_call_aaf805da47865acca300f8fd2e6823d61}{retry\+Wait\+Time}
+\begin{DoxyCompactList}\small\item\em The time spent between failed requests and next tries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A robust rec call that has the \hyperlink{class_x_i_r_e_s_t_call-p}{X\+I\+R\+E\+S\+T\+Call} interface. It tries to reconnect if there was an error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_x_i_robust_r_e_s_t_call_af138b45a25978ef766bd3fe602cbffec}{}\label{interface_x_i_robust_r_e_s_t_call_af138b45a25978ef766bd3fe602cbffec} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}!init\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:@{init\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:}}
+\index{init\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:@{init\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:}!X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}}
+\subsubsection{\texorpdfstring{init\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:()}{initWithSimpleCallProvider:timerProvider:config:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Simple\+Call\+Provider\+: \begin{DoxyParamCaption}\item[{(id$<$\hyperlink{protocol_x_i_robust_r_e_s_t_call_simple_call_provider-p}{X\+I\+Robust\+R\+E\+S\+T\+Call\+Simple\+Call\+Provider}$>$)}]{simple\+Call\+Provider }\item[{timerProvider:(id$<$X\+I\+Timer\+Provider$>$)}]{timer\+Provider }\item[{config:(\hyperlink{class_x_i_sdk_config}{X\+I\+Sdk\+Config} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simple\+Call\+Provider} & The provider for individual R\+E\+ST calls. \\
+\hline
+{\em timer\+Provider} & The timeout timer provider. \\
+\hline
+{\em config} & The config for the internal execution of the S\+DK. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_robust_r_e_s_t_call}{X\+I\+Robust\+R\+E\+S\+T\+Call} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_robust_r_e_s_t_call_a1ef8d367191235dd2e223d281cf6570b}{}\label{interface_x_i_robust_r_e_s_t_call_a1ef8d367191235dd2e223d281cf6570b} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}!rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:@{rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:}}
+\index{rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:@{rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:}!X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}}
+\subsubsection{\texorpdfstring{rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+:timer\+Provider\+:config\+:()}{restCallInternalWithSimpleCallProvider:timerProvider:config:()}}
+{\footnotesize\ttfamily + (instancetype) rest\+Call\+Internal\+With\+Simple\+Call\+Provider\+: \begin{DoxyParamCaption}\item[{(id$<$\hyperlink{protocol_x_i_robust_r_e_s_t_call_simple_call_provider-p}{X\+I\+Robust\+R\+E\+S\+T\+Call\+Simple\+Call\+Provider}$>$)}]{simple\+Call\+Provider }\item[{timerProvider:(id$<$X\+I\+Timer\+Provider$>$)}]{timer\+Provider }\item[{config:(\hyperlink{class_x_i_sdk_config}{X\+I\+Sdk\+Config} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+
+
+The static constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simple\+Call\+Provider} & The provider for individual R\+E\+ST calls. \\
+\hline
+{\em timer\+Provider} & The timeout timer provider. \\
+\hline
+{\em config} & The config for the internal execution of the S\+DK. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_robust_r_e_s_t_call}{X\+I\+Robust\+R\+E\+S\+T\+Call} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_x_i_robust_r_e_s_t_call_a171520ea20c4754022319faa183c9a1c}{}\label{interface_x_i_robust_r_e_s_t_call_a171520ea20c4754022319faa183c9a1c} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}!maximum\+Retry\+Count@{maximum\+Retry\+Count}}
+\index{maximum\+Retry\+Count@{maximum\+Retry\+Count}!X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}}
+\subsubsection{\texorpdfstring{maximum\+Retry\+Count}{maximumRetryCount}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) maximum\+Retry\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The request retry count. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_robust_r_e_s_t_call_aaf805da47865acca300f8fd2e6823d61}{}\label{interface_x_i_robust_r_e_s_t_call_aaf805da47865acca300f8fd2e6823d61} 
+\index{X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}!retry\+Wait\+Time@{retry\+Wait\+Time}}
+\index{retry\+Wait\+Time@{retry\+Wait\+Time}!X\+I\+Robust\+R\+E\+S\+T\+Call@{X\+I\+Robust\+R\+E\+S\+T\+Call}}
+\subsubsection{\texorpdfstring{retry\+Wait\+Time}{retryWaitTime}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) retry\+Wait\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The time spent between failed requests and next tries. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+R\+E\+S\+T\+Call/X\+I\+Robust\+R\+E\+S\+T\+Call.\+h\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+R\+E\+S\+T\+Call/X\+I\+Robust\+R\+E\+S\+T\+Call.\+m\end{DoxyCompactItemize}

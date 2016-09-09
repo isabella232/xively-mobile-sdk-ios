@@ -1,0 +1,80 @@
+\hypertarget{protocol_x_i_authentication_delegate_01-p}{}\section{$<$X\+I\+Authentication\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_authentication_delegate_01-p}\index{$<$\+X\+I\+Authentication\+Delegate $>$@{$<$\+X\+I\+Authentication\+Delegate $>$}}
+
+
+The protocol that is used to call \hyperlink{class_x_i_authentication}{X\+I\+Authentication} results on.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Authentication.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Authentication\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_authentication_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_authentication_delegate_01-p_a926311c03672c51b3a58e8590bc74c14}{authentication\+:did\+Fail\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The authentication did end with an error. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_authentication_delegate_01-p_a4f0b8feb3b461d717acc0fc627f1d04d}{authentication\+:did\+Create\+Session\+:}
+\begin{DoxyCompactList}\small\item\em The request is finished successfully, and returns a valid \hyperlink{}{X\+I\+Session } object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The protocol that is used to call \hyperlink{class_x_i_authentication}{X\+I\+Authentication} results on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_authentication_delegate_01-p_a4f0b8feb3b461d717acc0fc627f1d04d}{}\label{protocol_x_i_authentication_delegate_01-p_a4f0b8feb3b461d717acc0fc627f1d04d} 
+\index{X\+I\+Authentication\+Delegate -\/p@{X\+I\+Authentication\+Delegate -\/p}!authentication\+:did\+Create\+Session\+:@{authentication\+:did\+Create\+Session\+:}}
+\index{authentication\+:did\+Create\+Session\+:@{authentication\+:did\+Create\+Session\+:}!X\+I\+Authentication\+Delegate -\/p@{X\+I\+Authentication\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{authentication\+:did\+Create\+Session\+:()}{authentication:didCreateSession:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Authentication\+Delegate) authentication\+: \begin{DoxyParamCaption}\item[{(\hyperlink{class_x_i_authentication}{X\+I\+Authentication} $\ast$)}]{authentication }\item[{didCreateSession:(id$<$ X\+I\+Session $>$)}]{session }\end{DoxyParamCaption}}
+
+
+
+The request is finished successfully, and returns a valid \hyperlink{}{X\+I\+Session } object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em authentication} & The authentication instance that initiates the callback. \\
+\hline
+{\em session} & The session that is created by the authentication. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_authentication_delegate_01-p_a926311c03672c51b3a58e8590bc74c14}{}\label{protocol_x_i_authentication_delegate_01-p_a926311c03672c51b3a58e8590bc74c14} 
+\index{X\+I\+Authentication\+Delegate -\/p@{X\+I\+Authentication\+Delegate -\/p}!authentication\+:did\+Fail\+With\+Error\+:@{authentication\+:did\+Fail\+With\+Error\+:}}
+\index{authentication\+:did\+Fail\+With\+Error\+:@{authentication\+:did\+Fail\+With\+Error\+:}!X\+I\+Authentication\+Delegate -\/p@{X\+I\+Authentication\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{authentication\+:did\+Fail\+With\+Error\+:()}{authentication:didFailWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Authentication\+Delegate) authentication\+: \begin{DoxyParamCaption}\item[{(\hyperlink{class_x_i_authentication}{X\+I\+Authentication} $\ast$)}]{authentication }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The authentication did end with an error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em authentication} & The authentication instance that initiates the callback. \\
+\hline
+{\em error} & The reason of the error. The possible reasons are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_authentication_error_8h}{X\+I\+Authentication\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\hyperlink{_x_i_authentication_8h}{X\+I\+Authentication.\+h}\end{DoxyCompactItemize}

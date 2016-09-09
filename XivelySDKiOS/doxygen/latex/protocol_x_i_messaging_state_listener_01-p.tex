@@ -1,0 +1,80 @@
+\hypertarget{protocol_x_i_messaging_state_listener_01-p}{}\section{$<$X\+I\+Messaging\+State\+Listener $>$ Protocol Reference}
+\label{protocol_x_i_messaging_state_listener_01-p}\index{$<$\+X\+I\+Messaging\+State\+Listener $>$@{$<$\+X\+I\+Messaging\+State\+Listener $>$}}
+
+
+An interface to call back on messaging state changes.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Messaging\+State\+Listener.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Messaging\+State\+Listener $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_messaging_state_listener_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_state_listener_01-p_a9eb7b05e86af332ad9ce6b78f6ffdc46}{messaging\+:did\+Change\+State\+To\+:}
+\begin{DoxyCompactList}\small\item\em The current state of the messaging changed. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_messaging_state_listener_01-p_af095a64858599a26d65e266346acbbae}{messaging\+:will\+End\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The messaging connection is being ended by an error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface to call back on messaging state changes. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_messaging_state_listener_01-p_a9eb7b05e86af332ad9ce6b78f6ffdc46}{}\label{protocol_x_i_messaging_state_listener_01-p_a9eb7b05e86af332ad9ce6b78f6ffdc46} 
+\index{X\+I\+Messaging\+State\+Listener -\/p@{X\+I\+Messaging\+State\+Listener -\/p}!messaging\+:did\+Change\+State\+To\+:@{messaging\+:did\+Change\+State\+To\+:}}
+\index{messaging\+:did\+Change\+State\+To\+:@{messaging\+:did\+Change\+State\+To\+:}!X\+I\+Messaging\+State\+Listener -\/p@{X\+I\+Messaging\+State\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:did\+Change\+State\+To\+:()}{messaging:didChangeStateTo:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+State\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{didChangeStateTo:(X\+I\+Messaging\+State)}]{state }\end{DoxyParamCaption}}
+
+
+
+The current state of the messaging changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em state} & The new state of the messaging. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_messaging_state_listener_01-p_af095a64858599a26d65e266346acbbae}{}\label{protocol_x_i_messaging_state_listener_01-p_af095a64858599a26d65e266346acbbae} 
+\index{X\+I\+Messaging\+State\+Listener -\/p@{X\+I\+Messaging\+State\+Listener -\/p}!messaging\+:will\+End\+With\+Error\+:@{messaging\+:will\+End\+With\+Error\+:}}
+\index{messaging\+:will\+End\+With\+Error\+:@{messaging\+:will\+End\+With\+Error\+:}!X\+I\+Messaging\+State\+Listener -\/p@{X\+I\+Messaging\+State\+Listener -\/p}}
+\subsubsection{\texorpdfstring{messaging\+:will\+End\+With\+Error\+:()}{messaging:willEndWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Messaging\+State\+Listener) messaging\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+Messaging $>$)}]{messaging }\item[{willEndWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The messaging connection is being ended by an error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em messaging} & The messaging originating the call. \\
+\hline
+{\em error} & The arror that causes the connection end. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h} and \hyperlink{_x_i_messaging_error_8h}{X\+I\+Messaging\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Messaging/\hyperlink{_x_i_messaging_state_listener_8h}{X\+I\+Messaging\+State\+Listener.\+h}\end{DoxyCompactItemize}

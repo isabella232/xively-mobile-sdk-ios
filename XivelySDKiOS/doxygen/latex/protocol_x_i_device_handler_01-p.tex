@@ -1,0 +1,132 @@
+\hypertarget{protocol_x_i_device_handler_01-p}{}\section{$<$X\+I\+Device\+Handler $>$ Protocol Reference}
+\label{protocol_x_i_device_handler_01-p}\index{$<$\+X\+I\+Device\+Handler $>$@{$<$\+X\+I\+Device\+Handler $>$}}
+
+
+Interface for objects that list IoT device info containers that are accessible for the end user.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Device\+Handler.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Device\+Handler $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_device_handler_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_device_handler_01-p_a03714ca27ff2c98b10bfec118c4a0ee7}{request\+Device\+:}
+\begin{DoxyCompactList}\small\item\em Request the IoT device identified by device\+Id asynchronously. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_device_handler_01-p_aef8e4bb0c2696266b8172f8d10743bd0}{put\+Device\+:}
+\begin{DoxyCompactList}\small\item\em Updates the properties for a device. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_device_handler_01-p_ae7df43032c98224e1a8213f0066cfc3d}{cancel}
+\begin{DoxyCompactList}\small\item\em Cancel the listing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Device\+Handler\+State \hyperlink{protocol_x_i_device_handler_01-p_a9dcd7f0b3c074a7d3b0e7d63fc044fdb}{state}
+\begin{DoxyCompactList}\small\item\em The state of the listing object. \end{DoxyCompactList}\item 
+id$<$ X\+I\+Device\+Handler\+Delegate $>$ \hyperlink{protocol_x_i_device_handler_01-p_a09843895faf6f80b9da3688fcfc06feb}{delegate}
+\begin{DoxyCompactList}\small\item\em The delegate to call back the listing result on. \end{DoxyCompactList}\item 
+N\+S\+Error $\ast$ \hyperlink{protocol_x_i_device_handler_01-p_af962d7c523a442dfcb6cca4c0ac5672b}{error}
+\begin{DoxyCompactList}\small\item\em The error if the listing finished with error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for objects that list IoT device info containers that are accessible for the end user. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_device_handler_01-p_ae7df43032c98224e1a8213f0066cfc3d}{}\label{protocol_x_i_device_handler_01-p_ae7df43032c98224e1a8213f0066cfc3d} 
+\index{X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Handler) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Cancel the listing. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_handler_01-p_aef8e4bb0c2696266b8172f8d10743bd0}{}\label{protocol_x_i_device_handler_01-p_aef8e4bb0c2696266b8172f8d10743bd0} 
+\index{X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}!put\+Device\+:@{put\+Device\+:}}
+\index{put\+Device\+:@{put\+Device\+:}!X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}}
+\subsubsection{\texorpdfstring{put\+Device\+:()}{putDevice:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Handler) put\+Device\+: \begin{DoxyParamCaption}\item[{(\hyperlink{class_x_i_device_info}{X\+I\+Device\+Info} $\ast$)}]{device\+Info }\end{DoxyParamCaption}}
+
+
+
+Updates the properties for a device. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_handler_01-p_a03714ca27ff2c98b10bfec118c4a0ee7}{}\label{protocol_x_i_device_handler_01-p_a03714ca27ff2c98b10bfec118c4a0ee7} 
+\index{X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}!request\+Device\+:@{request\+Device\+:}}
+\index{request\+Device\+:@{request\+Device\+:}!X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}}
+\subsubsection{\texorpdfstring{request\+Device\+:()}{requestDevice:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Device\+Handler) request\+Device\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+
+
+Request the IoT device identified by device\+Id asynchronously. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_device_handler_01-p_a09843895faf6f80b9da3688fcfc06feb}{}\label{protocol_x_i_device_handler_01-p_a09843895faf6f80b9da3688fcfc06feb} 
+\index{X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}!delegate@{delegate}}
+\index{delegate@{delegate}!X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Device\+Handler\+Delegate$>$ X\+I\+Device\+Handler) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The delegate to call back the listing result on. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_handler_01-p_af962d7c523a442dfcb6cca4c0ac5672b}{}\label{protocol_x_i_device_handler_01-p_af962d7c523a442dfcb6cca4c0ac5672b} 
+\index{X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}!error@{error}}
+\index{error@{error}!X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (N\+S\+Error$\ast$ X\+I\+Device\+Handler) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error if the listing finished with error. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_device_handler_01-p_a9dcd7f0b3c074a7d3b0e7d63fc044fdb}{}\label{protocol_x_i_device_handler_01-p_a9dcd7f0b3c074a7d3b0e7d63fc044fdb} 
+\index{X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}!state@{state}}
+\index{state@{state}!X\+I\+Device\+Handler -\/p@{X\+I\+Device\+Handler -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Device\+Handler\+State X\+I\+Device\+Handler) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The state of the listing object. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+Device\+Info/\hyperlink{_x_i_device_handler_8h}{X\+I\+Device\+Handler.\+h}\end{DoxyCompactItemize}

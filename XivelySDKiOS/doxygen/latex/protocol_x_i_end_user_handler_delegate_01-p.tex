@@ -1,0 +1,80 @@
+\hypertarget{protocol_x_i_end_user_handler_delegate_01-p}{}\section{$<$X\+I\+End\+User\+Handler\+Delegate $>$ Protocol Reference}
+\label{protocol_x_i_end_user_handler_delegate_01-p}\index{$<$\+X\+I\+End\+User\+Handler\+Delegate $>$@{$<$\+X\+I\+End\+User\+Handler\+Delegate $>$}}
+
+
+The delegate for device info listing.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+End\+User\+Handler.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+End\+User\+Handler\+Delegate $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_end_user_handler_delegate_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_end_user_handler_delegate_01-p_a0c55fb34803563aa252942903d6216b6}{end\+User\+Handler\+:did\+Receive\+End\+User\+Info\+:}
+\begin{DoxyCompactList}\small\item\em The End\+User info query finished with success. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_end_user_handler_delegate_01-p_aeb6d8cfc627717ab2d408c5f7fb84450}{end\+User\+Handler\+:did\+Fail\+With\+Error\+:}
+\begin{DoxyCompactList}\small\item\em The association finished with an error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The delegate for device info listing. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_end_user_handler_delegate_01-p_aeb6d8cfc627717ab2d408c5f7fb84450}{}\label{protocol_x_i_end_user_handler_delegate_01-p_aeb6d8cfc627717ab2d408c5f7fb84450} 
+\index{X\+I\+End\+User\+Handler\+Delegate -\/p@{X\+I\+End\+User\+Handler\+Delegate -\/p}!end\+User\+Handler\+:did\+Fail\+With\+Error\+:@{end\+User\+Handler\+:did\+Fail\+With\+Error\+:}}
+\index{end\+User\+Handler\+:did\+Fail\+With\+Error\+:@{end\+User\+Handler\+:did\+Fail\+With\+Error\+:}!X\+I\+End\+User\+Handler\+Delegate -\/p@{X\+I\+End\+User\+Handler\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{end\+User\+Handler\+:did\+Fail\+With\+Error\+:()}{endUserHandler:didFailWithError:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+End\+User\+Handler\+Delegate) end\+User\+Handler\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+End\+User\+Handler $>$)}]{end\+User\+Handler }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}}
+
+
+
+The association finished with an error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em End\+User\+Handler} & The \hyperlink{class_x_i_end_user_handler-p}{X\+I\+End\+User\+Handler} instance that initiates the callback. \\
+\hline
+{\em error} & The reason of the error. The possible error codes are defined in \hyperlink{_x_i_common_error_8h}{X\+I\+Common\+Error.\+h}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_end_user_handler_delegate_01-p_a0c55fb34803563aa252942903d6216b6}{}\label{protocol_x_i_end_user_handler_delegate_01-p_a0c55fb34803563aa252942903d6216b6} 
+\index{X\+I\+End\+User\+Handler\+Delegate -\/p@{X\+I\+End\+User\+Handler\+Delegate -\/p}!end\+User\+Handler\+:did\+Receive\+End\+User\+Info\+:@{end\+User\+Handler\+:did\+Receive\+End\+User\+Info\+:}}
+\index{end\+User\+Handler\+:did\+Receive\+End\+User\+Info\+:@{end\+User\+Handler\+:did\+Receive\+End\+User\+Info\+:}!X\+I\+End\+User\+Handler\+Delegate -\/p@{X\+I\+End\+User\+Handler\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{end\+User\+Handler\+:did\+Receive\+End\+User\+Info\+:()}{endUserHandler:didReceiveEndUserInfo:()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+End\+User\+Handler\+Delegate) end\+User\+Handler\+: \begin{DoxyParamCaption}\item[{(id$<$ X\+I\+End\+User\+Handler $>$)}]{end\+User\+Handler }\item[{didReceiveEndUserInfo:(\hyperlink{class_x_i_end_user_info}{X\+I\+End\+User\+Info} $\ast$)}]{end\+User\+Info }\end{DoxyParamCaption}}
+
+
+
+The End\+User info query finished with success. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em End\+User\+Handler} & The End\+User\+Handler instance that initiates the callback. \\
+\hline
+{\em End\+User\+Info} & The End\+User info object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\+End\+User\+Info/X\+I\+End\+User\+Handler.\+h\end{DoxyCompactItemize}

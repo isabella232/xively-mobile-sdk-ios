@@ -1,0 +1,147 @@
+\hypertarget{protocol_x_i_session_01-p}{}\section{$<$X\+I\+Session $>$ Protocol Reference}
+\label{protocol_x_i_session_01-p}\index{$<$\+X\+I\+Session $>$@{$<$\+X\+I\+Session $>$}}
+
+
+The interface of a Xively session.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Session.\+h$>$}
+
+Inheritance diagram for $<$X\+I\+Session $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_x_i_session_01-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_x_i_session_01-p_a8f423fa580b199179874b97c65486ae8}{close}
+\begin{DoxyCompactList}\small\item\em Close the currently running session. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_session_01-p_ac2e106468605a7b34c07a5a156c13f34}{suspend}
+\begin{DoxyCompactList}\small\item\em Suspend the current session. It needs to be called when the application goes to background. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_session_01-p_a9808406f72e19472b687769dc01886c3}{resume}
+\begin{DoxyCompactList}\small\item\em Resumes the current session. It needs to be called when the application comes back to foreground. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{protocol_x_i_session_01-p_a614f196c8dc33e050e0635bfafbfee4d}{logout}
+\begin{DoxyCompactList}\small\item\em Log out the user. It is not supported now. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+X\+I\+Session\+State \hyperlink{protocol_x_i_session_01-p_a2bf3bb210d784bc62f51b321487d237a}{state}
+\begin{DoxyCompactList}\small\item\em The current state of the session. \end{DoxyCompactList}\item 
+B\+O\+OL \hyperlink{protocol_x_i_session_01-p_ac0fba6335bebf860a1bc5ba90d972944}{suspended}
+\begin{DoxyCompactList}\small\item\em The operation is suspended. \end{DoxyCompactList}\item 
+\hyperlink{interface_x_i_session_services}{X\+I\+Session\+Services} $\ast$ \hyperlink{protocol_x_i_session_01-p_ab01a51f9111d2b2a172d2993e3cdaf55}{services}
+\begin{DoxyCompactList}\small\item\em The services creator object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface of a Xively session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_x_i_session_01-p_a8f423fa580b199179874b97c65486ae8}{}\label{protocol_x_i_session_01-p_a8f423fa580b199179874b97c65486ae8} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!close@{close}}
+\index{close@{close}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Session) close \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Close the currently running session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_session_01-p_a614f196c8dc33e050e0635bfafbfee4d}{}\label{protocol_x_i_session_01-p_a614f196c8dc33e050e0635bfafbfee4d} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!logout@{logout}}
+\index{logout@{logout}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Session) logout \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Log out the user. It is not supported now. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_session_01-p_a9808406f72e19472b687769dc01886c3}{}\label{protocol_x_i_session_01-p_a9808406f72e19472b687769dc01886c3} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!resume@{resume}}
+\index{resume@{resume}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Session) resume \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Resumes the current session. It needs to be called when the application comes back to foreground. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_session_01-p_ac2e106468605a7b34c07a5a156c13f34}{}\label{protocol_x_i_session_01-p_ac2e106468605a7b34c07a5a156c13f34} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!suspend@{suspend}}
+\index{suspend@{suspend}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{suspend()}{suspend()}}
+{\footnotesize\ttfamily -\/ (void X\+I\+Session) suspend \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Suspend the current session. It needs to be called when the application goes to background. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{protocol_x_i_session_01-p_ab01a51f9111d2b2a172d2993e3cdaf55}{}\label{protocol_x_i_session_01-p_ab01a51f9111d2b2a172d2993e3cdaf55} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!services@{services}}
+\index{services@{services}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{services}{services}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_session_services}{X\+I\+Session\+Services}$\ast$ X\+I\+Session) services\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The services creator object. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_session_01-p_a2bf3bb210d784bc62f51b321487d237a}{}\label{protocol_x_i_session_01-p_a2bf3bb210d784bc62f51b321487d237a} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!state@{state}}
+\index{state@{state}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (X\+I\+Session\+State X\+I\+Session) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The current state of the session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{protocol_x_i_session_01-p_ac0fba6335bebf860a1bc5ba90d972944}{}\label{protocol_x_i_session_01-p_ac0fba6335bebf860a1bc5ba90d972944} 
+\index{X\+I\+Session -\/p@{X\+I\+Session -\/p}!suspended@{suspended}}
+\index{suspended@{suspended}!X\+I\+Session -\/p@{X\+I\+Session -\/p}}
+\subsubsection{\texorpdfstring{suspended}{suspended}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL X\+I\+Session) suspended\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The operation is suspended. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Public Headers/\+Xively\+S\+D\+K/\hyperlink{_x_i_session_8h}{X\+I\+Session.\+h}\end{DoxyCompactItemize}

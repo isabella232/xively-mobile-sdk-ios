@@ -1,0 +1,242 @@
+\hypertarget{interface_x_i_session_internal}{}\section{X\+I\+Session\+Internal Class Reference}
+\label{interface_x_i_session_internal}\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+
+
+The implementation of an xively session.  
+
+
+
+
+{\ttfamily \#import $<$X\+I\+Session\+Internal.\+h$>$}
+
+Inheritance diagram for X\+I\+Session\+Internal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_x_i_session_internal}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_x_i_session_internal_aecd47a945b3c947b44952fceb6272386}{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:}
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+(instancetype) -\/ \hyperlink{interface_x_i_session_internal_a1d6df5dc95c8bde9c2b6d9a4e2a8608e}{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:connection\+Pool\+:notifications\+:}
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_x_i_session_internal_ad39662246a3026dd1e2367540ba26dfa}{session\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:}
+\begin{DoxyCompactList}\small\item\em The static constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ X\+I\+Session $>$ \hyperlink{interface_x_i_session_internal_a8972d65fd7b30480733460a154556c4c}{delegate\+Caller}
+\begin{DoxyCompactList}\small\item\em The object the delegate is called back in on behalf. \end{DoxyCompactList}\item 
+id$<$ X\+I\+C\+O\+Connection\+Pooling $>$ \hyperlink{interface_x_i_session_internal_a3b9fd1842cfb168e8f8a503cf51226d6}{connection\+Pool}
+\begin{DoxyCompactList}\small\item\em The pool for creating M\+Q\+TT connections. \end{DoxyCompactList}\item 
+\hyperlink{class_x_i_access}{X\+I\+Access} $\ast$ \hyperlink{interface_x_i_session_internal_a1384b720dcd2a0c74d7f614a9ba041f9}{access}
+\begin{DoxyCompactList}\small\item\em The access object with the credentials. \end{DoxyCompactList}\item 
+\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config} $\ast$ \hyperlink{interface_x_i_session_internal_ad51887fa9c72b74e05a63e71619d9cb0}{services\+Config}
+\begin{DoxyCompactList}\small\item\em The services config object with S\+DK properties. \end{DoxyCompactList}\item 
+id$<$ \hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging} $>$ \hyperlink{interface_x_i_session_internal_a952ede1c227c8e4b04db8daf7fbe1193}{log}
+\begin{DoxyCompactList}\small\item\em The logger. \end{DoxyCompactList}\item 
+id$<$ X\+I\+R\+E\+S\+T\+Call\+Provider $>$ \hyperlink{interface_x_i_session_internal_a7df5c2d8d7c730b7e6230e195ef23327}{rest\+Call\+Provider}
+\begin{DoxyCompactList}\small\item\em The provider of rest calls. \end{DoxyCompactList}\item 
+\hyperlink{interface_x_i_c_o_session_notifications}{X\+I\+C\+O\+Session\+Notifications} $\ast$ \hyperlink{interface_x_i_session_internal_a523cb81fba56a180f39be09c7d5e49b1}{notifications}
+\begin{DoxyCompactList}\small\item\em The noifications center in the session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The implementation of an xively session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_x_i_session_internal_aecd47a945b3c947b44952fceb6272386}{}\label{interface_x_i_session_internal_aecd47a945b3c947b44952fceb6272386} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:@{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:}}
+\index{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:@{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:()}{initWithLogger:restCallProvider:servicesConfig:access:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Logger\+: \begin{DoxyParamCaption}\item[{(id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$)}]{logger }\item[{restCallProvider:(id$<$X\+I\+R\+E\+S\+T\+Call\+Provider$>$)}]{provider }\item[{servicesConfig:(\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config} $\ast$)}]{services\+Config }\item[{access:(\hyperlink{class_x_i_access}{X\+I\+Access} $\ast$)}]{access }\end{DoxyParamCaption}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger} & The logger. \\
+\hline
+{\em provider} & The provider of rest calls. \\
+\hline
+{\em services\+Config} & The config for the internal execution of the S\+DK. \\
+\hline
+{\em access} & The access data for the session. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_a1d6df5dc95c8bde9c2b6d9a4e2a8608e}{}\label{interface_x_i_session_internal_a1d6df5dc95c8bde9c2b6d9a4e2a8608e} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:connection\+Pool\+:notifications\+:@{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:connection\+Pool\+:notifications\+:}}
+\index{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:connection\+Pool\+:notifications\+:@{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:connection\+Pool\+:notifications\+:}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{init\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:connection\+Pool\+:notifications\+:()}{initWithLogger:restCallProvider:servicesConfig:access:connectionPool:notifications:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Logger\+: \begin{DoxyParamCaption}\item[{(id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$)}]{logger }\item[{restCallProvider:(id$<$X\+I\+R\+E\+S\+T\+Call\+Provider$>$)}]{provider }\item[{servicesConfig:(\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config} $\ast$)}]{services\+Config }\item[{access:(\hyperlink{class_x_i_access}{X\+I\+Access} $\ast$)}]{access }\item[{connectionPool:(id$<$X\+I\+C\+O\+Connection\+Pooling$>$)}]{connection\+Pool }\item[{notifications:(\hyperlink{interface_x_i_c_o_session_notifications}{X\+I\+C\+O\+Session\+Notifications} $\ast$)}]{notifications }\end{DoxyParamCaption}}
+
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger} & The logger. \\
+\hline
+{\em provider} & The provider of rest calls. \\
+\hline
+{\em services\+Config} & The config for the internal execution of the S\+DK. \\
+\hline
+{\em access} & The access data for the session. \\
+\hline
+{\em connection\+Pool} & M\+Q\+TT connection pool. \\
+\hline
+{\em notifications} & Notification center of the S\+DK. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_ad39662246a3026dd1e2367540ba26dfa}{}\label{interface_x_i_session_internal_ad39662246a3026dd1e2367540ba26dfa} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!session\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:@{session\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:}}
+\index{session\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:@{session\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{session\+With\+Logger\+:rest\+Call\+Provider\+:services\+Config\+:access\+:()}{sessionWithLogger:restCallProvider:servicesConfig:access:()}}
+{\footnotesize\ttfamily + (instancetype) session\+With\+Logger\+: \begin{DoxyParamCaption}\item[{(id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$)}]{logger }\item[{restCallProvider:(id$<$X\+I\+R\+E\+S\+T\+Call\+Provider$>$)}]{provider }\item[{servicesConfig:(\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config} $\ast$)}]{services\+Config }\item[{access:(\hyperlink{class_x_i_access}{X\+I\+Access} $\ast$)}]{access }\end{DoxyParamCaption}}
+
+
+
+The static constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger} & The logger. \\
+\hline
+{\em provider} & The provider of rest calls. \\
+\hline
+{\em services\+Config} & The config for the internal execution of the S\+DK. \\
+\hline
+{\em access} & The access data for the session. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_x_i_session_internal}{X\+I\+Session\+Internal} object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_x_i_session_internal_a1384b720dcd2a0c74d7f614a9ba041f9}{}\label{interface_x_i_session_internal_a1384b720dcd2a0c74d7f614a9ba041f9} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!access@{access}}
+\index{access@{access}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{access}{access}}
+{\footnotesize\ttfamily -\/ (\hyperlink{class_x_i_access}{X\+I\+Access}$\ast$) access\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The access object with the credentials. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_a3b9fd1842cfb168e8f8a503cf51226d6}{}\label{interface_x_i_session_internal_a3b9fd1842cfb168e8f8a503cf51226d6} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!connection\+Pool@{connection\+Pool}}
+\index{connection\+Pool@{connection\+Pool}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{connection\+Pool}{connectionPool}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+C\+O\+Connection\+Pooling$>$) connection\+Pool\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The pool for creating M\+Q\+TT connections. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_a8972d65fd7b30480733460a154556c4c}{}\label{interface_x_i_session_internal_a8972d65fd7b30480733460a154556c4c} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!delegate\+Caller@{delegate\+Caller}}
+\index{delegate\+Caller@{delegate\+Caller}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{delegate\+Caller}{delegateCaller}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+Session$>$) delegate\+Caller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The object the delegate is called back in on behalf. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_a952ede1c227c8e4b04db8daf7fbe1193}{}\label{interface_x_i_session_internal_a952ede1c227c8e4b04db8daf7fbe1193} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!log@{log}}
+\index{log@{log}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily -\/ (id$<$\hyperlink{protocol_x_i_c_o_logging-p}{X\+I\+C\+O\+Logging}$>$) log\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}
+
+
+
+The logger. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_a523cb81fba56a180f39be09c7d5e49b1}{}\label{interface_x_i_session_internal_a523cb81fba56a180f39be09c7d5e49b1} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!notifications@{notifications}}
+\index{notifications@{notifications}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{notifications}{notifications}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_c_o_session_notifications}{X\+I\+C\+O\+Session\+Notifications}$\ast$) notifications\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The noifications center in the session. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_a7df5c2d8d7c730b7e6230e195ef23327}{}\label{interface_x_i_session_internal_a7df5c2d8d7c730b7e6230e195ef23327} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!rest\+Call\+Provider@{rest\+Call\+Provider}}
+\index{rest\+Call\+Provider@{rest\+Call\+Provider}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{rest\+Call\+Provider}{restCallProvider}}
+{\footnotesize\ttfamily -\/ (id$<$X\+I\+R\+E\+S\+T\+Call\+Provider$>$) rest\+Call\+Provider\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The provider of rest calls. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+\hypertarget{interface_x_i_session_internal_ad51887fa9c72b74e05a63e71619d9cb0}{}\label{interface_x_i_session_internal_ad51887fa9c72b74e05a63e71619d9cb0} 
+\index{X\+I\+Session\+Internal@{X\+I\+Session\+Internal}!services\+Config@{services\+Config}}
+\index{services\+Config@{services\+Config}!X\+I\+Session\+Internal@{X\+I\+Session\+Internal}}
+\subsubsection{\texorpdfstring{services\+Config}{servicesConfig}}
+{\footnotesize\ttfamily -\/ (\hyperlink{interface_x_i_services_config}{X\+I\+Services\+Config}$\ast$) services\+Config\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The services config object with S\+DK properties. 
+
+\begin{DoxySince}{Since}
+Version 1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Internal Headers/\+Internals/\+Session/X\+I\+Session\+Internal.\+h\item 
+src/common-\/i\+O\+S/common-\/i\+O\+S/\+Session/X\+I\+Session\+Internal.\+m\end{DoxyCompactItemize}
