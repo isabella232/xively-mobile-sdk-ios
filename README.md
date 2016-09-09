@@ -284,7 +284,7 @@ The service can be accessed through the *deviceInfoList* API of the XiSession ob
 
 ### Graph TimeSeries Data
 Xively provides TimeSeries data storage to persist the data of specific device channels (e.g. sensor data). 
-Here is an example for how to query it then graph it using the MPAndroidChart library.
+Here is an example for how to query it.
 
 #### 1. Query Xively TimeSeries
 
