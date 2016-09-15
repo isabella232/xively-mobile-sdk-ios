@@ -19,12 +19,15 @@ This is the Xively iOS SDK. It is designed to help facilitate building an iOS ap
 	- Send a Message
 	- Receive Messages
 	- List Devices
+    - List Organizations
+    - Get End User
+    - Get Device
+    - Update End User
+    - Update Device
 	- Graph TimeSeries Data
 5. Reference Application
 	- 
 6. Troubleshooting
-	- Known Issues
-	- Common Problems
 	- Getting Help
 
 ## Introduction
@@ -281,6 +284,127 @@ The service can be accessed through the *deviceInfoList* API of the XiSession ob
     // device info list request failed with error
 }
 ```
+### List Organizations
+
+The SDK provides a service to retrieve a list of organizations accesible with your credentials and their details.
+The service can be accessed through the *XIOrganizationHandler* API of the XISession object.
+
+```objectivec
+-(void) queryOrganizationList {
+    id<XIOrganizationHandler> organizationHandler = [[self.session services] organizationHandler];
+    [organizationHandler setDelegate:self];
+    [organizationHandler listOrganizations];
+}
+
+- (void)organizationHandler:(id<XIOrganizationHandler>)organizationhandler 
+             didReceiveList:(NSArray *)organizationInfos {
+    // Process the list as required
+}
+
+- (void)organizationHandler:(id<XIOrganizationHandler>)organizationHandler 
+           didFailWithError:(NSError *)error {
+    // Handle Error
+}
+```
+
+### Get End User
+
+The SDK provides a service to retrieve one specific end user accesible with your credentials and their details.
+The service can be accessed through the *endUserHandler* API of the XISession object.
+
+```objectivec
+- (void) queryEndUser:(NSString *)endUserId {
+    id<XIEndUserHandler> endUserHandler = [[self.session services] endUserHandler];
+    [endUserHandler setDelegate:self];
+    [endUserHandler requestEndUser:endUserId];
+}
+
+- (void)endUserHandler:(id<XIEndUserHandler>)endUserHandler 
+ didReceiveEndUserInfo:(XIEndUserInfo *)endUserInfo {
+    // Handle EndUserInfo
+}
+
+- (void)endUserHandler:(id<XIEndUserHandler>)endUserHandler 
+      didFailWithError:(NSError *)error {
+    // Handle Error
+}
+```
+
+### Get Device
+
+The SDK provides a service to retrieve one specific device accesible with your credentials and their details.
+The service can be accessed through the *deviceHandler* API of the XISession object.
+
+```objectivec
+
+- (void) getDevice:(NSString*) deviceInfo {
+    id<XIDeviceHandler> deviceHandler = [[self.session services] deviceHandler];
+    [deviceHandler setDelegate:self];
+    [deviceHandler requestDevice:deviceId];
+}
+
+- (void)deviceHandler:(id<XIDeviceHandler>)deviceHandler 
+ didReceiveDeviceInfo:(XIDeviceInfo *)deviceInfo {
+    // Handle Device Info
+}
+
+- (void)deviceHandler:(id<XIDeviceHandler>)deviceHandler 
+     didFailWithError:(NSError *)error {
+    // Handle Error
+}
+```
+
+### Update End User
+
+The SDK provides a service to update one specific end user accesible with your credentials and their details.
+The service can be accessed through the *deviceHandler* API of the XISession object.
+You have to provide the XIEndUserInfo object containing the version tag of the user data retrieved by `requestEndUser`.
+
+```objectivec
+- (void)updateEndUser:(XIEndUserInfo *)endUserInfo 
+       withNewAddress:(NSString* address) {
+    id<XIEndUserHandler> endUserHandler = [[self.session services] endUserHandler];
+    [endUserHandler setDelegate:self];
+    endUserInfo.address = address;
+    [endUserHandler putEndUser:endUserInfo];
+}
+
+- (void)endUserHandler:(id<XIEndUserHandler>)endUserHandler 
+ didReceiveEndUserInfo:(XIEndUserInfo *)endUserInfo {
+    // Handle successful update
+}
+
+- (void)endUserHandler:(id<XIEndUserHandler>)endUserHandler 
+      didFailWithError:(NSError *)error {
+    // Handle Error
+}
+```
+
+### Update Device
+
+The SDK provides a service to update one specific device accesible with your credentials and their details.
+The service can be accessed through the *deviceHandler* API of the XISession object.
+You have to provide the XIDeviceInfo object containing the version tag of the device data retrieved by `requestDevice` or `requestList`.
+
+```objectivec
+- (void)updateDeviceInfo:(XIDeviceInfo *)deviceInfo 
+             withNewName:(NSString *)name {
+    id<XIDeviceHandler> deviceHandler = [[self.session services] deviceHandler];
+    [deviceHandler setDelegate:self];
+    deviceInfo.name = name;
+    [deviceHandler putDevice:deviceInfo];
+}
+
+- (void)deviceHandler:(id<XIDeviceHandler>)deviceHandler 
+ didReceiveDeviceInfo:(XIDeviceInfo *)deviceInfo {
+    // Handle successful update
+}
+
+- (void)deviceHandler:(id<XIDeviceHandler>)deviceHandler 
+     didFailWithError:(NSError *)error {
+    // Handle ERROR
+}
+```
 
 ### Graph TimeSeries Data
 Xively provides TimeSeries data storage to persist the data of specific device channels (e.g. sensor data). 
@@ -318,15 +442,5 @@ Now we can graph it.
 #### 2. Graph it
 We will use JBChartView iOS library to graph it, you can download it here: https://github.com/Jawbone/JBChartView
 
-
-##Troubleshooting
-** TODO **
-
-### Known Issues
-None.
-** TODO **
-### Common Problems
-### Getting Help
-** TODO **
-
+### Troubleshooting
 If you are still having trouble you can reach out to Xively by contacting your Sales Engineer.
