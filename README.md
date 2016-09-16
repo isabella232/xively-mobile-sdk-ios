@@ -31,34 +31,25 @@ This is the Xively iOS SDK. It is designed to help facilitate building an iOS ap
 	- Getting Help
 
 ## Introduction
-### About Xively
-** TODO **
-This documentation will refer to Xively objects such as devices, end users, channels, and more. We will do our best to explain but if you are unsure what these are, you should see the full Xively [API Documentation](http://docs.xively.com/).
-
-For further details see http:\\docs.xively.com
-### Download
-The internal release of the library can be downloaded from the following location:
-https://github.com/xively/xively-mobile-sdk-ios
-
-### Contents
-Package structure:
-
-* [src] - the source code of the library
-* [javadoc] - API documentation
-* CHANGELOG - release history
-* COPYING - Copying and redistributing legal info
-* LICENSE - License Agreement
-* README.md - project readme document
 
 ### Supported Xively Services
 The SDK currently supports using the following services:
 
- * Username/Password based authentication to Xively Identity Management(IdM) API
- * Querying the list of devices from Blueprint
- * Querying Time Series records of channels
- * Querying Organization data
- * Querying EndUser data
+ * Username/Password based authentication with Xively Identity Management(IdM) API
+ * Querying organization or organization list from Blueprint
+ * Querying device or device list from Blueprint
+ * Querying end user or end user list from Blueprint
+ * Updating end user in Blueprint
+ * Updating device in Blueprint
+ * Querying time series records of channels
  * Messaging through the publish-subscribe style (MQTT) interface
+
+### Package structure:
+
+* [XivelySDKiOS/src] - the source code of the library
+* [XivelySDKiOS/doxygen] - API documentation
+* LICENSE - License Agreement
+* README.md - project readme document
  
 ## Getting Started
 This section will help you get the Xively iOS SDK setup in your environment. It will take you through the basic installation as well as a simple example.
