@@ -49,6 +49,12 @@ typedef NS_ENUM(NSUInteger, XIDeviceInfoProvisioningState) {
 @property(nonatomic, readonly)NSString *deviceId;
 
 /**
+ * @brief The id of the IoT device.
+ * @since Version 1.0
+ */
+@property(nonatomic, readonly)NSString *organizationId;
+
+/**
  * @brief The serial number.
  * @since Version 1.0
  */

@@ -317,6 +317,8 @@
 		27B5CB011BD8DEE700A79CB1 /* XIMessagingStateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIMessagingStateListener.h; sourceTree = "<group>"; };
 		27B5CB021BD8DEE700A79CB1 /* XIMessagingSubscriptionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIMessagingSubscriptionListener.h; sourceTree = "<group>"; };
 		27B5CB031BD8DEE700A79CB1 /* XISessionServices+Messaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XISessionServices+Messaging.h"; sourceTree = "<group>"; };
+		6B607ABB1DB4CC6700C0E00C /* XIOrganizationImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XIOrganizationImports.h; path = OrganizationInfo/XIOrganizationImports.h; sourceTree = "<group>"; };
+		6B607ABC1DB4CCD900C0E00C /* XIEndUserImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XIEndUserImports.h; path = EndUserInfo/XIEndUserImports.h; sourceTree = "<group>"; };
 		F627B7D01BBEA94200A060A5 /* XICOConnecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XICOConnecting.h; sourceTree = "<group>"; };
 		F627B7D11BBEA94200A060A5 /* XICOConnectionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XICOConnectionListener.h; sourceTree = "<group>"; };
 		F627B7D21BBEA94200A060A5 /* XICOConnectionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XICOConnectionState.h; sourceTree = "<group>"; };
@@ -557,6 +559,7 @@
 				062499BD1D704596002804D8 /* XIEndUserHandler.h */,
 				062499BE1D704596002804D8 /* XIEndUserInfo.h */,
 				062499BF1D704596002804D8 /* XISessionServices+EndUserHandler.h */,
+				6B607ABC1DB4CCD900C0E00C /* XIEndUserImports.h */,
 			);
 			name = EndUserInfo;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				065E37CF1D630D87004E39B9 /* XIOrganizationInfo.h */,
 				065E37D11D6310DD004E39B9 /* XIOrganizationHandler.h */,
 				065E37D21D631CF1004E39B9 /* XISessionServices+OrganizationHandler.h */,
+				6B607ABB1DB4CC6700C0E00C /* XIOrganizationImports.h */,
 			);
 			name = OrganizationInfo;
 			sourceTree = "<group>";

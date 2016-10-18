@@ -22,6 +22,7 @@
 		_customFields = _parameters;
         
         _deviceId = ValueOrNil(@"id");
+        _organizationId = ValueOrNil(@"organizationId");
         _serialNumber = ValueOrNil(@"serialNumber");
         _deviceVersion =  ValueOrNil(@"deviceVersion");
         _deviceLocation =  ValueOrNil(@"location");
@@ -65,6 +66,7 @@
 	if ( _fieldsToUpdate != nil ) [ dictionary addEntriesFromDictionary: _fieldsToUpdate ];
     
     if (_deviceId) [dictionary setObject:_deviceId forKey:@"id"];
+    if (_organizationId) [dictionary setObject:_organizationId forKey:@"organizationId"];
     if (_serialNumber) [dictionary setObject:_serialNumber forKey:@"serialNumber"];
     if (_deviceVersion) [dictionary setObject:_deviceVersion forKey:@"deviceVersion"];
     if (_deviceLocation) [dictionary setObject:_deviceLocation forKey:@"location"];

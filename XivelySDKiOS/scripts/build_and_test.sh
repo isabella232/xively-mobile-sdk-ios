@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #Set up oclint
-export PUMPKIN_HOME=~/.pumpkin
-export OCLINT_HOME=$PUMPKIN_HOME/oclint-0.8.1-x86_64-darwin-14.0.0/oclint-0.8.1
+export LIB_DIR=$(dirname "$0")/../lib
+export OCLINT_HOME=$LIB_DIR/oclint-0.8.1-x86_64-darwin-14.0.0/oclint-0.8.1
 export PATH=$OCLINT_HOME/bin:$PATH
 
 if [ -d '/xcode_7/Xcode.app/' ]; then
@@ -22,7 +22,7 @@ fi
 
 function cleanBuildAnalyze() {
 	echo "Building $1..."
-	$XCODEBUILD -configuration Debug -workspace xem-sdk.xcworkspace -scheme $1 -sdk iphonesimulator clean build || exit 1
+	$XCODEBUILD -configuration Debug -workspace XivelySDKiOS.xcworkspace -scheme $1 -sdk iphonesimulator clean build || exit 1
 	echo "Analyzing $1 with XC analyzer..."
 	rm -rf xcodebuild.log
 	rm -rf analysis.txt
@@ -50,7 +50,7 @@ function cleanBuildAnalyze() {
 function test() {
 	echo "== $1 testing =="
 
-	$XCODEBUILD test -configuration Debug -workspace xem-sdk.xcworkspace -scheme $1 -sdk iphonesimulator -derivedDataPath derivedData 2>&1 | scripts/ocunit2junit
+	$XCODEBUILD test -configuration Debug -workspace XivelySDKiOS.xcworkspace -scheme $1 -sdk iphonesimulator -derivedDataPath derivedData 2>&1 | scripts/ocunit2junit
 	cp test-reports/* all-test-reports
 	echo "== $1 tested =="
 }
