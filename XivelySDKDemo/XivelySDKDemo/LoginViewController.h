@@ -10,6 +10,7 @@
 #import "XivelyService.h"
 
 @interface LoginViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *accountId;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;

@@ -20,14 +20,6 @@ XivelyService* staticService = nil;
 - (instancetype)init {
     self = [super init];
     if (self) {
-         ///////////////////////////////////////////////
-        //////////////XIVELY CONFIGURATION/////////////
-        self.accountId = @"ec274e02-a279-4faf-8901-ed503d80c55c";
-        self.username = @"app53810938@xively.com";
-        self.password = @"itVJd9RRVy8l/BhrJcjguXD2suNUBD5buXFGniGJ6i0=";
-        self.messagingChannel = @"awsomeMessagingChannel";
-         ///////////////////////////////////////////////
-        ///////////////////////////////////////////////
     }
     return self;
 }

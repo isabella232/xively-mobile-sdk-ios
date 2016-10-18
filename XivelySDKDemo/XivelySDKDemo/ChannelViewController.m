@@ -41,12 +41,15 @@
     return [self.channels count];
 }
 
+- (NSString*)shortTopic:(NSString*)topic {
+    return [[topic componentsSeparatedByString:@"/"] lastObject];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"channelId" forIndexPath:indexPath];
     
     XIDeviceChannel* channel = self.channels[indexPath.row];
-    cell.textLabel.text = channel.channelId;
+    cell.textLabel.text = [self shortTopic:channel.channelId];
     cell.detailTextLabel.text = channel.persistenceType == XIDeviceChannelPersistanceTypeSimple ? @"General" : @"Timeseries";
     
     return cell;
@@ -58,6 +61,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         XIDeviceChannel* channel = self.channels[indexPath.row];
         [controller setChannel:channel];
+        [controller setTitle:[self shortTopic:channel.channelId]];
     }
 }
 

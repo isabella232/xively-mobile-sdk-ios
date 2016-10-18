@@ -35,7 +35,11 @@
 */
 
 - (IBAction)loginPressed:(id)sender {
-    [[XivelyService sharedXivelyService] login: self ];
+    [[XivelyService sharedXivelyService] setAccountId:self.accountId.text];
+    [[XivelyService sharedXivelyService] setUsername:self.userName.text];
+    [[XivelyService sharedXivelyService] setPassword:self.password.text];
+    [[XivelyService sharedXivelyService] login: self];
+    
     [self.loginButton setEnabled:false];
     [self.activityIndicator startAnimating];
 }
