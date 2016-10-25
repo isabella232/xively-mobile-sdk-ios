@@ -14,7 +14,8 @@
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
-@property (strong, nonatomic) NSString *parentOrganizationId;
+@property (strong, nonatomic) NSString* parentOrganizationId;
+@property (strong, nonatomic) NSString* parentName;
 @property (strong, nonatomic) NSArray* organizations;
 @property (strong, nonatomic) NSArray* devices;
 

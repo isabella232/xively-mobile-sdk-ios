@@ -7,10 +7,9 @@
 //
 
 #import "MessageViewController.h"
-#import "XivelyService.h"
 
 @interface MessageViewController () {
-    id<XIMessaging> messaging;
+    id<XIMessaging> messagingObj;
 }
 @end
 
@@ -25,6 +24,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
++ (dispatch_queue_t)getMessagingQueue {
+    static dispatch_queue_t queue = nil;
+    if (queue == nil) {
+        queue = dispatch_queue_create("messaging.queue", NULL);
+    }
+    return queue;
 }
 
 /*
@@ -45,35 +52,45 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"View Will Appear");
-    NSLog(@"Channel name: %@", self.channel.channelId);
-    messaging = [[XivelyService sharedXivelyService] messaging];
-    [messaging addStateListener:self];
-    [messaging addDataListener:self];
-    [messaging addSubscriptionListener:self];
-    [messaging subscribeToChannel:self.channel.channelId qos:XIMessagingQoSAtMostOnce];
-    
+    [self addMessage:@"Connecting to messaging service..."];
     if (self.channel.persistenceType == XIDeviceChannelPersistanceTypeTimeSeries) {
         [self loadTimeSeriesData];
     }
-    
+    [self.sendButton setEnabled:false];
+    dispatch_async([[self class] getMessagingQueue], ^{
+        // Synchronizing messaging creation with deletions
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [[XivelyService sharedXivelyService] setDelegate:self];
+            [[XivelyService sharedXivelyService] createMessaging];
+        });
+    });
     [super viewWillAppear:animated];
 }
 
-
 - (void)viewWillDisappear:(BOOL)animated {
     NSLog(@"View Will Disappear");
-    [messaging unsubscribeFromChannel:self.channel.channelId];
-    [messaging removeStateListener:self];
-    [messaging removeDataListener:self];
-    [messaging removeSubscriptionListener:self];
+    id<XIMessaging> messaging = self.messaging;
+    dispatch_async([[self class] getMessagingQueue], ^{
+        // Synchronizing messaging creation with deletions
+        if (messaging) {
+            [messaging unsubscribeFromChannel:self.channel.channelId];
+            [messaging removeStateListener:self];
+            [messaging removeDataListener:self];
+            [messaging removeSubscriptionListener:self];
+            [messaging close];
+        }
+    });
+    [[XivelyService sharedXivelyService] setDelegate:nil];
+    self.messaging = nil;
     [super viewWillDisappear:animated];
 }
 
 - (IBAction)sendPushed:(id)sender {
-    NSLog(@"Sending message...");
     NSData* data = [self.messageInputTextField.text dataUsingEncoding:NSUTF8StringEncoding];
-    [messaging publishToChannel: self.channel.channelId message:data qos:XIMessagingQoSAtMostOnce];
+    [self.messaging publishToChannel:self.channel.channelId
+                             message:data
+                                 qos:(([self.qosSegmentedControl selectedSegmentIndex] == 0) ? XIMessagingQoSAtMostOnce : XIMessagingQoSAtLeastOnce)
+                              retain:self.retainSwitch.on];
     self.messageInputTextField.text = @"";
 }
 
@@ -97,7 +114,6 @@
         case XIMessagingStateDisconnecting: [self addMessage:@"Messaging disconnecting"]; break;
         case XIMessagingStateClosed:        [self addMessage:@"Messaging closed"]; break;
         case XIMessagingStateError:         [self addMessage:@"Messaging error"]; break;
-
     }
 }
 
@@ -124,7 +140,10 @@
 {
     if ([channel isEqualToString:self.channel.channelId]) {
         NSString* messageString = [[NSString alloc] initWithData:message encoding:NSUTF8StringEncoding];
-        [self addMessage:[NSString stringWithFormat:@"A message arrived: %@", messageString]];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateStyle:NSDateFormatterLongStyle];
+        [dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+        [self addMessage:[NSString stringWithFormat:@"%@: %@", [dateFormatter stringFromDate:[NSDate date]], messageString]];
     }
 }
 
@@ -200,10 +219,15 @@
 {
     [self addMessage:[NSString stringWithFormat:@"Received %ld timeseries item...", [timeSeriesItems count]]];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setDateStyle:NSDateFormatterLongStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterLongStyle];
     for (XITimeSeriesItem* item in timeSeriesItems) {
-        [self addMessage:[NSString stringWithFormat:@"%@; %@; %@; %@", [dateFormatter stringFromDate:item.time],
-                          item.category, item.stringValue, item.numericValue]];
+        NSString* valuesString = [NSString stringWithFormat:@"%@: %@ / %@ / %@",
+                                  [dateFormatter stringFromDate:item.time],
+                                  (item.category) ? item.category : @"",
+                                  (item.stringValue) ? item.stringValue : @"",
+                                  (item.numericValue) ? [item.numericValue stringValue] : @""];
+        [self addMessage:valuesString];
     }
 }
 
@@ -218,5 +242,24 @@
     [self addMessage:[NSString stringWithFormat:@"TimeSeries error occured: %@", [error localizedDescription]]];
 }
 
+
+#pragma mark Messaging
+- (void)xivelyService:(XivelyService*)xivelyService createdMessaging:(id<XIMessaging>)messaging
+{
+    [self addMessage:@"Messaging connected."];
+    self.messaging = messaging;
+    [messaging addStateListener:self];
+    [messaging addDataListener:self];
+    [messaging addSubscriptionListener:self];
+    [messaging subscribeToChannel:self.channel.channelId qos:XIMessagingQoSAtMostOnce];
+    [self.sendButton setEnabled:true];
+}
+
+- (void)xivelyService:(XivelyService*)xivelyService failedToCreateMessaging:(NSError*)error
+{
+    [self addMessage:[NSString stringWithFormat:@"Messaging error occured: %@", [error localizedDescription]]];
+    self.messaging = nil;
+    [self.sendButton setEnabled:false];
+}
 
 @end

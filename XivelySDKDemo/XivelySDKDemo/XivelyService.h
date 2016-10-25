@@ -8,35 +8,40 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <XivelySDK/XivelySDK.h>
-#import "DeviceInfoList.h"
 
-@interface XivelyService : NSObject <XIAuthenticationDelegate,
-                                   XIMessagingCreatorDelegate,
-                                     XIDeviceInfoListDelegate,
-                                XIOrganizationHandlerDelegate>
+@class XivelyService;
 
-@property(nonatomic, strong)NSString *accountId;
-@property(nonatomic, strong)NSString *username;
-@property(nonatomic, strong)NSString *password;
+@protocol XivelyServiceDelegate <NSObject>
+- (void)xivelyService:(XivelyService*)xivelyService createdMessaging:(id<XIMessaging>)messaging;
+- (void)xivelyService:(XivelyService*)xivelyService failedToCreateMessaging:(NSError*)error;
+@end
+
+
+
+@interface XivelyService : NSObject <XIMessagingCreatorDelegate,
+                                       XIDeviceInfoListDelegate,
+                                  XIOrganizationHandlerDelegate>
+
 @property(nonatomic, strong)NSString *messagingChannel;
 
-@property(nonatomic, strong)XIAuthentication *authentication;
 @property(nonatomic, strong)id<XISession> session;
 @property(nonatomic, strong)id<XIMessagingCreator> messagingCreator;
-@property(nonatomic, strong)id<XIMessaging> messaging;
 @property(nonatomic, strong)id<XIOrganizationHandler> organizationHandler;
 
 @property(nonatomic, strong)NSTimer *timer;
-@property(nonatomic, strong)UIViewController* loginController;
-@property(nonatomic, strong)DeviceInfoList* infoList;
+@property(nonatomic, strong)id<XIDeviceInfoList> infoList;
 @property(nonatomic, strong)NSArray* deviceInfos;
 @property(nonatomic, strong)NSArray* organizationInfos;
 
-//Call start to start the Xively Hello World
-- (void)login : ( UIViewController* ) viewController;
+@property(nonatomic) bool connectCleanSession;
+@property(nonatomic, strong) NSString* connectLastWillTopic;
+@property(nonatomic, strong) NSString* connectLastWillMessage;
+@property(nonatomic) NSUInteger connectLastWillQoS;
+@property(nonatomic) bool connectLastWillRetain;
 
-//Call stop to finish periodically publishing messages and cleanup
-- (void)stop;
+@property(nonatomic, weak)id<XivelyServiceDelegate> delegate;
+
+- (void)createMessaging;
 
 - (id<XITimeSeries>)timeSeries;
 

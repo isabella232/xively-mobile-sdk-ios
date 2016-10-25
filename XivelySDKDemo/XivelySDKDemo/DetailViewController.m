@@ -19,15 +19,14 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
         XIDeviceInfo* info = self.detailItem;
-        self.detailTextView.text = [NSString stringWithFormat: @"Name: %@\nId: %@\nLocation: %@\nSerial number: %@\nDevice version: %@\nPurchase date: %@\nProvisioning state: %i " ,
-            info.deviceName ,
-            info.deviceId ,
-            info.deviceLocation ,
-            info.serialNumber ,
-            info.deviceVersion ,
-            info.purchaseDate ,
-            (int)info.provisioningState ];
-        
+        self.detailTextView.text = @"";
+        for (NSString* key in info.parameters) {
+            NSObject* val = [info.parameters objectForKey:key];
+            if (val != [NSNull null] &&
+                ![key isEqualToString:@"channels"]) {
+                self.detailTextView.text = [NSString stringWithFormat:@"%@\n%@: %@", self.detailTextView.text, key, val];
+            }
+        }
         [self.channelsButton setTitle: [NSString stringWithFormat:@"Channels (%lu)", (unsigned long)[info.deviceChannels count]]
                              forState:UIControlStateNormal];
     }

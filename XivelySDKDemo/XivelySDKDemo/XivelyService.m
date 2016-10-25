@@ -20,65 +20,50 @@ XivelyService* staticService = nil;
 - (instancetype)init {
     self = [super init];
     if (self) {
+        self.connectCleanSession = true;
+        self.connectLastWillTopic = @"";
+        self.connectLastWillMessage = @"";
+        self.connectLastWillQoS = 0;
+        self.connectLastWillRetain = false;
     }
     return self;
 }
 
-//Call start to start the Xively Hello World
-- (void)login : ( UIViewController* ) viewController {
-    //Create an authentication object and set to call its result back on this instance
-    self.loginController = viewController;
-    
-    self.authentication = [[XIAuthentication alloc] initWithSdkConfig:[XISdkConfig config]];
-    self.authentication.delegate = self;
-    NSLog(@"Authentication object created and set");
-    
-    //Start authentication. It is an asynchronous request.
-    //The result is called back on the methods defined in XIAuthenticationDelegate
-    [self.authentication requestLoginWithUsername:self.username
-                                         password:self.password
-                                        accountId:self.accountId];
-    NSLog(@"Authentication requested");
-}
-
-//Call stop to finish periodically publishing messages and cleanup
-- (void)stop {
-    [self.timer invalidate];
-    self.timer = nil;
-    [self.messaging close];
-    [self.messagingCreator cancel];
-    [self.session close];
-    self.session = nil;
-}
-
 #pragma XIAuthenticationDelegate
-- (void)authentication:(XIAuthentication *)authentication didFailWithError:(NSError *)error {
-    //The execution returns here if the authentication failed
-    NSLog(@"Authentication failed");
-}
 
-- (void)authentication:(XIAuthentication *)authentication didCreateSession:(id<XISession>)session {
+- (void)setSession:(id<XISession>)session {
+    if (_session != session) {
+        _session = session;
+    }
     //The execution returns here if the authentication was successful
     NSLog(@"Authentication success");
-    
-    //The preserve the session for later use. A session wraps in a jwt with some user data.
-    //Services like messaging or Time Series can be created through this object.
-    self.session = session;
     
     // Device info list
     self.infoList = [session.services deviceInfoList];
     self.infoList.delegate = self;
     [self.infoList requestList];
     
-    [self.loginController performSegueWithIdentifier:@"loginSeque" sender:self];
-    self.messagingCreator = [[session services] messagingCreator];
-    [self.messagingCreator setMessagingCreatorDelegate:self];
-    [self.messagingCreator createMessaging];
-    
     // Origanization info list
     self.organizationHandler = [session.services organizationHandler];
     [self.organizationHandler setDelegate:self];
     [self.organizationHandler listOrganizations];
+}
+
+- (void)createMessaging {
+    NSLog(@"Create messaging...");
+    self.messagingCreator = [[self.session services] messagingCreator];
+    [self.messagingCreator setMessagingCreatorDelegate:self];
+    
+    if ([self.connectLastWillTopic isEqualToString:@""]) {
+        [self.messagingCreator createMessagingWithCleanSession:self.connectCleanSession];
+    } else {
+        NSData* messageData = [self.connectLastWillMessage dataUsingEncoding:NSUTF8StringEncoding];
+        XILastWill* lastWill = [[XILastWill alloc] initWithChannel:self.connectLastWillTopic
+                                                           message:messageData
+                                                               qos:((self.connectLastWillQoS == 0) ? XIMessagingQoSAtMostOnce : XIMessagingQoSAtLeastOnce)
+                                                            retain:self.connectLastWillRetain];
+        [self.messagingCreator createMessagingWithCleanSession:self.connectCleanSession lastWill:lastWill];
+    }
 }
 
 - (id<XITimeSeries>)timeSeries
@@ -104,6 +89,9 @@ XivelyService* staticService = nil;
     //Building up a Messaging connection failed.
     self.messagingCreator = nil;
     NSLog(@"Messaging connection failed");
+    if (self.delegate) {
+        [self.delegate xivelyService:self failedToCreateMessaging:error];
+    }
 }
 
 - (void)messagingCreator:(id<XIMessagingCreator>)creator
@@ -112,9 +100,10 @@ XivelyService* staticService = nil;
     //The received Messaging instance is up and running.
     self.messagingCreator = nil;
     NSLog(@"Messaging connected");
-    
     //Preserve the messaging instance for later use
-    self.messaging = messaging;
+    if (self.delegate) {
+        [self.delegate xivelyService:self createdMessaging:messaging];
+    }
 }
 
 #pragma mark Organization handling
@@ -124,5 +113,14 @@ XivelyService* staticService = nil;
     [[NSNotificationCenter defaultCenter]postNotificationName:@"showOrganizations" object:nil];
 }
 
+- (void)organizationHandler:(id<XIOrganizationHandler>)organizationHandler didReceiveOrganizationInfo:(XIOrganizationInfo *)organizationInfo
+{
+    
+}
+
+- (void)organizationHandler:(id<XIOrganizationHandler>)organizationHandler didFailWithError:(NSError *)error;
+{
+    NSLog(@"Got an error while receiving organization infos: %@", [error localizedDescription]);
+}
 
 @end

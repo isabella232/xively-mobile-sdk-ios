@@ -15,13 +15,12 @@
 		337081F41D9A68DE00C90059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337081F31D9A68DE00C90059 /* Assets.xcassets */; };
 		337081F71D9A68DE00C90059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337081F51D9A68DE00C90059 /* LaunchScreen.storyboard */; };
 		337082001D9A6A9A00C90059 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337081FF1D9A6A9A00C90059 /* LoginViewController.m */; };
-		337082031D9A6FAD00C90059 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337082021D9A6FAD00C90059 /* SplitViewController.m */; };
 		337082061D9A71E000C90059 /* XivelyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 337082051D9A71E000C90059 /* XivelyService.m */; };
 		337082081D9A71F100C90059 /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337082071D9A71F100C90059 /* XivelySDK.framework */; };
-		3370820D1D9A8A3B00C90059 /* DeviceInfoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3370820C1D9A8A3B00C90059 /* DeviceInfoList.m */; };
 		33FD25501DA54FB2002E705A /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 33FD254F1DA54FB2002E705A /* header_logo.png */; };
 		6B43BB9A1DA4F2BC0090B7E8 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B43BB991DA4F2BC0090B7E8 /* ChannelViewController.m */; };
 		6B43BBA31DA78B340090B7E8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B43BBA21DA78B340090B7E8 /* MessageViewController.m */; };
+		6B607ABF1DB7BA8100C0E00C /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B607ABE1DB7BA8100C0E00C /* SettingsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,18 +38,16 @@
 		337081F81D9A68DE00C90059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337081FE1D9A6A9A00C90059 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		337081FF1D9A6A9A00C90059 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		337082011D9A6FAD00C90059 /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
-		337082021D9A6FAD00C90059 /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
 		337082041D9A71E000C90059 /* XivelyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyService.h; sourceTree = "<group>"; };
 		337082051D9A71E000C90059 /* XivelyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyService.m; sourceTree = "<group>"; };
 		337082071D9A71F100C90059 /* XivelySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XivelySDK.framework; sourceTree = "<group>"; };
-		3370820B1D9A8A3B00C90059 /* DeviceInfoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoList.h; sourceTree = "<group>"; };
-		3370820C1D9A8A3B00C90059 /* DeviceInfoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoList.m; sourceTree = "<group>"; };
 		33FD254F1DA54FB2002E705A /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		6B43BB981DA4F2BC0090B7E8 /* ChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
 		6B43BB991DA4F2BC0090B7E8 /* ChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
 		6B43BBA11DA78B340090B7E8 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		6B43BBA21DA78B340090B7E8 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		6B607ABD1DB7BA8100C0E00C /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		6B607ABE1DB7BA8100C0E00C /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +81,7 @@
 		337081E31D9A68DE00C90059 /* XivelySDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				337082071D9A71F100C90059 /* XivelySDK.framework */,
 				337081E71D9A68DE00C90059 /* AppDelegate.h */,
 				337081E81D9A68DE00C90059 /* AppDelegate.m */,
 				337081EA1D9A68DE00C90059 /* MasterViewController.h */,
@@ -99,15 +97,12 @@
 				337081E41D9A68DE00C90059 /* Supporting Files */,
 				337081FE1D9A6A9A00C90059 /* LoginViewController.h */,
 				337081FF1D9A6A9A00C90059 /* LoginViewController.m */,
-				337082011D9A6FAD00C90059 /* SplitViewController.h */,
-				337082021D9A6FAD00C90059 /* SplitViewController.m */,
-				337082071D9A71F100C90059 /* XivelySDK.framework */,
-				3370820B1D9A8A3B00C90059 /* DeviceInfoList.h */,
-				3370820C1D9A8A3B00C90059 /* DeviceInfoList.m */,
 				6B43BB981DA4F2BC0090B7E8 /* ChannelViewController.h */,
 				6B43BB991DA4F2BC0090B7E8 /* ChannelViewController.m */,
 				6B43BBA11DA78B340090B7E8 /* MessageViewController.h */,
 				6B43BBA21DA78B340090B7E8 /* MessageViewController.m */,
+				6B607ABD1DB7BA8100C0E00C /* SettingsController.h */,
+				6B607ABE1DB7BA8100C0E00C /* SettingsController.m */,
 			);
 			path = XivelySDKDemo;
 			sourceTree = "<group>";
@@ -195,14 +190,13 @@
 			files = (
 				6B43BB9A1DA4F2BC0090B7E8 /* ChannelViewController.m in Sources */,
 				337081E91D9A68DE00C90059 /* AppDelegate.m in Sources */,
-				337082031D9A6FAD00C90059 /* SplitViewController.m in Sources */,
 				337081EC1D9A68DE00C90059 /* MasterViewController.m in Sources */,
-				3370820D1D9A8A3B00C90059 /* DeviceInfoList.m in Sources */,
 				337081E61D9A68DE00C90059 /* main.m in Sources */,
 				6B43BBA31DA78B340090B7E8 /* MessageViewController.m in Sources */,
 				337081EF1D9A68DE00C90059 /* DetailViewController.m in Sources */,
 				337082061D9A71E000C90059 /* XivelyService.m in Sources */,
 				337082001D9A6A9A00C90059 /* LoginViewController.m in Sources */,
+				6B607ABF1DB7BA8100C0E00C /* SettingsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

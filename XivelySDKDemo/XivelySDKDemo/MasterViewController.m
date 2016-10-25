@@ -59,6 +59,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
+    self.navigationController.navigationBar.topItem.backBarButtonItem = [[UIBarButtonItem alloc]
+                                                                         initWithTitle:self.parentName style:UIBarButtonItemStylePlain target:nil action:nil];
     [super viewWillAppear:animated];
 }
 
@@ -84,7 +86,7 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         XIDeviceInfo *dev = self.devices[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        DetailViewController *controller = (DetailViewController *)[segue destinationViewController];
         [controller setDetailItem:dev];
         [controller setTitle:dev.deviceName];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -95,6 +97,7 @@
         XIOrganizationInfo *org = self.organizations[indexPath.row];
         [nextController setTitle:org.name];
         nextController.parentOrganizationId = org.organizationId;
+        nextController.parentName = self.title;
     }
 }
 
@@ -129,7 +132,6 @@
         return 0;
     }
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if ( indexPath.section == 0 ) {
