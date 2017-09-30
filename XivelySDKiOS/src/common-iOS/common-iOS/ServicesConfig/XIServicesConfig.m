@@ -19,7 +19,9 @@
         _deviceAssociationServiceUrl = @"https://provision.xively.com/api/v1/association/start-association-with-code";
         _mqttBrokerUrl = @"ssl://broker.xively.com:8883";
         _blueprintEndUsersServiceUrl = @"https://blueprint.xively.com/api/v1/end-users";
+        _blueprintEndUsersEndpointPath = @"/api/v1/end-users";
         _blueprintAccountUsersServiceUrl = @"https://blueprint.xively.com/api/v1/account-users";
+        _blueprintAccountUsersEndpointPath = @"/api/v1/account-users";
         _createMqttCredentialsServiceUrl = @"https://blueprint.xively.com/api/v1/access/mqtt-credentials";
         _blueprintDevicesServiceUrl = @"https://blueprint.xively.com/api/v1/devices";
         _blueprintOrganizationsServiceUrl = @"https://blueprint.xively.com/api/v1/organizations";

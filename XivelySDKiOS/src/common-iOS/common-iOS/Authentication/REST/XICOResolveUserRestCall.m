@@ -82,11 +82,11 @@
 }
 
 - (NSString *)endUserQueryUrlWithAccountId:(NSString *)accountId idmUserId:(NSString *)idmUserId {
-    return [self userQueryUrlWithAccountId:accountId idmUserId:idmUserId url:self.servicesConfig.blueprintEndUsersServiceUrl];
+    return [self userQueryUrlWithAccountId:accountId idmUserId:idmUserId url:self.servicesConfig.blueprintEndUsersEndpointPath];
 }
 
 - (NSString *)accountUserQueryUrlWithAccountId:(NSString *)accountId idmUserId:(NSString *)idmUserId {
-    return [self userQueryUrlWithAccountId:accountId idmUserId:idmUserId url:self.servicesConfig.blueprintAccountUsersServiceUrl];
+    return [self userQueryUrlWithAccountId:accountId idmUserId:idmUserId url:self.servicesConfig.blueprintAccountUsersEndpointPath];
 }
 
 - (NSString *)userQueryUrlWithAccountId:(NSString *)accountId idmUserId:(NSString *)idmUserId url:(NSString *)url {
