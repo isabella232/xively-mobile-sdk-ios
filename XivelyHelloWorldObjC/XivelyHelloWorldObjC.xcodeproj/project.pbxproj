@@ -84,6 +84,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C8341FC1F7E802D00E390FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F67395CD1BF4B94200C4A262 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +98,7 @@
 				F67395F21BF4B94200C4A262 /* XivelyHelloWorldObjCTests */,
 				F67395FD1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests */,
 				F67395D71BF4B94200C4A262 /* Products */,
+				3C8341FC1F7E802D00E390FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -429,6 +437,10 @@
 				);
 				INFOPLIST_FILE = XivelyHelloWorldObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XivelyHelloWorldObjC",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +457,10 @@
 				);
 				INFOPLIST_FILE = XivelyHelloWorldObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XivelyHelloWorldObjC",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = XI.XivelyHelloWorldObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +534,7 @@
 				F67396051BF4B94200C4A262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F67396061BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +543,7 @@
 				F67396081BF4B94200C4A262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F67396091BF4B94200C4A262 /* Build configuration list for PBXNativeTarget "XivelyHelloWorldObjCUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +552,7 @@
 				F673960B1BF4B94200C4A262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
