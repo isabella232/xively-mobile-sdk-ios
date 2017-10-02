@@ -18,7 +18,9 @@
 @property (strong, nonatomic, readonly) NSString* deviceAssociationServiceUrl;
 @property (strong, nonatomic, readonly) NSString* mqttBrokerUrl;
 @property (strong, nonatomic, readonly) NSString* blueprintEndUsersServiceUrl;
+@property (strong, nonatomic, readonly) NSString* blueprintEndUsersEndpointPath;
 @property (strong, nonatomic, readonly) NSString* blueprintAccountUsersServiceUrl;
+@property (strong, nonatomic, readonly) NSString* blueprintAccountUsersEndpointPath;
 @property (strong, nonatomic, readonly) NSString* blueprintDevicesServiceUrl;
 @property (strong, nonatomic, readonly) NSString* blueprintOrganizationsServiceUrl;
 @property (strong, nonatomic, readonly) NSString* blueprintBatchServiceUrl;
