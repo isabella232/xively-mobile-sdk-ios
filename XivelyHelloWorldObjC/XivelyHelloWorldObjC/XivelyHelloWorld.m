@@ -14,10 +14,10 @@
     if (self) {
          ///////////////////////////////////////////////
         //////////////XIVELY CONFIGURATION/////////////
-        self.accountId = @"***REMOVED***";
-        self.username = @"***REMOVED***";
-        self.password = @"***REMOVED***";
-        self.messagingChannel = @"xi/blue/v1/***REMOVED***/d/bb80e745-c1e3-443d-bde1-7f82fe356c0a/_log";
+        self.accountId = @"G-U-I-D";
+        self.username = @"awesome@foo.com";
+        self.password = @"hunter2";
+        self.messagingChannel = @"awsomeMessagingChannel";
          ///////////////////////////////////////////////
         ///////////////////////////////////////////////
     }
