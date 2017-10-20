@@ -16,7 +16,7 @@
         _sdkConfig = config;
         _loginServiceUrl = @"https://id.xively.com/api/v1/auth/login-user";
         _oauthServiceUrl = @"https://access.xively.com/api/authentication/oauth/authenticate";
-        _deviceAssociationServiceUrl = @"https://provision.xively.com/api/v1/association/start-association-with-code";
+        _deviceAssociationServiceUrl = @"https://blueprint.xively.com/api/v1/association/start-association-with-code";
         _mqttBrokerUrl = @"ssl://broker.xively.com:8883";
         _blueprintEndUsersServiceUrl = @"https://blueprint.xively.com/api/v1/end-users";
         _blueprintEndUsersEndpointPath = @"/api/v1/end-users";

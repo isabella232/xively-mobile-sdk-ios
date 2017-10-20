@@ -14,10 +14,10 @@
     if (self) {
          ///////////////////////////////////////////////
         //////////////XIVELY CONFIGURATION/////////////
-        self.accountId = @"G-U-I-D";
-        self.username = @"awesome@foo.com";
-        self.password = @"hunter2";
-        self.messagingChannel = @"awsomeMessagingChannel";
+        self.accountId = @"d95ee4d1-45fb-4061-b3fb-f2651158b416";
+        self.username = @"kresshy+2@gmail.com";
+        self.password = @"asdQWE123";
+        self.messagingChannel = @"xi/blue/v1/d95ee4d1-45fb-4061-b3fb-f2651158b416/d/bb80e745-c1e3-443d-bde1-7f82fe356c0a/_log";
          ///////////////////////////////////////////////
         ///////////////////////////////////////////////
     }
