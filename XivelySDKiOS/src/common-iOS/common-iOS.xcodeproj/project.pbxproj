@@ -1383,7 +1383,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)\necho \"${GIT_BRANCH}\"\n\nGIT_COMMIT_ID=$(git rev-parse ${GIT_BRANCH})\necho \"${GIT_COMMIT_ID}\"\n\nxcodebuild -configuration Debug -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphoneos build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\"\n\nxcodebuild -configuration Debug -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphonesimulator build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\"";
+			shellScript = "GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)\necho \"${GIT_BRANCH}\"\n\nGIT_COMMIT_ID=$(git rev-parse ${GIT_BRANCH})\necho \"${GIT_COMMIT_ID}\"\n\nxcodebuild -configuration Debug -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphoneos build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\" OTHER_CFLAGS=\"-fembed-bitcode-marker\"\n\nxcodebuild -configuration Debug -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphonesimulator build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\" OTHER_CFLAGS=\"-fembed-bitcode-marker\"";
 		};
 		F63FF8631A8B560E0071B8B5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1501,7 +1501,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)\necho \"${GIT_BRANCH}\"\n\nGIT_COMMIT_ID=$(git rev-parse ${GIT_BRANCH})\necho \"${GIT_COMMIT_ID}\"\n\nxcodebuild -configuration Release -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphoneos build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\"\n\nxcodebuild -configuration Release -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphonesimulator build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\"";
+			shellScript = "GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)\necho \"${GIT_BRANCH}\"\n\nGIT_COMMIT_ID=$(git rev-parse ${GIT_BRANCH})\necho \"${GIT_COMMIT_ID}\"\n\nxcodebuild -configuration Release -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphoneos build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\" OTHER_CFLAGS=\"-fembed-bitcode\"\n\nxcodebuild -configuration Release -project \"${PROJECT_NAME}.xcodeproj\" -target 'common-iOS' -sdk iphonesimulator build RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" GCC_PREPROCESSOR_DEFINITIONS=\"${inherited} _GIT_COMMIT_ID=${GIT_COMMIT_ID}\" OTHER_CFLAGS=\"-fembed-bitcode\"";
 		};
 		F66DF9D71A6CFDDF0053E1BF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1792,6 +1792,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = "";
+				"BITCODE_GENERATION_MODE[arch=*]" = marker;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1836,6 +1838,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode-marker";
 				SDKROOT = iphoneos;
 				SYMROOT = ../../bin;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1846,6 +1849,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = "";
+				"BITCODE_GENERATION_MODE[arch=*]" = bitcode;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1882,6 +1887,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
 				SDKROOT = iphoneos;
 				SYMROOT = ../../bin;
 				USER_HEADER_SEARCH_PATHS = "";
