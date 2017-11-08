@@ -30,15 +30,15 @@ typedef NS_ENUM(NSUInteger, XIEndUserHandlerState) {
 
 /**
  * @brief The EndUser info query finished with success.
- * @param EndUserHandler The EndUserHandler instance that initiates the callback.
- * @param EndUserInfo The EndUser info object.
+ * @param endUserHandler The EndUserHandler instance that initiates the callback.
+ * @param endUserInfo The EndUser info object.
  * @since Version 1.0
  */
 - (void)endUserHandler:(id<XIEndUserHandler>)endUserHandler didReceiveEndUserInfo:(XIEndUserInfo *)endUserInfo;
 
 /**
  * @brief The association finished with an error.
- * @param EndUserHandler The XIEndUserHandler instance that initiates the callback.
+ * @param endUserHandler The XIEndUserHandler instance that initiates the callback.
  * @param error The reason of the error. The possible error codes are defined in \link XICommonError.h \endlink.
  * @since Version 1.0
  */
