@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2797652F1FB309C6004ABB4D /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279765281FB309BC004ABB4D /* XivelySDK.framework */; };
 		337081E61D9A68DE00C90059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 337081E51D9A68DE00C90059 /* main.m */; };
 		337081E91D9A68DE00C90059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 337081E81D9A68DE00C90059 /* AppDelegate.m */; };
 		337081EC1D9A68DE00C90059 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337081EB1D9A68DE00C90059 /* MasterViewController.m */; };
@@ -16,14 +17,64 @@
 		337081F71D9A68DE00C90059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337081F51D9A68DE00C90059 /* LaunchScreen.storyboard */; };
 		337082001D9A6A9A00C90059 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337081FF1D9A6A9A00C90059 /* LoginViewController.m */; };
 		337082061D9A71E000C90059 /* XivelyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 337082051D9A71E000C90059 /* XivelyService.m */; };
-		337082081D9A71F100C90059 /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337082071D9A71F100C90059 /* XivelySDK.framework */; };
 		33FD25501DA54FB2002E705A /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 33FD254F1DA54FB2002E705A /* header_logo.png */; };
 		6B43BB9A1DA4F2BC0090B7E8 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B43BB991DA4F2BC0090B7E8 /* ChannelViewController.m */; };
 		6B43BBA31DA78B340090B7E8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B43BBA21DA78B340090B7E8 /* MessageViewController.m */; };
 		6B607ABF1DB7BA8100C0E00C /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B607ABE1DB7BA8100C0E00C /* SettingsController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		279765251FB309BC004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6DBF47C1A66830200EE309D;
+			remoteInfo = libXivelySDK;
+		};
+		279765271FB309BC004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 279620ED1FB2F8C100E70118;
+			remoteInfo = XivelySDK;
+		};
+		279765291FB309BC004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6DBF4871A66830200EE309D;
+			remoteInfo = XivelySDKTests;
+		};
+		2797652B1FB309BC004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270BAFD91BC66CDB0079D654;
+			remoteInfo = XivelySDKE2ETests;
+		};
+		2797652D1FB309C2004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 279620EC1FB2F8C100E70118;
+			remoteInfo = XivelySDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		275E7F451FB330DF000EEFFB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XivelySDK.xcodeproj; path = ../XivelySDKiOS/src/XivelySDK/XivelySDK.xcodeproj; sourceTree = "<group>"; };
 		337081E11D9A68DE00C90059 /* XivelySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XivelySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337081E51D9A68DE00C90059 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		337081E71D9A68DE00C90059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,7 +91,6 @@
 		337081FF1D9A6A9A00C90059 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		337082041D9A71E000C90059 /* XivelyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyService.h; sourceTree = "<group>"; };
 		337082051D9A71E000C90059 /* XivelyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyService.m; sourceTree = "<group>"; };
-		337082071D9A71F100C90059 /* XivelySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XivelySDK.framework; sourceTree = "<group>"; };
 		33FD254F1DA54FB2002E705A /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		6B43BB981DA4F2BC0090B7E8 /* ChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
 		6B43BB991DA4F2BC0090B7E8 /* ChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
@@ -55,18 +105,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337082081D9A71F100C90059 /* XivelySDK.framework in Frameworks */,
+				2797652F1FB309C6004ABB4D /* XivelySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277ADF211FB3032400BC7B82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2797651F1FB309BC004ABB4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279765261FB309BC004ABB4D /* liblibXivelySDK.a */,
+				279765281FB309BC004ABB4D /* XivelySDK.framework */,
+				2797652A1FB309BC004ABB4D /* XivelySDKTests.xctest */,
+				2797652C1FB309BC004ABB4D /* XivelySDKE2ETests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		337081D81D9A68DE00C90059 = {
 			isa = PBXGroup;
 			children = (
+				2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */,
 				337081E31D9A68DE00C90059 /* XivelySDKDemo */,
 				337081E21D9A68DE00C90059 /* Products */,
+				277ADF211FB3032400BC7B82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +151,6 @@
 		337081E31D9A68DE00C90059 /* XivelySDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				337082071D9A71F100C90059 /* XivelySDK.framework */,
 				337081E71D9A68DE00C90059 /* AppDelegate.h */,
 				337081E81D9A68DE00C90059 /* AppDelegate.m */,
 				337081EA1D9A68DE00C90059 /* MasterViewController.h */,
@@ -126,10 +195,12 @@
 				337081DD1D9A68DE00C90059 /* Sources */,
 				337081DE1D9A68DE00C90059 /* Frameworks */,
 				337081DF1D9A68DE00C90059 /* Resources */,
+				275E7F451FB330DF000EEFFB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2797652E1FB309C2004ABB4D /* PBXTargetDependency */,
 			);
 			name = XivelySDKDemo;
 			productName = XivelySDKDemo;
@@ -142,7 +213,7 @@
 		337081D91D9A68DE00C90059 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = LogMeIn;
 				TargetAttributes = {
 					337081E01D9A68DE00C90059 = {
@@ -162,12 +233,49 @@
 			mainGroup = 337081D81D9A68DE00C90059;
 			productRefGroup = 337081E21D9A68DE00C90059 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2797651F1FB309BC004ABB4D /* Products */;
+					ProjectRef = 2797651E1FB309BC004ABB4D /* XivelySDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				337081E01D9A68DE00C90059 /* XivelySDKDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		279765261FB309BC004ABB4D /* liblibXivelySDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibXivelySDK.a;
+			remoteRef = 279765251FB309BC004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279765281FB309BC004ABB4D /* XivelySDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XivelySDK.framework;
+			remoteRef = 279765271FB309BC004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2797652A1FB309BC004ABB4D /* XivelySDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XivelySDKTests.xctest;
+			remoteRef = 279765291FB309BC004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2797652C1FB309BC004ABB4D /* XivelySDKE2ETests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XivelySDKE2ETests.xctest;
+			remoteRef = 2797652B1FB309BC004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		337081DF1D9A68DE00C90059 /* Resources */ = {
@@ -202,6 +310,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2797652E1FB309C2004ABB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XivelySDK;
+			targetProxy = 2797652D1FB309C2004ABB4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		337081F01D9A68DE00C90059 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -231,7 +347,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -239,7 +357,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -279,7 +402,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -287,7 +412,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
