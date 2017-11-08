@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2797651C1FB309AA004ABB4D /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279765151FB3099C004ABB4D /* XivelySDK.framework */; };
 		F67395DB1BF4B94200C4A262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395DA1BF4B94200C4A262 /* main.m */; };
 		F67395DE1BF4B94200C4A262 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395DD1BF4B94200C4A262 /* AppDelegate.m */; };
 		F67395E11BF4B94200C4A262 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395E01BF4B94200C4A262 /* ViewController.m */; };
@@ -16,10 +17,44 @@
 		F67395F41BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395F31BF4B94200C4A262 /* XivelyHelloWorldObjCTests.m */; };
 		F67395FF1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F67395FE1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests.m */; };
 		F673960E1BF4B9B200C4A262 /* XivelyHelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = F673960D1BF4B9B200C4A262 /* XivelyHelloWorld.m */; };
-		F67396101BF4B9FD00C4A262 /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F673960F1BF4B9FD00C4A262 /* XivelySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		279765121FB3099C004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6DBF47C1A66830200EE309D;
+			remoteInfo = libXivelySDK;
+		};
+		279765141FB3099C004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 279620ED1FB2F8C100E70118;
+			remoteInfo = XivelySDK;
+		};
+		279765161FB3099C004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6DBF4871A66830200EE309D;
+			remoteInfo = XivelySDKTests;
+		};
+		279765181FB3099C004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270BAFD91BC66CDB0079D654;
+			remoteInfo = XivelySDKE2ETests;
+		};
+		2797651A1FB309A7004ABB4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 279620EC1FB2F8C100E70118;
+			remoteInfo = XivelySDK;
+		};
 		F67395F01BF4B94200C4A262 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F67395CE1BF4B94200C4A262 /* Project object */;
@@ -37,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XivelySDK.xcodeproj; path = ../XivelySDKiOS/src/XivelySDK/XivelySDK.xcodeproj; sourceTree = "<group>"; };
 		F67395D61BF4B94200C4A262 /* XivelyHelloWorldObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XivelyHelloWorldObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67395DA1BF4B94200C4A262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F67395DC1BF4B94200C4A262 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +91,6 @@
 		F67396001BF4B94200C4A262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F673960C1BF4B9B200C4A262 /* XivelyHelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XivelyHelloWorld.h; sourceTree = "<group>"; };
 		F673960D1BF4B9B200C4A262 /* XivelyHelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XivelyHelloWorld.m; sourceTree = "<group>"; };
-		F673960F1BF4B9FD00C4A262 /* XivelySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XivelySDK.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F67396101BF4B9FD00C4A262 /* XivelySDK.framework in Frameworks */,
+				2797651C1FB309AA004ABB4D /* XivelySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +119,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2797650C1FB3099C004ABB4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279765131FB3099C004ABB4D /* liblibXivelySDK.a */,
+				279765151FB3099C004ABB4D /* XivelySDK.framework */,
+				279765171FB3099C004ABB4D /* XivelySDKTests.xctest */,
+				279765191FB3099C004ABB4D /* XivelySDKE2ETests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3C8341FC1F7E802D00E390FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +140,7 @@
 		F67395CD1BF4B94200C4A262 = {
 			isa = PBXGroup;
 			children = (
+				2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */,
 				F67395D81BF4B94200C4A262 /* XivelyHelloWorldObjC */,
 				F67395F21BF4B94200C4A262 /* XivelyHelloWorldObjCTests */,
 				F67395FD1BF4B94200C4A262 /* XivelyHelloWorldObjCUITests */,
@@ -115,7 +162,6 @@
 		F67395D81BF4B94200C4A262 /* XivelyHelloWorldObjC */ = {
 			isa = PBXGroup;
 			children = (
-				F673960F1BF4B9FD00C4A262 /* XivelySDK.framework */,
 				F673960C1BF4B9B200C4A262 /* XivelyHelloWorld.h */,
 				F673960D1BF4B9B200C4A262 /* XivelyHelloWorld.m */,
 				F67395DC1BF4B94200C4A262 /* AppDelegate.h */,
@@ -171,6 +217,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2797651B1FB309A7004ABB4D /* PBXTargetDependency */,
 			);
 			name = XivelyHelloWorldObjC;
 			productName = XivelyHelloWorldObjC;
@@ -246,6 +293,12 @@
 			mainGroup = F67395CD1BF4B94200C4A262;
 			productRefGroup = F67395D71BF4B94200C4A262 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2797650C1FB3099C004ABB4D /* Products */;
+					ProjectRef = 2797650B1FB3099C004ABB4D /* XivelySDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F67395D51BF4B94200C4A262 /* XivelyHelloWorldObjC */,
@@ -254,6 +307,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		279765131FB3099C004ABB4D /* liblibXivelySDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibXivelySDK.a;
+			remoteRef = 279765121FB3099C004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279765151FB3099C004ABB4D /* XivelySDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XivelySDK.framework;
+			remoteRef = 279765141FB3099C004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279765171FB3099C004ABB4D /* XivelySDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XivelySDKTests.xctest;
+			remoteRef = 279765161FB3099C004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279765191FB3099C004ABB4D /* XivelySDKE2ETests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XivelySDKE2ETests.xctest;
+			remoteRef = 279765181FB3099C004ABB4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F67395D41BF4B94200C4A262 /* Resources */ = {
@@ -313,6 +397,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2797651B1FB309A7004ABB4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XivelySDK;
+			targetProxy = 2797651A1FB309A7004ABB4D /* PBXContainerItemProxy */;
+		};
 		F67395F11BF4B94200C4A262 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F67395D51BF4B94200C4A262 /* XivelyHelloWorldObjC */;
