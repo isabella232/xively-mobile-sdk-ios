@@ -99,7 +99,7 @@
             }
             break;
         default:
-            NSLog(@"Oops, event code not handled: 0x%02x", eventCode);
+            NSLog(@"Oops, event code not handled: 0x%02x", (unsigned int)eventCode);
             break;
     }
 }

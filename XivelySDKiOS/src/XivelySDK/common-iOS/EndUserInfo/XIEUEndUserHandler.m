@@ -273,6 +273,11 @@ typedef NS_ENUM(NSInteger, XIDIDeviceInfoListEvent) {
     return XIEndUserHandlerStateCanceled;
 }
 
+- (NSInteger)onAggregatedRequestReceived: (NSObject*) obj {
+    
+    return XIEndUserHandlerStateExtendedRequest;
+}
+
 - (NSInteger)onInitialRequestReceived:(NSDictionary *)parameters {
     XIEndUserInfo *endUserInfo = parameters[@"endUserInfo"];
     

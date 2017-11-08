@@ -294,8 +294,8 @@ typedef NS_ENUM(NSInteger, XIDIDeviceInfoListEvent) {
 }
 
 - (NSInteger)onAggregatedRequestReceived:(NSDictionary *)parameters {
-    NSArray *deviceInfoList = parameters[@"deviceInfoList"];
-    id<XIDeviceInfoCall> deviceInfoCall = parameters[@"deviceInfoCall"];
+    NSArray *deviceInfoList __unused = parameters[@"deviceInfoList"];
+    id<XIDeviceInfoCall> deviceInfoCall __unused = parameters[@"deviceInfoCall"];
     
     NSLog(@"On aggregated request received");
     
