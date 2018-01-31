@@ -70,8 +70,6 @@
                     length = 0;
                     lengthMultiplier = 1;
                     status = MQTTDecoderStatusDecodingLength;
-                } else {
-                    assert(0);
                 }
             }
             while (status == MQTTDecoderStatusDecodingLength) {
