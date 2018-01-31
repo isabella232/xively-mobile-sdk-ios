@@ -61,7 +61,7 @@
             if (status == MQTTDecoderStatusDecodingHeader) {
                 
                 NSInteger n = [stream read:&header maxLength:sizeof(UInt8)];
-                if (n  < 0) {
+                if (n  <= 0) {
                     status = MQTTDecoderStatusConnectionError;
                     [delegate decoder:self handleEvent:MQTTDecoderEventConnectionError];
                     return;
