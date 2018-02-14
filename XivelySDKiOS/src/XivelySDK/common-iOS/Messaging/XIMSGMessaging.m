@@ -43,22 +43,22 @@
     
     switch (self.connection.state) {
         case XICOConnectionStateInit:
+        case XICOConnectionStateConnecting:
             return XIMessagingStateClosed;
             break;
             
         case XICOConnectionStateConnected:
             return XIMessagingStateConnected;
+            break;
             
         case XICOConnectionStateSuspended:
         case XICOConnectionStateReconnecting:
             return XIMessagingStateReconnecting;
+            break;
             
         case XICOConnectionStateError:
-            return XIMessagingStateError;
-        
-        //case XICOConnectionStateConnecting:
         default:
-            assert(0);
+            return XIMessagingStateError;
             break;
     }
 }
