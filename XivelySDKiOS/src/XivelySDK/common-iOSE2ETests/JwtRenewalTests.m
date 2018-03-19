@@ -3,7 +3,7 @@
 //  common-iOS
 //
 //  Created by gszajko on 27/10/15.
-//  Copyright © 2015 LogMeIn Inc. All rights reserved.
+//  Copyright © 2015 Xively All rights reserved.
 //
 
 #import "E2ETestCase.h"

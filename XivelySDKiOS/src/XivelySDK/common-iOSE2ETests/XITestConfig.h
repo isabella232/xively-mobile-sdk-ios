@@ -3,7 +3,7 @@
 //  common-iOS
 //
 //  Created by tkorodi on 02/09/16.
-//  Copyright © 2016 LogMeIn Inc. All rights reserved.
+//  Copyright © 2016 Xively All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

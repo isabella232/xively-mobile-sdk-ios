@@ -3,7 +3,7 @@
 //  common-iOS
 //
 //  Created by gszajko on 09/07/15.
-//  Copyright (c) 2015 LogMeIn Inc. All rights reserved.
+//  Copyright (c) 2015 Xively All rights reserved.
 //
 
 @protocol XICOConnectionListener;

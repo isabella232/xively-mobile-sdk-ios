@@ -3,7 +3,7 @@
 //  common
 //
 //  Created by Gábor Szajkó on 11/12/14.
-//  Copyright (c) 2015 LogMeIn Inc.. All rights reserved.
+//  Copyright (c) 2015 Xively. All rights reserved.
 //
 
 OCMOCK_DIRECTORY = $(PROJECT_DIR)/../../lib/OCMock-3.4-1

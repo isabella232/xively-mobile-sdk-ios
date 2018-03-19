@@ -1,6 +1,6 @@
 //
 //  XIMessaging.h
-//  Copyright (c) 2015 LogMeIn Inc. All rights reserved.
+//  Copyright (c) 2015 Xively All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

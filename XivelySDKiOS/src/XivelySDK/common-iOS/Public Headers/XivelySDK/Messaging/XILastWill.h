@@ -1,6 +1,6 @@
 //
 //  XILastWill.h
-//  Copyright © 2015 LogMeIn Inc. All rights reserved.
+//  Copyright © 2015 Xively All rights reserved.
 //
 
 /** @file */

@@ -3,7 +3,7 @@
 //  common-iOS
 //
 //  Created by vfabian on 15/09/15.
-//  Copyright (c) 2015 LogMeIn Inc. All rights reserved.
+//  Copyright (c) 2015 Xively All rights reserved.
 //
 
 #import "XITimeSeriesProxy.h"

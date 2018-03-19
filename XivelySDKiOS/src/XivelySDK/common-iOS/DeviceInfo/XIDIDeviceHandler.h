@@ -2,7 +2,7 @@
 //  XIDIDeviceInfoList.h
 //  common-iOS
 //
-//  Copyright (c) 2016 LogMeIn Inc. All rights reserved.
+//  Copyright (c) 2016 Xively All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

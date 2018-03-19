@@ -1,6 +1,6 @@
 //
 //  NSMutableArray+nonRetaining.m
-//  Copyright (c) 2014 LogMeIn Inc. All rights reserved.
+//  Copyright (c) 2014 Xively All rights reserved.
 //
 
 #import "NSMutableArray+nonRetaining.h"

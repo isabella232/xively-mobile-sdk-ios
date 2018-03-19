@@ -1407,7 +1407,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "LogMeIn Inc.";
+				ORGANIZATIONNAME = "Xively";
 				TargetAttributes = {
 					270BAFD81BC66CDB0079D654 = {
 						CreatedOnToolsVersion = 7.0.1;
